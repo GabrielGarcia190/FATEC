@@ -1,2 +1,2 @@
 # ExerciciosFatec
-## Um repositório para armazenadas atividades desenvolvidas na Fatec
+Um repositório para armazenadas atividades desenvolvidas na Fatec
