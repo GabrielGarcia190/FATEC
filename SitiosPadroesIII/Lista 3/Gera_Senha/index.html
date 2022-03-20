@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <style type="text/css">
+    #none {
+      display: none;
+      text-align: center;
+      color: red;
+      padding-top: 10%;
+    }
+
+    #pizza {
+      width: 200px;
+      height: 200px;
+    }
+
+    #texto {
+      font-size: 28px;
+    }
+
+    #texto1 {
+      font-size: 28px;
+      display: none;
+    }
+  </style>
+
+</head>
+
+
+<body class="container p-5" id="background">
+
+
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navegação</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Principal</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Mudar de Cor
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><button type="button" onclick="AtivarTemaDark()" id="btn" class="btn btn-dark">Dark</button></li>
+                <li><button type="button" onclick="AtivarTemaLight()" class="btn btn-light">Light</button></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="d-flex justify-content-center mt-5">
+    <img
+      src="data:image/png;base64,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"
+      id="pizza">
+  </div>
+  <h1 id="texto" class="container mt-3 d-flex justify-content-center">Gerador de Senha</h1><br>
+  <div class="container mt-3 d-flex justify-content-center">
+    <h1 id="texto" class="float-start">Insira o nome: </h1>
+    <input type="text" class="input-group-text" id="nomeAluno">
+  </div><br>
+  <div class="container mt-3 d-flex justify-content-center">
+    <h1 id="texto" class="float-start">Senha Gerada:</h1>
+  </div>
+  <p id="resultado" class="d-flex justify-content-center"></p>
+
+  <h1 id="texto1" class="d-flex justify-content-center" display="none"></h1><br>
+  <h1 id="mostrarArvore" class="text-center" display="none"></h1><br><br>
+  <button type="button" onclick="gerarSenha()" id="btn"
+    class="btn btn-dark container align-items-center">Calcular</button>
+
+</body>
+
+</html>
