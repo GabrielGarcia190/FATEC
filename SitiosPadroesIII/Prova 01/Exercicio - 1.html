@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <title>Ex 1</title>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    <p>INSIRA UM VALOR: </p>
+    <input type="number" id="campoValor">
+    <button onclick="executar()">Enviar</button><br>
+    <div id="resultado"></div>
+</body>
+<script>
+function executar() {
+    try {
+
+        var numero = document.getElementById("campoValor").value;
+        if (numero > 10 || numero < -10 || numero == "") {
+            throw (error);
+        }
+
+        if (numero > 0) {
+            document.getElementById("resultado").innerHTML = "NUMERO POSITIVO";
+        } else if (numero == 0) {
+            document.getElementById("resultado").innerHTML = "VALOR NEUTRO  ";
+        } else {
+            document.getElementById("resultado").innerHTML = "VALOR NEGATIVO";
+        }
+        console.log(numero);
+
+    } catch (error) {
+        alert("Valor Invalido");
+    }
+
+}
+</script>
+</html>
