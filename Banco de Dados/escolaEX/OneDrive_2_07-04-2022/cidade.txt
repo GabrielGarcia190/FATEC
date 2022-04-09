@@ -1,0 +1,5 @@
+1	Jales	1
+2	Urania	1
+3	Iturama	2
+4	Pontalinda	1
+5	Paranaiba	3
