@@ -13,6 +13,8 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="main.js"></script>
+
 </head>
 
 <body>
@@ -30,7 +32,7 @@
         </nav>
         <div class="content">
             <h4>Olá, Meu Nome é</h4>
-            <h1>Gabriel<span>Garcia</span></h1>
+            <h1 id="escrever">Gabriel <span>Garcia</span></h1>
             <h3>Eu sou o Batman.</h3>
             <div class="newslatter">
                 <form>
@@ -102,23 +104,28 @@
     <form class="contato" action="https://formsubmit.co/gokugamer190@gmail.com" method="POST">
         <p class="title"> - ENTRE EM CONTATO COMIGO -</p>
         <hr width="600px">
+        <label class="error" id="errorNome">*Insira um nome valido</label>
         <div class="nome" style=" display: flex; align-items: center; justify-content: start;">
             <input class="texto" type="text" style="width: 400px;" placeholder="Insira o seu Nome"
-                aria-label="default input example" name="Nome" value="" required>
-            <input class="texto" type="text" id="nome" style=" width: 200px" placeholder="Insira o seu Telefone (Opcional)"
-                aria-label="default input example" id="Telefone">
+                aria-label="default input example" name="Nome" value="" required id="Nome" onchange="verifica()">
+            <select class="texto" type="text" id="nome" style=" width: 200px"
+                placeholder="Insira o seu Telefone (Opcional)" aria-label="default input example" id="Telefone">
+                <option></option>
+            </select>
         </div>
+        <label class="error">* Insira um e-mail valido</label>
         <div class="nome" style=" display: flex; align-items: center; justify-content: start;">
             <input class="texto" type="text" style="width: 610px;" placeholder="Insira o e-mail"
-                aria-label="default input example" name="E-mail" required>
+                aria-label="default input example" name="E-mail" required ">
         </div>
-        <div class="nome" style="display: flex; align-items: center; justify-content: start;">
-        <textarea class="texto" placeholder="Escreva sua mensagem" name="Mensagem" style="width: 610px;" required></textarea>
-        <input type="hidden" name="_captcha" value="false">
-        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">  LINHA PARA MOSTRAR PÁGINA DE ENVIADO COM SUCESSO--> 
+        <div class=" nome" style="display: flex; align-items: center; justify-content: start;">
+            <textarea class="texto" placeholder="Escreva sua mensagem" name="Mensagem" style="width: 610px;"
+                required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">  LINHA PARA MOSTRAR PÁGINA DE ENVIADO COM SUCESSO-->
         </div>
 
-        <button type="submit" href="#"" class=" button-two" style="margin-bottom: 10px;">Enviar Mensagem        </button>
+        <button type="submit" href="#"" class=" button-two" style="margin-bottom: 10px;">Enviar Mensagem </button>
     </form>
 
     <footer>

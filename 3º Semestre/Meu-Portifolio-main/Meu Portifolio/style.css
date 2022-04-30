@@ -373,3 +373,9 @@ footer p:nth-child(2) {
     border-radius: 50%;
     height: 1000px;
 }
+.error{
+    margin-top: 5px;
+    font-size: 15px;
+    color: red;
+    display: none;
+}
