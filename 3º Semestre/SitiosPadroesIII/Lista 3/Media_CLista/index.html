@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <style type="text/css">
+    #none {
+      display: none;
+      text-align: center;
+      color: red;
+      padding-top: 10%;
+    }
+
+    #pizza {
+      width: 200px;
+      height: 200px;
+    }
+
+    #texto {
+      font-size: 28px;
+    }
+
+    #texto1 {
+      font-size: 28px;
+      display: none;
+    }
+  </style>
+
+</head>
+
+
+<div class="container p-5" id="background">
+
+
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navegação</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Principal</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Mudar de Cor
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><button type="button" onclick="AtivarTemaDark()" id="btn" class="btn btn-dark">Dark</button></li>
+                <li><button type="button" onclick="AtivarTemaLight()" class="btn btn-light">Light</button></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="d-flex justify-content-center mt-5">
+    <img
+      src="data:image/png;base64,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"
+      id="pizza">
+  </div><br />
+  <div class="d-flex justify-content-center">
+    <h1 id="texto">Insira a Nota: </h1>
+    <input id="campoNota" type="text" class="input-group-text "
+      aria-label="Dollar amount (with dot and two decimal places)">
+  </div><br>
+
+
+  <div class="container mt-3 d-flex justify-content-center">
+    <h1 id="texto" class="d-flex justify-content-center">Média dos alunos:</h1><br>
+  </div><br>
+  <p id="quantNotas" class="d-flex justify-content-center"></p><br>
+  <p id="media" class="d-flex justify-content-center"></p><br>
+  <button type="button" onclick="inserirNota()" class="btn btn-dark container align-items-center">Inserir
+    nota</button><br><br>
+  <button type="button" onclick="calcular()" id="btn" class="btn btn-dark container align-items-center">Calcular
+    Media</button><br><br>
+  <button type="button" onclick="limpaLista()" id="btn" class="btn btn-dark container align-items-center">Limpar
+    Notas</button>
+
+  </body>
+
+</html>

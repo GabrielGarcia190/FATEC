@@ -1,0 +1,5 @@
+3	WebDesign	3200.00
+4	Analista TI	7800.00
+5	Adm Banco Dados	6800.00
+6	Adm Redes	5200.00
+7	Suporte TI	2500.00

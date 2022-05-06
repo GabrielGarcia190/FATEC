@@ -1,0 +1,107 @@
+-- Scrpit para o banco de dados Aula
+
+-- Criando uma tebela---------------
+CREATE TABLE cargo(
+	idcar INT NOT NULL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	salario DECIMAL(10,2)
+);
+------------------------------------
+-- Consultar Tabela Cargo--------
+SELECT * FROM cargo;
+---------------------------------
+
+--Consultar Campos Especificos---
+SELECT  nome, salario FROM cargo;
+----------------------------------
+
+--Consulta com filtro------------------------
+SELECT  * FROM cargo WHERE nome='WebDesign';
+---------------------------------------------
+
+--Consulta com filtro---------------------
+SELECT  * FROM cargo WHERE nome like 'P%';
+-------------------------------------------
+
+--Consulta com ordenação decrescente-
+SELECT * FROM cargo ORDER BY nome;
+-------------------------------------
+
+--Consulta com limite de linhas
+SELECT * FROM cargo LIMIT 3;
+------------------------------
+
+-- Inserir dados na tabela cargo----------------------------------
+-- 1º Sintaxe-----------------------------
+INSERT INTO cargo(idcar, nome, salario)
+VALUES(1, 'Gerente TI', 10000.00);
+----------------------------------------
+
+-- 2º Sintaxe ------------------------------------------------
+INSERT INTO cargo VALUES(2, 'Programador', 6500.00 );
+--------------------------------------------------------------
+
+-- Alteração de Dados-----------------------------------------
+UPDATE cargo SET nome='Administrador de Redes' WHERE idcar=6;
+--------------------------------------------------------------
+
+--Apagar Registros (linhas) na tabela cargo-
+DELETE FROM cargo WHERE idcar=6;
+---------------------------------------------
+
+--Alterar a estrutura da tabela cargo---------
+ALTER TABLE cargo ADD adicional DECIMAL(10,2);
+ALTER TABLE cargo DROP adicional;
+ALTER TABLE cargo RENAME nome TO nome_cargo;
+----------------------------------------------
+
+--Importar Dados para tabela cargos--
+COPY cargo from 'C:\Logs\cargos.txt';
+-------------------------------------
+-- Apaga a tabela
+DROP TABLE cargo;
+-----------------
+
+------------------------------- EXERCICIOS -------------------------------------------
+-- 1)Qual a finalidade da instrução CREATE TABLE?
+-- R: Criar uma Tabela
+
+-- 2)Qual a finalidade da instrução INSERT INTO?
+-- R: Inserir Dados em uma tabela 
+
+-- 3) Qual a finalidade da instrução SELECT com FROM?
+-- R: Consulta os dados de uma tabela
+
+-- 4)Qual a finalidade da instrução UPDATE com SET?
+-- R: Atualizar dados de um campo na tabela
+
+-- 5)Qual a finalidade da instrução DELETE FROM?
+-- R: Deletar Dados da tabela
+
+-- 6)Qual a finalidade da instrução ALTER TABLE?
+-- R: Alterar a estrutura de uma tabela
+
+------------------------------------------------------------------------
+
+ALTER TABLE cargo ADD sigla VARCHAR(50) NOT NULL;
+
+UPDATE cargo SET sigla='GTI' WHERE idcar=1;
+UPDATE cargo SET sigla='PRO' WHERE idcar=2;
+UPDATE cargo SET sigla='WED' WHERE idcar=3;
+UPDATE cargo SET sigla='ATI' WHERE idcar=4;
+UPDATE cargo SET sigla='DBA' WHERE idcar=5;
+UPDATE cargo SET sigla='STI' WHERE idcar=7;
+
+---------------------------------------------------------------------------
+
+CREATE TABLE Funcionario(
+	idFunc INT NOT NULL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	CPF VARCHAR(20) NOT NULL,
+	idCar INT REFERENCES cargo(idcar) 
+	ON UPDATE RESTRICT ON DELETE RESTRICT	
+);
+
+COPY funcionario FROM 'C:\Users\Aluno19\3D Objects\ExerciciosFatec\Banco de Dados\funcionario.txt'
+
+SELECT * FROM Funcionario;

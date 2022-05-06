@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Lan House JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../../../../Working%20files/GABRIEL%20GARCIA%20RODOLFO%20ALVES/01%20-%20Exercícios/main.js"></script>
+  <style type="text/css">
+    #none {
+      display: none;
+      text-align: center;
+      color: red;
+      padding-top: 10%;
+    }
+
+    #pizza {
+      width: 200px;
+      height: 200px;
+    }
+
+    #texto {
+      font-size: 28px;
+    }
+
+    #texto1 {
+      font-size: 18px;
+      display: none;
+    }
+  </style>
+
+</head>
+
+
+<body class="container p-5" id="background">
+
+
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Lan House JS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Principal</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Mudar de Cor
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><button type="button" onclick="AtivarTemaDark()" id="btn" class="btn btn-dark">Dark</button></li>
+                <li><button type="button" onclick="AtivarTemaLight()" class="btn btn-light">Light</button></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="d-flex justify-content-center mt-5">
+    <img src="https://cdn-icons-png.flaticon.com/512/2292/2292038.png" id="pizza">
+  </div>
+  <h1 id="texto">Valor por 15 minutos de uso: </h1>
+  <div class="input-group ">
+    <input id="campoTempo" type="number" class="form-control" placeholder="Digite o tempo de uso"
+      aria-label="Dollar amount (with dot and two decimal places)">
+    <!-- <span class="input-group-text">$</span>
+    <span id="vl" class="input-group-text">0.00</span> -->
+  </div>
+  <div class="container align-items-center">
+  </div>
+  <div class="container mt-3">
+    <h1 id="texto" name="pessoas" class="float-start">Tempo de uso:</h1>
+    <h1 id="texto" class="float-end">Valor a ser cobrado</h1><br><br>
+    <input type="number" placeholder="Insira em minutos" id="campoValor" class="input-group-text float-start">
+    <h1 id="texto1" class="float-end"></h1><br><br>
+  </div>
+  <button type="button" onclick="MostrarValor()" id="btn"
+    class="btn btn-dark container align-items-center">Calcular</button>
+</body>
+<script>
+  function AtivarTemaDark() {
+    document.getElementById("background").style.backgroundColor = "#2c2c2c";
+    document.getElementById("background").style.color = "white";
+  }
+
+  function AtivarTemaLight() {
+    document.getElementById("background").style.backgroundColor = "white";
+    document.getElementById("background").style.color = "black";
+  }
+
+  function MostrarValor() {
+    let tempo = document.getElementById("campoTempo").value;
+    let valor = parseInt(document.getElementById("campoValor").value);
+    let promocao = parseInt((tempo / 15) * valor);
+
+
+    if (tempo == null || tempo == '' || valor < 0) {
+      document.getElementById("texto1").innerHTML = "Preencha os campos corretamente";
+    } else {
+      if (tempo % 15 > 0) {
+        promocao = (promocao + valor);
+      }
+      document.getElementById("texto1").innerHTML = "Valor Ã  pagar: R$ " + promocao + ",00";
+    }
+    document.getElementById('texto1').style.display = 'block';
+  }
+</script>
+
+</html>

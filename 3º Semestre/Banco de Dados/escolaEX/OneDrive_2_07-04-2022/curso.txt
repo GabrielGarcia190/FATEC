@@ -1,0 +1,6 @@
+1	Linux
+2	HTML
+3	CSS
+4	Java
+5	PHP
+6	Redes
