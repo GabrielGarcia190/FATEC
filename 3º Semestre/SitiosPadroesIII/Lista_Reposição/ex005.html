@@ -2,94 +2,161 @@
 <html>
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Page Title</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="main.js"></script>
-  <style type="text/css">
-    p{
-      font-size: 30px;
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <style type="text/css">
+        #pizza {
+            width: 200px;
+            height: 200px;
         }
 
-    #pizza {
-      width: 200px;
-      height: 200px;
-    }
+        label {
+            font-size: 20px;
 
-    label{
-      font-size: 20px;
-
-    }
-  </style>
+        }
+    </style>
 
 </head>
 
 
-<div class="container p-5" id="background">
+<div class="container p-5" id="Cadastro">
 
-  <div class="d-flex justify-content-center mt-5">
-    <img src="https://cdn-icons-png.flaticon.com/512/126/126790.png" id="pizza" style="margin-bottom: 10%;">
-  </div><br/>
-  <p id="nome" class="d-flex justify-content-center">Cadastrar Usuário: </p><br>
-  <div class="d-flex justify-content-center"> 
-    <input id="campoNome" name="nome" type="text" class="input-group-text "
-      aria-label="Dollar amount (with dot and two decimal places)" placeholder="Insira o seu nome " style=" width: 45%;">
-    <input id="campoTel" name="nome" type="number" class="input-group-text "
-      aria-label="Dollar amount (with dot and two decimal places)" placeholder="Insira o seu telefone " style="margin-left: 50px; width: 30%;">
-  </div><br>
-  <div class="d-flex justify-content-center">
-  </div>
-  <div class="d-flex justify-content-center">
-    <input id="campoEmail name="endereco" type="text" class="input-group-text"
-      aria-label="Dollar amount (with dot and two decimal places)" placeholder="Insira o seu e-mail" style=" width: 80%;">
-  </div><br>
-  <div class="d-flex justify-content-center">
-    <input id="campoEndereco" name="nome" type="text" class="input-group-text "
-      aria-label="Dollar amount (with dot and two decimal places)" placeholder="Insira o seu Endereco (Ex: Rua, n°, cidade)" style=" width: 80%;">
-  </div><br>
+    <div class="d-flex justify-content-center mt-5">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126790.png" id="pizza" style="margin-bottom: 10%;">
+    </div><br />
+    <section id="session" style="display: none;">
+        <p id="nome" class="d-flex justify-content-center" style="font-size: 30px;">Cadastrar Usuário: </p><br>
+        <div class="d-flex justify-content-center">
+            <input id="campoNome" name="nome" type="text" class="input-group-text "
+                aria-label="Dollar amount (with dot and two decimal places)" placeholder="Insira o seu nome "
+                style=" width: 45%;">
+            <input id="campoTel" name="nome" type="number" class="input-group-text "
+                aria-label="Dollar amount (with dot and two decimal places)" placeholder="Insira o seu telefone "
+                style="margin-left: 50px; width: 30%;">
+        </div><br>
+        <div class="d-flex justify-content-center">
+        </div>
+        <div class="d-flex justify-content-center">
+            <input id="campoEmail" name="endereco" type="email" class="input-group-text"
+                aria-label="Dollar amount (with dot and two decimal places)" placeholder="Insira o seu e-mail"
+                style=" width: 80%;">
+        </div><br>
+        <div class="d-flex justify-content-center">
+            <input id="campoEndereco" name="nome" type="text" class="input-group-text "
+                aria-label="Dollar amount (with dot and two decimal places)"
+                placeholder="Insira o seu Endereco (Ex: Rua, n°, cidade)" style=" width: 80%;">
+        </div><br>
+    </section>
+
+    <div class="container p-5" id="consulta" style="font-size: 30px; display: none;">
+        <div class="d-flex justify-content-center" id="background"><br>
+            <p id="nome" class="d-flex justify-content-center" style="margin-right: 10px;">Pesquisar Cadastro</p>
+            <input id="campoConsulta" name="nome" type="text" class="input-group-text "
+                aria-label="Dollar amount (with dot and two decimal places)" placeholder="Insira o nome no cadastro "
+                style=" width: 45%; height: 50px;">
+        </div>
+    </div>
+
+    <div style="font-size: 20px; display: none;" id="res">
+        <p id="nome" class="d-flex justify-content-center" style="margin-right: 10px;">Cadastro Encontrado: </p>
+        <p class="d-flex justify-content-center" id="resNome" style="margin-right: 10px;"></p>
+        <p class="d-flex justify-content-center" id="resEndereco" style="margin-right: 10px;"></p>
+        <p class="d-flex justify-content-center" id="resEmail" style="margin-right: 10px;"></p>
+        <p class="d-flex justify-content-center" id="resTel" style="margin-right: 10px;"></p>
+    </div>
 
 
-  
- 
-  <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-primary" onclick="inserirDados()">Cadastrar</button>
-    <button type="button" class="btn btn-primary ms-4" onclick="inserirDados()">Editar</button>
-    <button type="button" class="btn btn-primary ms-4" onclick="mostrarDados()">Mostrar</button>
 
-  </div>
-  
 
-  </body>
+
+
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-primary" style="display: none;" id="salvar"
+            onclick="salvar()">Salvar</button>
+        <button type="button" class="btn btn-primary ms-4" onclick="inserirDados()">Cadastrar</button>
+        <button type="button" class="btn btn-primary ms-4" style="display: none;" id="excluir"
+            onclick="excluir()">Excluir</button>
+        <button type="button" class="btn btn-primary ms-4" onclick="mostrarDados()">Consultar</button>
+
+    </div>
+
+
+    </body>
 
 </html>
 <script>
-  let listaUsuario = [];
-  let usuario = class meusDados {
-    constructor(nome, endereco, telefone, email) {
-      this.nome = nome;
-      this.endereco = endereco;
-      this.telefone = telefone;
-      this.email = email;
+    let listaUsuario = [];
+    let consultaNome = [];
+
+    let usuario = class meusDados {
+        constructor(nome, endereco, telefone, email) {
+            this.nome = nome;
+            this.endereco = endereco;
+            this.telefone = telefone;
+            this.email = email;
+        }
     }
-  }
 
-  function inserirDados() {
-    let nome = document.getElementById("campoNome").value;
-    let endereco = document.getElementById("campoEndereco").value;
-    let telefone = document.getElementById("campoTel").value;
-    let email = document.getElementById("campoEmail").value;
+    function inserirDados() {
+        document.getElementById("session").style.display = "block";
+        document.getElementById("consulta").style.display = "none";
+        document.getElementById("salvar").style.display = "block";
+        document.getElementById("res").style.display = "none";
+        document.getElementById("consulta").style.display = "none";
 
-    listaUsuario.push(new usuario(nome, endereco, telefone, email));
-  }
+    }
 
-  function mostrarDados(){
-    document.getElementById()
-  }
+    function salvar() {
+        let nome = document.getElementById("campoNome").value;
+        let endereco = document.getElementById("campoEndereco").value;
+        let telefone = document.getElementById("campoTel").value;
+        let email = document.getElementById("campoEmail").value;
+
+        listaUsuario.push(new usuario(nome, endereco, telefone, email));
+    }
+    function mostrarDados() {
+        document.getElementById("consulta").style.display = "block";
+        document.getElementById("session").style.display = "none";
+        document.getElementById("res").style.display = "block";
+        document.getElementById("salvar").style.display = "none";
+
+        let nome = document.getElementById("campoConsulta").value;
+
+        if (nome == "") {
+            document.getElementById("resNome").innerHTML = "Preencha com o nome do Cadastro";
+        } else {
+
+            consultaNome = listaUsuario.filter(function (e) {
+                return e.nome == nome;
+            });
+            let resconsulta = consultaNome;
+
+
+            document.getElementById("resNome").innerHTML = "Nome:  " + consultaNome[0].nome;
+            document.getElementById("resEndereco").innerHTML = "Endereço:  " + consultaNome[0].endereco;
+            document.getElementById("resEmail").innerHTML = "E-mail:  " + consultaNome[0].email;
+            document.getElementById("resTel").innerHTML = "Telefone:  " + consultaNome[0].telefone;
+            document.getElementById("excluir").style.display = "block";
+            return consultaNome;
+        }
+
+
+    }
+// NÃO CONSEGUI FAZER EXLUIR NEM EDITAR
+    function excluir() {
+        let nome = mostrarDados();
+        let index = listaUsuario.findIndex(i => i.nome === nome.nome);
+        console.log(nome);
+        console.log(index);
+    }
+
 
 </script>
 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <style type="text/css">
+        p {
+            font-size: 30px;
+        }
+
+        #pizza {
+            width: 200px;
+            height: 200px;
+        }
+
+        label {
+            font-size: 20px;
+
+        }
+    </style>
+
+</head>
+
+
+<div class="container p-5" id="background">
+
+    <section>
+        <div class="d-flex justify-content-center mt-5">
+            <img src="https://cdn-icons-png.flaticon.com/512/2038/2038237.png" id="pizza" style="margin-bottom: 10%;">
+        </div><br />
+        <p id="nome" class="d-flex justify-content-center">Ultimo número sorteado: </p>
+        <p id="ultNum" class="d-flex justify-content-center">...</p>
+        <p id="nome" class="d-flex justify-content-center">Números sorteados: </p>
+        <p id="numSorteado" class="d-flex justify-content-center">...</p>
+
+    </section>
+
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-primary" onclick="sortear()">Sortear</button>
+
+    </div>
+
+
+    </body>
+
+</html>
+<script>
+    let listaSorteados = [];
+
+    function sortear() {
+        listaSorteados.push(Math.floor(Math.random() * (75 + 1)));
+        let tamLista = parseInt(listaSorteados.length);
+        console.log(tamLista);
+        document.getElementById("ultNum").innerHTML = listaSorteados[tamLista - 1];
+        document.getElementById("numSorteado").innerHTML = listaSorteados;
+        console.log(listaSorteados);
+        console.log(listaSorteados[tamLista - 1]);
+    }
+
+    //FALTA VERIFICAR SE O NÚMERO JÁ FOI SORTEADO
+</script>
+
+</html>
