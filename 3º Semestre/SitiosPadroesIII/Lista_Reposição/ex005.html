@@ -79,8 +79,8 @@
 
     <div class="d-flex justify-content-center">
         <button type="button" class="btn btn-primary" style="display: none;" id="salvar"
-            onclick="salvar()">Salvar</button>
-        <button type="button" class="btn btn-primary ms-4" onclick="inserirDados()">Cadastrar</button>
+            onclick="InserirDados()">Salvar</button>
+        <button type="button" class="btn btn-primary ms-4" onclick="MostrarTelaCadastro()">Cadastrar</button>
         <button type="button" class="btn btn-primary ms-4" style="display: none;" id="excluir"
             onclick="excluir()">Excluir</button>
         <button type="button" class="btn btn-primary ms-4" onclick="mostrarDados()">Consultar</button>
@@ -104,7 +104,7 @@
         }
     }
 
-    function inserirDados() {
+    function MostrarTelaCadastro() {
         document.getElementById("session").style.display = "block";
         document.getElementById("consulta").style.display = "none";
         document.getElementById("salvar").style.display = "block";
@@ -113,14 +113,20 @@
 
     }
 
-    function salvar() {
+
+    function InserirDados(usuario) {
+        listaUsuario.push(usuario);
+    }
+
+    function AtribuirDados() {
         let nome = document.getElementById("campoNome").value;
         let endereco = document.getElementById("campoEndereco").value;
         let telefone = document.getElementById("campoTel").value;
         let email = document.getElementById("campoEmail").value;
-
-        listaUsuario.push(new usuario(nome, endereco, telefone, email));
+        return new usuario(nome, endereco, telefone, email);
     }
+
+
     function mostrarDados() {
         document.getElementById("consulta").style.display = "block";
         document.getElementById("session").style.display = "none";
@@ -133,28 +139,25 @@
             document.getElementById("resNome").innerHTML = "Preencha com o nome do Cadastro";
         } else {
 
-            consultaNome = listaUsuario.filter(function (e) {
+            consultaNome = listaUsuario.find(function (e) {
                 return e.nome == nome;
             });
-            let resconsulta = consultaNome;
 
-
-            document.getElementById("resNome").innerHTML = "Nome:  " + consultaNome[0].nome;
-            document.getElementById("resEndereco").innerHTML = "Endereço:  " + consultaNome[0].endereco;
-            document.getElementById("resEmail").innerHTML = "E-mail:  " + consultaNome[0].email;
-            document.getElementById("resTel").innerHTML = "Telefone:  " + consultaNome[0].telefone;
+            document.getElementById("resNome").innerHTML = "Nome:  " + consultaNome.nome;
+            document.getElementById("resEndereco").innerHTML = "Endereço:  " + consultaNome.endereco;
+            document.getElementById("resEmail").innerHTML = "E-mail:  " + consultaNome.email;
+            document.getElementById("resTel").innerHTML = "Telefone:  " + consultaNome.telefone;
             document.getElementById("excluir").style.display = "block";
-            return consultaNome;
         }
 
 
     }
-// NÃO CONSEGUI FAZER EXLUIR NEM EDITAR
+    // NÃO CONSEGUI FAZER EXLUIR NEM EDITAR
+
     function excluir() {
-        let nome = mostrarDados();
-        let index = listaUsuario.findIndex(i => i.nome === nome.nome);
-        console.log(nome);
-        console.log(index);
+        let nome = document.getElementById("campoConsulta").value;
+        listaUsuario = listaUsuario.filter(i => i.nome != nome);
+        // Atualizar();
     }
 
 

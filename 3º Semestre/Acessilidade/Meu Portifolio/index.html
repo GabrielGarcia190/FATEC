@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gabriel Garcia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <div class="hero" alt="" id="hero">
+        <nav>
+            <h2 class="logo" id="logo"> Porti<span id="span" class="span">folio</span></h2>
+            <ul>
+                <li><a id="lista" href="#">Home</a></li>
+                <li><a id="lista1" href="#">About</a></li>
+                <li><a id="lista2" href="#">Services</a></li>
+                <li><a id="lista3" href="#">Skills</a></li>
+                <li><a id="lista4" href="#">Contato</a></li>
+            </ul>
+            <a href="#" class="btn" id="btn" onclick="trocarCores()">Alto Contrasete</a>
+        </nav>
+        <div class="content">
+            <h4 id="h4">Olá, Meu Nome é</h4>
+            <h1 id="h1">Gabriel<span id="span1" class="span"> Garcia</span></h1>
+            <!-- <h3>Eu sou o Batman.</h3> -->
+            <!-- <div class="newslatter">
+                <form>
+                    <input type="e-mail" name="e-mail" id="e-mail" placeholder="Digite o que você procura">
+                    <input type="submit" name="enviar" value="Buscar">
+                </form> -->
+            </div>
+        </div>
+    </div>
+    <section class="sobre">
+        <div class="main">
+            <img src="Img/imagem2.jpg" alt="...">
+            <div class="sobre-texto">
+                <h2>Sobre mim </h2>
+                <h5> Lorasd asda <span>sda rkmams</span></h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure nam reiciendis ratione
+                    voluptatum .</p>
+                <button type="button">Vamos Conversar</button>
+            </div>
+        </div>
+    </section>
+    <div class="service">
+        <div class="title">
+            <h2>Meus Projetos</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bandage"></i>
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <div class="pra">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure nam reiciendis ratione
+                        voluptatum .</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Saiba Mais</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user"></i>
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <div class="pra">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure nam reiciendis ratione
+                        voluptatum .</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Saiba Mais</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <i class="fa-solid fa-bell"></i>
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <div class="pra">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure nam reiciendis ratione
+                        voluptatum .</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Saiba Mais</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <form class="contato">
+        <p class="title"> - ENTRE EM CONTATO COMIGO -</p>
+        <hr width="600px">
+        <div class="nome" style=" display: flex; align-items: center; justify-content: start;">
+            <input class="texto" type="text" style="width: 400px;" placeholder="Insira o seu Nome"
+                aria-label="default input example" value="">
+            <input class="texto" type="text" id="nome" style=" width: 200px" placeholder="Insira o seu Telefone"
+                aria-label="default input example" id="nome">
+        </div>
+        <div class="nome" style=" display: flex; align-items: center; justify-content: start;">
+            <input class="texto" type="text" style="width: 610px;" placeholder="Insira o seu Nome"
+                aria-label="default input example">
+        </div>
+        <div class="nome" style="display: flex; align-items: center; justify-content: start;">
+            <textarea class="texto" placeholder="Escreva sua mensagem" style="width: 610px;"></textarea>
+        </div>
+
+        <button type="submit" href="#"" class=" button-two" onclick="enviar()" style="margin-bottom: 10px;">Enviar
+            Mensagem </button>
+    </form>
+
+    <div class="service">
+        <object width="1280px" height="720px" style="align-items: center; justify-content: center; margin-left: 10%;">
+            <param name="movie" value="source/X2Download.mp4" />
+            <embed src="source/X2Download.mp4" type="application/x-shockwave-flash" width="425" height="350" />
+        </object>
+    </div>
+
+
+    <footer>
+        <p>Gabriel Garcia</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tenetur distinctio suscipit at quibusdam? Sunt:
+        </p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="fim">@CopyRight By Gabriel Garcia</p>
+    </footer>
+
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
