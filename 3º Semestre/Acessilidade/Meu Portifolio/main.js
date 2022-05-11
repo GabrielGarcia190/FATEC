@@ -1,11 +1,11 @@
 function altoContraste() {
+    document.getElementById("btn").style.display = "none";
     modicarClassHero();
     modicarClassSobre();
     modicarClassService();
     modificarContato();
     modificarVideo();
     modificarFooter();
-    document.getElementById("btn").style.display = "none";
     document.getElementById("btn-1").style.display = "block";
 }
 
@@ -16,7 +16,6 @@ function modicarClassHero() {
     document.getElementById('lista1').style.cssText = " color: black;";
     document.getElementById('lista2').style.cssText = " color: black;";
     document.getElementById('lista3').style.cssText = " color: black;";
-    document.getElementById('lista4').style.cssText = " color: black;";
     document.getElementById('btn-1').style.cssText = " color: white; background-color: black;";
     document.getElementById("span1").style.cssText = " color: rgb(0,0,205);";
     document.getElementById("span").style.cssText = " color: rgb(0,0,205);";
@@ -84,6 +83,7 @@ function modificarFooter() {
 
 function voltarNormal() {
     document.location.reload(true);
+    document.getElementById("btn").style.display = "none";
 }
 
 // function altoContraste() {

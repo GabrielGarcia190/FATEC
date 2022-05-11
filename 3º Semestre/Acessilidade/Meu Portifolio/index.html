@@ -20,24 +20,17 @@
         <nav>
             <h2 class="logo" id="logo"> Porti<span id="span" class="span">folio</span></h2>
             <ul>
-                <li><a id="lista" href="#">Home</a></li>
-                <li><a id="lista1" href="#">About</a></li>
-                <li><a id="lista2" href="#">Services</a></li>
-                <li><a id="lista3" href="#">Skills</a></li>
-                <li><a id="lista4" href="#">Contato</a></li>
+                <li><a id="lista" href="#hero">Home</a></li>
+                <li><a id="lista1" href="#sobre">Sobre</a></li>
+                <li><a id="lista2" href="#service">Projetos</a></li>
+                <li><a id="lista3" href="#contato">Contato</a></li>
             </ul>
-            <a href="#" class="btn" id="btn" onclick="altoContraste()">Alto Contrasete</a>
-            <a href="#" class="btn" id="btn-1" style="display: none;" onclick="voltarNormal()">Alto Contrasete</a>
+            <a href="#" class="btn" id="btn" style="display: block;" onclick="altoContraste()">Alto Contraste</a>
+            <a href="#" class="btn" id="btn-1" style="display: none;" onclick="voltarNormal()">Alto Contraste</a>
         </nav>
         <div class="content">
             <h4 id="h4">Olá, Meu Nome é</h4>
             <h1 id="h1">Gabriel<span id="span1" class="span"> Garcia</span></h1>
-            <!-- <h3>Eu sou o Batman.</h3> -->
-            <!-- <div class="newslatter">
-                <form>
-                    <input type="e-mail" name="e-mail" id="e-mail" placeholder="Digite o que você procura">
-                    <input type="submit" name="enviar" value="Buscar">
-                </form> -->
         </div>
     </div>
     </div>
@@ -46,10 +39,8 @@
             <img src="Img/imagem2.jpg" id="img" alt="...">
             <div class="sobre-texto">
                 <h2 id="sobre-h2">Sobre mim </h2>
-                <h5 id="sobre-h5"> Lorasd asda <span>sda rkmams</span></h5>
-                <p id="sobre-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure nam reiciendis
-                    ratione
-                    voluptatum .</p>
+                <h5 id="sobre-h5"> ESTUDANTE <span class="span">DA FATEC DE JALES.</span></h5>
+                <p id="sobre-p"> No momento estou estudando programação orientada a objetos.</p>
                 <button type="button" id="sobre-btn">Vamos Conversar</button>
             </div>
         </div>
@@ -62,40 +53,34 @@
         <div class="box">
             <div class="card" id="card">
                 <i class="fa-solid fa-bandage" id="i"></i>
-                <h5 id="card-h5">Lorem ipsum dolor sit amet</h5>
+                <h5 id="card-h5">Em desenvolvimento</h5>
                 <div class="pra">
-                    <p id="card-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure nam
-                        reiciendis ratione
-                        voluptatum .</p>
+                    <p id="card-p">Em breve....</p>
                     <p style="text-align: center;">
-                        <a class="button" href="#" id="card-btn">Saiba Mais</a>
+                        <!-- <a class="button" href="#" id="card-btn">Saiba Mais</a> -->
                     </p>
                 </div>
             </div>
 
             <div class="card" id="card1">
                 <i class="fa-solid fa-user" id="i1"></i>
-                <h5 id="card-h51">Lorem ipsum dolor sit amet</h5>
+                <h5 id="card-h51">Em desenvolvimento</h5>
                 <div class="pra">
-                    <p id="card-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure nam
-                        reiciendis ratione
-                        voluptatum .</p>
+                    <p id="card-p1">Em breve...</p>
                     <p style="text-align: center;">
-                        <a class="button" href="#" id="card-btn1">Saiba Mais</a>
+                        <!-- <a class="button" href="#" id="card-btn1">Saiba Mais</a> -->
                     </p>
                 </div>
             </div>
 
             <div class="card" id="card2">
                 <i class="fa-solid fa-bell" id="i2"></i>
-                <h5 id="card-h52">Lorem ipsum dolor sit amet</h5>
+                <h5 id="card-h52">Em desenvolvimento</h5>
                 <div class="pra">
-                    <p id="card-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure nam
-                        reiciendis ratione
-                        voluptatum .</p>
+                    <p id="card-p2">Em breve....</p>
 
                     <p style="text-align: center;">
-                        <a class="button" href="#" id="card-btn2">Saiba Mais</a>
+                        <!-- <a class="button" href="#" id="card-btn2">Saiba Mais</a> -->
                     </p>
                 </div>
             </div>
@@ -120,9 +105,9 @@
             <textarea class="texto" placeholder="Escreva sua mensagem" style="width: 610px;"></textarea>
         </div>
 
-        <button type="submit" href="#"" class=" button-two" onclick="enviar()" id="contato-btn"
-            style="margin-bottom: 10px;">Enviar
-            Mensagem </button>
+        <input type="submit" href="#"" class=" button-two" onclick="enviar()" id="contato-btn"
+            style="margin-bottom: 10px;">
+
     </form>
 
     <div class="service" id="video">
@@ -135,14 +120,17 @@
 
     <footer id="footer">
         <p id="gg">Gabriel Garcia</p>
-        <p id="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tenetur distinctio suscipit at
-            quibusdam? Sunt:
+        <p id="text">Você pode me encontrar nas seguintes plataformas:
         </p>
         <div class="social" id="social">
-            <a id="social-a" href="#"><i id="social-i" class="fa-brands fa-facebook"></i></a>
-            <a id="social-a1" href="#"><i id="social-i1" class="fa-brands fa-instagram"></i></a>
-            <a id="social-a2" href="#"><i id="social-i2" class="fa-brands fa-discord"></i></a>
-            <a id="social-a3" href="#"><i id="social-i3" class="fa-brands fa-linkedin"></i></a>
+            <a id="social-a" href="https://www.facebook.com/" target="_blank"><i id="social-i"
+                    class="fa-brands fa-facebook"></i></a>
+            <a id="social-a1" href="https://www.instagram.com/" target="_blank"><i id="social-i1"
+                    class="fa-brands fa-instagram"></i></a>
+            <a id="social-a2" href="https://discord.com/" target="_blank"><i id="social-i2"
+                    class="fa-brands fa-discord"></i></a>
+            <a id="social-a3" href="https://br.linkedin.com/" target="_blank"><i id="social-i3"
+                    class="fa-brands fa-linkedin"></i></a>
         </div>
         <p class="fim" id="social-p">@CopyRight By Gabriel Garcia</p>
     </footer>
