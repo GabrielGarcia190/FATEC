@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .zebraon{
+        background: silver;
+    }
+</style>
+<body>
+    <table class="zebra">
+        <tr>
+            <thead>
+                <th>Vendedor</th>
+                <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manoel</td>
+                <td>12.300,00</td>
+            </tr>
+            <tr>
+                <td>Joaquim</td>
+                <td>21.300,00</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>21.300,00</td>
+            </tr>
+            <tr>
+                <td>Marta</td>
+                <td>21.300,00</td>
+            </tr>
+            <tr>
+                <td>Antonio</td>
+                <td>21.100,00</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>31.100,00</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+<script>
+    window.onload = function () {
+        let zebrar = document.querySelectorAll(".zebra tbody tr")
+        for (var i = 0; i < zebrar.length; i += 2)
+            zebrar[i].className = "zebraon"
+    }
+</script>
+
+</html>
