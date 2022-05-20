@@ -1,0 +1,45 @@
+-- EXERCICIO 1
+CREATE TABLE Estado (
+	idEst int NOT NULL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Cidade (
+	idCid int NOT NULL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	idEst int REFERENCES Estado(idEst) ON UPDATE RESTRICT ON DELETE RESTRICT
+);
+
+CREATE TABLE Cliente (
+	idCli int NOT NULL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	idCid int REFERENCES Cidade(idCid) ON UPDATE RESTRICT ON DELETE RESTRICT
+);
+
+CREATE TABLE Venda (
+	idVen int NOT NULL PRIMARY KEY,
+	data date NOT NULL,
+	total decimal NOT NULL,
+	idCli int REFERENCES Cliente (idCli) ON UPDATE RESTRICT ON DELETE RESTRICT
+);
+
+-- EXERCICIO 2
+COPY Cidade FROM 'D:\cidade.txt';
+COPY Cliente FROM 'D:\cliente.txt';
+COPY Estado FROM 'D:\estado.txt';
+COPY Venda FROM 'D:\venda.txt';
+
+SELECT * FROM estado;
+SELECT * FROM cliente;
+SELECT * FROM venda;
+SELECT * FROM cidade;
+
+-- EXERCICIO 3
+SELECT c.nome, COUNT(*) FROM cliente c INNER JOIN Venda v ON c.idCli = v.idCli  GROUP BY c.idCli, c.nome ORDER BY c.nome
+
+
+-- EXERCICIO 4
+SELECT  c.nome, COUNT(*), SUM(total) FROM cliente c INNER JOIN Venda v ON c.idCli = v.idCli  GROUP BY c.idCli, c.nome ORDER BY c.nome
+
+-- EXERCICIO 5
+SELECT c.nome, COUNT (*) FROM cliente c INNER JOIN venda v ON c.idCli = v.idCli GROUP BY c.nome, v.data HAVING v.data < '2003-12-31'

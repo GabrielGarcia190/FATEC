@@ -1,0 +1,436 @@
+-- Script para o banco de dados Aula
+
+-- Criar uma tabela
+create table cargo (
+idcar	int not null primary key,
+nome	varchar(50) not null,
+salario	decimal(10,2)	
+);
+
+-- Consultar a tabela cargo
+select * from cargo;
+
+select nome, salario from cargo;
+
+-- Inserir dados na tabela cargo
+-- 1ª sintaxe
+insert into cargo (idcar, nome, salario)
+values (1, 'Gerente TI', 10000.00);
+
+-- 2ª sintaxe
+insert into cargo values (2, 'Programador', 6500.00);
+
+-- Importar dados para a tabela cargo
+copy cargo from 'c:\temp\cargo.txt';
+
+-- Consulta com filtragem na tabela cargo
+select * from cargo where nome='Web design';
+
+-- Consulta com ordenação crescente
+select * from cargo order by nome asc;
+
+-- Consulta com ordenação decrescente
+select * from cargo order by nome desc;
+
+-- Consulta com limite de linhas
+select * from cargo limit 3;
+
+-- Alteração de dados na tabela cargo
+update cargo set nome='Administrador Redes' where idcar=6;
+
+-- Consulta ordenando pelo idcar
+select * from cargo order by idcar asc;
+
+-- Apagar registros (linhas) na tabela cargo
+delete from cargo where idcar=6;
+
+--Alterar a estrutura da tabela cargo
+alter table cargo add adicional decimal(10,2);
+
+alter table cargo drop adicional;
+
+alter table cargo rename nome to nomecar;
+
+--Exercícios do arquivo 9
+
+/* 
+comentário em bloco
+*/
+
+ALTER TABLE cargo ADD sigla VARCHAR(3);
+
+UPDATE cargo SET sigla = 'GTI' WHERE idCar = 1;
+UPDATE cargo SET sigla = 'PRO' WHERE idCar = 2;
+UPDATE cargo SET sigla = 'WED' WHERE idCar = 3;
+UPDATE cargo SET sigla = 'ATI' WHERE idCar = 4;
+UPDATE cargo SET sigla = 'DBA' WHERE idCar = 5;
+UPDATE cargo SET sigla = 'STI' WHERE idCar = 7;
+
+-- Arquivo 10
+
+-- Criação da tabela funcionário
+create table funcionario(
+idfun	int not null primary key,
+nome	varchar(50) not null,
+cpf		varchar(20) not null unique,
+idcar	int references cargo(idcar) on update restrict on delete restrict
+);
+
+--Consultar a tabela funcionário
+select * from funcionario order by idcar asc;
+
+--Importando dados para a tabela funcionário
+copy funcionario from 'c:\temp\funcionario.txt';
+
+-- Consulta entre as tabelas Funcionario e Cargo
+-- Consulta com a clausula ON
+select f.idfun, f.nome, c.idcar, c.nomecar
+from funcionario f inner join cargo c on c.idcar = f.idcar;
+
+-- Consulta com a clausula USING
+select f.idfun, f.nome, c.idcar, c.nomecar
+from funcionario f inner join cargo c using (idcar);
+
+-- Consulta com a clausula NATURAL
+select f.idfun, f.nome, c.idcar, c.nomecar
+from funcionario f natural inner join cargo c;
+
+--Criando a tabela Dependente
+CREATE TABLE dependente (
+idDep	  INT NOT NULL PRIMARY KEY,
+nome	  VARCHAR(100),
+dataNasc  DATE	
+);
+
+SELECT * FROM dependente
+
+--Criando a tabela DepFunc (Dependentes do Funcionário)
+CREATE TABLE DepFunc (
+idDepFun  INT NOT NULL PRIMARY KEY,
+idFun	  INT REFERENCES funcionario(idFun) ON UPDATE RESTRICT ON DELETE RESTRICT,
+idDep	  INT REFERENCES dependente(idDep) ON UPDATE RESTRICT ON DELETE RESTRICT		
+);
+
+SELECT * FROM DepFunc
+
+--Importando dados para as tabelas Dependente e DepFunc
+COPY dependente FROM 'c:/temp/dependente.txt'
+
+COPY DepFunc FROM 'c:/temp/depfunc.txt'
+
+--Consultando as tabelas
+select * from funcionario;
+
+select * from dependente;
+
+select * from depfunc;
+
+select * from cargo;
+
+--Consulta com três tabelas
+select f.idfun, f.nome, d.iddep, d.nome
+from funcionario f inner join depfunc df on f.idfun = df.idfun 
+inner join dependente d on d.iddep = df.iddep;
+
+--Inserção de dados na tabela funcionário
+insert into funcionario values(6, 'Antonio Perez', '666777888-66');
+
+--Consulta usando LEFT OUTER JOIN
+select f.idfun, f.nome, c.idcar, c.nomecar
+from funcionario f LEFT OUTER JOIN cargo c on f.idcar = c.idcar;
+
+--Consulta usando RIGTH OUTER JOIN
+select f.idfun, f.nome, c.idcar, c.nomecar
+from funcionario f RIGHT OUTER JOIN cargo c on f.idcar = c.idcar;
+
+--Consulta usando FULL OUTER JOIN
+select f.idfun, f.nome, c.idcar, c.nomecar
+from funcionario f FULL OUTER JOIN cargo c on f.idcar = c.idcar;
+
+-- Exercícios do Arquivo 10
+
+--Referente ao banco de dados Escola
+
+
+-- Arquivo 11 - Operadores
+select * from cargo;
+
+SELECT nomecar, salario, salario + 100 as "Salário com acréscimo de R$100.00" FROM cargo;
+
+SELECT nomecar, salario, salario + (salario * 0.20) as "Aumento de 20%" FROM Cargo;
+
+--ou
+
+SELECT nomecar, salario, salario * 1.20 as "Aumento de 20%" FROM Cargo;
+
+-- Operadores relacionais
+
+SELECT * FROM Funcionario f INNER JOIN Cargo c ON f.idCar = c.idCar WHERE c.idCar = 4;
+
+SELECT * FROM Funcionario f INNER JOIN Cargo c ON f.idCar = c.idCar WHERE c.salario >= 7000.00;
+
+-- Operadores lógicos
+
+SELECT idDep, nome as "Dependente", dataNasc FROM Dependente WHERE idDep = 5 AND dataNasc >= '2000-01-01';
+
+SELECT * FROM Funcionario WHERE idCar = 2 OR idCar = 3;
+
+SELECT * FROM Funcionario WHERE not(idCar = 4);
+
+-- Operadores auxiliares
+
+ALTER TABLE Funcionario ADD filhos SMALLINT;
+
+SELECT * FROM Funcionario;
+
+UPDATE Funcionario SET filhos = 1 WHERE idFun = 1;
+UPDATE Funcionario SET filhos = 1 WHERE idFun = 3;
+UPDATE Funcionario SET filhos = 1 WHERE idFun = 4;
+UPDATE Funcionario SET filhos = 2 WHERE idFun = 5;
+
+SELECT * FROM Funcionario ORDER BY idFun;
+
+SELECT * FROM Funcionario WHERE filhos IS NULL;
+
+SELECT * FROM Funcionario WHERE NOT (filhos IS NULL);
+
+SELECT * FROM Cargo WHERE salario BETWEEN 2000.00 AND 6000.00;
+--ou
+SELECT * FROM Cargo WHERE salario >= 2000.00 AND salario <= 6000.00;
+
+SELECT * FROM Cargo WHERE NOT (salario BETWEEN 2000.00 AND 6000.00);
+
+SELECT * FROM Funcionario WHERE idCar IN(1, 4);
+
+SELECT * FROM Funcionario WHERE nome LIKE 'A%';
+
+SELECT * FROM Funcionario WHERE nome LIKE '__i%';
+
+SELECT * FROM Funcionario WHERE nome LIKE '%ar%';
+
+SELECT * FROM Dependente WHERE nome LIKE '%Mava'
+
+-- Exercícios do Arquivo 11
+
+--1
+SELECT nomeCar, salario, salario + 250 AS "Salário com acrescimo" FROM Cargo;
+
+--2
+SELECT f.nome, c.nomecar, c.salario, c.salario*0.075 AS "Desconto de 7.5%", 
+c.salario - (c.salario * 0.075) AS "Salario com desconto" 
+FROM funcionario f INNER JOIN cargo c ON f.idCar = c.idCar
+order by f.nome;
+
+--3
+SELECT f.nome, c.idCar, c.nomeCar 
+from funcionario f INNER JOIN cargo c ON f.idCar = c.idCar 
+WHERE c.idCar = 4;
+
+--4
+SELECT f.nome, c.nomeCar, c.salario 
+FROM funcionario f INNER JOIN cargo c ON f.idCar = c.idCar
+WHERE c.salario >= 5800;
+
+--5
+SELECT f.nome, c.idCar, c.nomeCar, c.salario 
+FROM funcionario f INNER JOIN cargo c ON f.idCar = c.idCar
+WHERE c.salario >= 5700 AND c.idCar = 2;
+
+--6
+SELECT f.nome, c.nomeCar, c.salario 
+FROM funcionario f INNER JOIN Cargo c ON f.idCar = c.idCar
+WHERE c.nomeCar = 'Programador' OR c.nomeCar = 'Gerente TI';
+
+--7
+SELECT f.nome, c.nomeCar, c.salario 
+FROM funcionario f INNER JOIN cargo c ON f.idCar = c.idCar 
+WHERE  (c.nomeCar = 'Programador' OR c.nomeCar = 'Webdesign') AND c.salario > 5000;
+
+--8
+SELECT f.nome, c.nomeCar, c.salario 
+FROM funcionario f INNER JOIN cargo c ON f.idCar = c.idCar 
+WHERE NOT (c.nomeCar = 'Programador' OR c.nomeCar = 'Suporte TI');
+
+--9
+SELECT nome, filhos FROM funcionario 
+WHERE filhos BETWEEN 2 AND 4;
+
+--10
+SELECT nome, filhos FROM funcionario 
+WHERE NOT (filhos BETWEEN 2 AND 3);
+
+--11
+SELECT nome, filhos FROM funcionario
+WHERE NOT (filhos BETWEEN 2 AND 3) OR (filhos IS NULL);
+
+--12
+SELECT nome, filhos FROM funcionario WHERE filhos IN(2,3);
+
+--13
+SELECT nome FROM Dependente WHERE nome LIKE '%Robeti';
+
+select * from dependente;
+
+--Arquivo 12 - Funções
+
+-- Funções de Agregação
+
+select avg(salario) from cargo;
+
+select count(*) as "Funcionários com idcar=4" from funcionario where idcar=4;
+
+select * from funcionario;
+
+select count(*) from funcionario f inner join cargo c on f.idcar = c.idcar
+where c.salario >= 6000;
+
+select * from funcionario f inner join cargo c on f.idcar = c.idcar
+where c.salario >= 6000;
+
+select max(salario) from cargo;
+
+select min(salario) from cargo;
+
+select sum(salario) from funcionario f inner join cargo c on f.idcar = c.idcar;
+
+select * from funcionario f inner join cargo c on f.idcar = c.idcar;
+
+select * from funcionario;
+
+select sum(salario) from funcionario f inner join cargo c on f.idcar = c.idcar
+where c.idcar=4;
+
+select * from funcionario f inner join cargo c on f.idcar = c.idcar
+where c.idcar=4;
+
+-- Funções de Data e Hora
+
+SELECT * FROM funcionario
+SELECT * FROM cargo
+
+
+ALTER TABLE funcionario ADD COLUMN dataAdm DATE
+
+
+
+UPDATE funcionario SET dataAdm = '2016-11-10' WHERE idFun = 1;
+UPDATE funcionario SET dataAdm = '1987-05-20' WHERE idFun = 2;
+UPDATE funcionario SET dataAdm = '2000-10-12' WHERE idFun = 3;
+UPDATE funcionario SET dataAdm = '2005-10-10' WHERE idFun = 4;
+UPDATE funcionario SET dataAdm = '2016-03-30' WHERE idFun = 5;
+
+SELECT idfun, nome, DATE '2022-05-12' - dataAdm AS "Dias trabalhados" FROM funcionario
+
+SELECT idfun, nome, (DATE '2022-05-12' - dataAdm) / 365 AS "Dias trabalhados" FROM funcionario
+
+SELECT idfun, nome, AGE('2022-05-12', dataAdm) AS "Anos/meses/dias" FROM funcionario
+
+SELECT EXTRACT(HOUR FROM now()) as "HORA", EXTRACT(MINUTE FROM now()) AS "MINUTOS", EXTRACT(SECOND FROM now()) AS "SEGUNDOS"
+
+SELECT nome, dataAdm FROM funcionario WHERE EXTRACT(DAY FROM dataAdm) = 15;
+
+SELECT nome, dataAdm FROM funcionario WHERE EXTRACT(MONTH FROM dataAdm) = 10;
+
+SELECT 'José' || 'Silva' AS "Nome completo"
+
+SELECT LENGTH ('GABRIEL GARCIA RODOLFO ALVES ');
+
+SELECT LOWER(nome) FROM Funcionario;
+
+SELECT UPPER(nome) FROM Funcionario;
+
+-------------EXERCICIOS --------------------------------------
+
+-- EXERCICIO 1
+
+SELECT AVG(filhos) FROM Funcionario;
+
+-- EXERCICIO 2
+
+SELECT AVG(filhos) FROM funcionario WHERE idCar = 4;
+
+-- EXERCICIO 3 
+
+SELECT SUM(salario) FROM Cargo WHERE idCar = 3;
+
+-- EXERCICIO 4 
+
+SELECT 
+
+-- EXERCICIO 5
+
+SELECT COUNT(salario) FROM cargo c INNER JOIN Funcionario f ON c.idCar = f.idCar
+WHERE c.salario > 6500;
+
+-- EXERCICIO 6
+
+SELECT COUNT(salario) FROM cargo c INNER JOIN Funcionario f ON c.idCar = f.idCar
+WHERE c.salario = 3200;
+
+-- EXERCICIO 7 
+
+SELECT COUNT(salario) FROM cargo c INNER JOIN Funcionario f ON c.idCar = f.idCar
+WHERE c.salario >= 1000 AND c.salario <= 7000;
+
+-- EXERCICIO 8
+SELECT nome FROM Funcionario WHERE nome LIKE '%a';
+
+--EXERCICIO 9
+SELECT MAX(salario) FROM cargo WHERE idCar >= 2 AND idCar <= 4;
+
+--EXERCICIO 10
+SELECT SUM(salario) FROM cargo c INNER JOIN funcionario f ON c.idCar = f.idCar 
+WHERE nomeCar = 'Programador';
+
+--EXERCICIO 11
+SELECT SUM(salario) FROM cargo c INNER JOIN funcionario f ON c.idCar = f.idCar 
+WHERE nomeCar = 'Gerente TI';
+
+--EXERCICIO 12
+SELECT  * FROM Funcionario WHERE EXTRACT(DAY FROM dataAdm) = 20;
+
+--EXERCICIO 13 
+SELECT  * FROM Funcionario WHERE EXTRACT(DAY FROM dataAdm) >= 5  AND  EXTRACT(DAY FROM dataAdm) <= 15;
+
+--EXERCICIO 14
+SELECT  * FROM Funcionario WHERE EXTRACT(DAY FROM dataAdm) >= 5  AND  EXTRACT(DAY FROM dataAdm) <= 15 ORDER BY dataAdm ASC;
+
+--EXERCICIO 15
+SELECT  * FROM Funcionario WHERE EXTRACT(DAY FROM dataAdm) >= 5  AND  EXTRACT(DAY FROM dataAdm) <= 15 ORDER BY dataAdm DESC;
+
+--EXERCICIO 16
+SELECT  * FROM Funcionario WHERE dataAdm <= '2004-01-01';
+
+--EXERCICIO 17
+SELECT 	LOWER(f.nome), LOWER(c.nomeCar)
+FROM Funcionario f 
+INNER JOIN cargo c 
+ON f.idCar=c.idCar
+WHERE f.idCar = 1 OR c.idCar = 5;
+
+--EXERCICIO 18
+
+SELECT nome, idCar, dataAdm 
+FROM Funcionario 
+WHERE EXTRACT(DAY FROM dataAdm) >= 20 AND EXTRACT(DAY FROM dataAdm) <= 30
+AND idCar >= 2 AND idCar <=4
+
+--EXERCICIO 19
+
+SELECT nome, f.idCar, c.nomeCar, f.dataAdm FROM funcionario f INNER JOIN
+cargo c ON f.idCar = c.idCar 
+WHERE EXTRACT(DAY FROM dataAdm) >= 10 AND EXTRACT(DAY FROM dataAdm) <=15
+AND c.nomeCar = 'Analista TI' or c.nomeCar = 'Web design'
+
+--EXERICIO 20
+SELECT nome, f.idCar, c.nomeCar, dataAdm FROM funcionario f INNER JOIN
+cargo c ON f.idCar = c.idCar 
+WHERE EXTRACT (MONTH FROM dataAdm) >= 5 AND EXTRACT (MONTH FROM dataAdm) <= 11 AND c.nomeCar = 'Programador';
+
+--EXERCICIO 21 
+SELECT nome, f.idCar, c.nomeCar, dataAdm FROM funcionario f INNER JOIN
+cargo c ON f.idCar = c.idCar 
+WHERE EXTRACT (MONTH FROM dataAdm) >= 5 AND EXTRACT (MONTH FROM dataAdm) <= 11 AND NOT c.nomeCar = 'Programador';
+
+--EXERCICIO 22
+SELECT COUNT(idFun) FROM Funcionario WHERE EXTRACT(MONTH FROM dataAdm) = 10;

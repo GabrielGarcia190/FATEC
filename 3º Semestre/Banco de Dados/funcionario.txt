@@ -1,5 +1,0 @@
-1	Adauto Souza	111222333-11	1
-2	Marina Terra	222333444-22	2
-3	Marcos Robeti	333444555-33	4
-4	Adilson Soares	444555666-44	3
-5	Loren Mava	555666777-55	4
