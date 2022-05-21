@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Drag the bar to change its widht: </p>
+    <div style="background: orange; width: 60px; height: 20px; "></div>
+</body>
+    <script>
+        let lastX;
+        let rect = document.querySelector("div");
+        rect.addEventListener("mousedown", function(event){
+            if(event.which == 1){
+                lastX = event.pageX;
+                addEventListener("mousemove", moved);
+                event.preventDefault();
+            }
+        });
+
+        function moved(event){
+            if(event.which != 1){
+                removeEventListener("mousemove", moved);
+            }else{
+                var dist = event.pageX - lastX;
+                var newWidht = Math.max(10, rect.offsetWidth + dist);
+                rect.style.width = newWidht + "px";
+                lastX = event.pageX;
+            }
+        }
+    </script>
+</html>
