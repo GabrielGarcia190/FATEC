@@ -1,11 +1,36 @@
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10vw;
 }
 
-.menu  button{
+.menu button {
     margin-left: 1vw;
 }
 
+.editar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vw;
+}
+
+.editar form div {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.editar form div input {
+    width: 40vw;
+}
+
+ 
+
+.editarSlide button {
+    display: flex;
+    float: right;
+    margin-bottom: 1vw;
+    justify-content: center;
+    align-items: center;
+}
