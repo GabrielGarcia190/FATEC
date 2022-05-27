@@ -10,12 +10,15 @@
 }
 
 .editar {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin-top: 10vw;
 }
 
+.editar form{
+    border-radius: 10px;
+}
 .editar form div {
     margin-left: 1vw;
     margin-right: 1vw;
@@ -25,12 +28,21 @@
     width: 40vw;
 }
 
- 
 
 .editarSlide button {
     display: flex;
     float: right;
     margin-bottom: 1vw;
+    margin-right: 1vw;
     justify-content: center;
     align-items: center;
+}
+
+#slide{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: red;
 }
