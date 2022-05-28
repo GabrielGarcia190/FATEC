@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor-principal: rgb(46, 62, 77);
+    --cor-secundaria: rgb(222, 228, 235);
+    --cor-outra:rgb(00, 00, 00);
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    left: -300px;
+    transition: all .2s linear;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.link{
+    background-color: #494950;
+    padding: 20px;
+    font-family: 'Arial';
+    font-size: 12pt;
+    transition: all 2.s linear;
+    color: #f4f4f9;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link:hover{
+    background-color: #050522;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px);
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+
+#check:checked ~ .conteudo{
+    margin-left: 350px;
+    
+}
+.conteudo{
+    margin-left:100px;
+    width: 1000px;
+    height: 500px;
+    background-color: #494950
+}
+
+.texto{
+    margin-left: 25px;
+    margin-bottom: 25px;
+    width: 950px;
+    height: 450px;
+    background-color: white;
+}
+#conteudo{
+    font-family: "Arial";
+    font-size: 25px;
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+#par{
+    font-family: "Arial";
+    line-height: 30px;
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+
+#hr{
+    margin-left: 100px;
+}
+#face{
+    margin-top: 30px;
+    margin-left: 400px;
+   
+}
+footer{
+    color: white;
+    text-align: center;
+    height: 150px;
+    background-color: #000;
+    padding-top: 5px;
+    clear: both;
+    text-decoration: none;
+}
+#down{
+    margin-right: 150px;
+    margin-left: 470px;
+}
+#hr1{
+    margin-left: 190px;
+}
+#icon{
+    margin-top: 20px;
+    margin-left: 90px;
+    padding-right: 20px;
+}
+#nerd{
+
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 25%;
+    padding-right: 20%;
+}
+#nerd1{
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Arial";
+    text-align: justify;
+}
+button{
+    width: 100px;
+    height: 25px;
+    margin-left: 30%;
+}
+
+button a {
+    align-self: center;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: "HACKED";
+    width: 100px;
+
+}   
+#at1{
+    font-family: "Arial";
+    width: 30%;
+    height: 400px;
+    background-color: white;
+    margin-top: 0;
+    margin-left: 100px;
+    float: left;
+ 
+}
+#at2{
+    font-family: "Arial";
+    width: 30%;
+    height: 300px;
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 200px;
+    float: left;
+}
+#project{
+    text-align: center;
+    font-family: "Arial";
+}
+#form{
+    font-family: Arial;
+    margin-left: 200px;
+}
+#a{
+    font-family: "Arial";
+    font-size: 15pt;
+    text-align: center;
+}
+#de{
+    margin-top: 30px;
+    padding-right: 50px;
+    margin-left: 350px;
+   
+}

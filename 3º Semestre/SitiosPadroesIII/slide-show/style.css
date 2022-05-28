@@ -39,10 +39,15 @@
 }
 
 #slide{
-    height: 30vh;
+  
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: red;
+        
+}
+
+#carossel{
+    height: 30vh;
+    width: 5vw;
 }

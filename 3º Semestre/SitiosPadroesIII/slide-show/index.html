@@ -12,98 +12,131 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+
+
     <script type="text/javascript" src="main.js"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
+<div class="editar " id="editar">
+    <form class="border border-dark">
+        <div class="editarSlide">
+            <br>
+            <label> Qual Slide deseja modificar:
+                <select onchange="opcaoSelecionada(this)">
+                    <option selected> Escolha</option>
+                    <option>Apresentação</option>
+                    <option>Slide 1</option>
+                    <option>Slide 2</option>
+                    <option>Slide 3</option>
+                </select>
 
-<body>
-    <div class="editar " id="editar">
-        <form class="border border-dark">
-            <div class="editarSlide">
-                <br>
-                <label> Qual Slide deseja modificar:
-                    <select onchange="opcaoSelecionada(this)">
-                        <option selected> Escolha</option>
-                        <option>Slide 1</option>
-                        <option>Slide 2</option>
-                        <option>Slide 3</option>
-                    </select>
-
-                </label>
-                <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top"
-                    title="Adicionar Slide">+</button>
+            </label>
+            <!-- <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Fechar Edição"
+                    onclick="fecharEdição()">x</button> -->
+            <br />
+            <br />
+            <label>Insira o Conteudo da leganda</label>
+            <input class="input-group" type="text" onclick="limpar()" id="campoLegenda" placeholder="Insira a leganda aqui"/>
+            <br>
+            <!-- <input class="input-group" type="file" onchange="carregarImagem(this)" /> -->
+            <label> Inserir Imagem:
+                <select onchange="imagemSelecionada(this)">
+                    <option selected> Escolha</option>
+                    <option>Imagem Padrão I</option>
+                    <option>Imagem Padrão II</option>
+                    <option>Jorge - Skin Careca TV Gamer full HD</option>
+                    <option>Cristiano - Skin O Rei do JavaScript</option>
+                    <option>Thiaguin - Skin Zé do Caixão</option>
+                </select>
                 <br />
-                <br />
-                <label>Insira o Conteudo da leganda</label>
-                <input class="input-group" type="text" id="campoLegenda" />
-                <br>
-                <input class="input-group" type="file" onchange="carregarImagem(event)" />
                 <br />
                 <button type="button" class="btn btn-success" onclick="salvarEdicao()">Salvar</button>
                 <button type="button" class="btn btn-danger" onclick="cancelarApreesntacao()">Cancelar</button>
                 <br />
-            </div>
-
-        </form>
-
-        </fieldset>
-    </div>
-    <div id="botoes">
-        <div class="menu">
-            <button type="button" class="btn btn-warning" onclick="editarSlide()">Editar</button>
-            <button type="button" class="btn btn-success" onclick="apresentar()">Apresentar</button>
         </div>
+    </form>
+</div>
+<div id="botoes">
+    <h1 class="menu">Apresentação de Slides</h1>
+    <div class="menu">
+        <button type="button" class="btn btn-warning" onclick="editarSlide()">Editar</button>
+        <button type="button" class="btn btn-success" onclick="apresentar()">Apresentar</button>
     </div>
+</div>
 
-    <div style="display: none;" id="slide">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" id="slide1    ">
+<div style="display: none;" id="slide">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" id="carrosel    ">
 
-            <div class="carousel-indicators">
+        <div class="carousel-indicators" data-bs-ride="carousel">
 
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/thumb-1920-410316.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 id="h1"> Slide 1 </h5>
-                        <p id="p1">Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/thumb-1920-410316.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/thumb-1920-410316.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
         </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img id="imgAp"
+                    src="https://i0.wp.com/www.multarte.com.br/wp-content/uploads/2018/12/fundo-preto-background90-1024x640.jpg?resize=696%2C435&ssl=1"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Inicio</h5>
+                    <p id="p1">Insira a legenda para este Slide</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img id="imgSli1"
+                    src="https://i0.wp.com/www.multarte.com.br/wp-content/uploads/2018/12/fundo-preto-background90-1024x640.jpg?resize=696%2C435&ssl=1"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5> Slide 1</h5>
+                    <p id="p2">Insira a legenda para este Slide</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img id="imgSli2" src="https://i0.wp.com/www.multarte.com.br/wp-content/uploads/2018/12/fundo-preto-background90-1024x640.jpg?resize=696%2C435&ssl=1" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Slide 2</h5>
+                    <p id="p3"> Insira a legenda para este Slide.</p>
+                </div>
+            </div>
+            <div  class="carousel-item" data-bs-interval="3000">
+                <img id="imgSli3" src="https://i0.wp.com/www.multarte.com.br/wp-content/uploads/2018/12/fundo-preto-background90-1024x640.jpg?resize=696%2C435&ssl=1"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5> Slide 3</h5>
+                    <p id="p4">Insira a legenda para este Slide</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+</div>
+</div>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
 </html>
