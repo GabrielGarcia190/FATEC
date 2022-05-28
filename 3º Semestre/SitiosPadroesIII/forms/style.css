@@ -1,0 +1,25 @@
+#form{
+    margin-top: 10vw;
+    border-radius: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.form{
+    margin-top: 2vw;
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+}
+
+.form textarea{
+  width: 600px;
+  height: 50px;
+}
+
+.checkbox {
+    margin-top: 3vw;
+}
+
+.radio{
+    margin-top: 3vw;
+}
