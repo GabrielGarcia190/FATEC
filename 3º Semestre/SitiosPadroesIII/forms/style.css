@@ -11,15 +11,19 @@
     margin-bottom: 2vw;
 }
 
-.form textarea{
-  width: 600px;
-  height: 50px;
+.form .dissertativa input{
+  width: 80vw;
+  height: 8vw;
 }
 
-.checkbox {
+.checkbox{
     margin-top: 3vw;
 }
 
-.radio{
-    margin-top: 3vw;
+.checkbox div{
+    margin-bottom: 2vw;
 }
+
+
+
+
