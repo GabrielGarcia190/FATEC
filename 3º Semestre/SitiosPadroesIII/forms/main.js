@@ -84,16 +84,27 @@ function checarBox() {
 //             alert("Escolheu: " + botoes[i].value);
 // }
 function checarRadio() {
-    var botoes = document.getElementsByName("flexRadioDefault");
-    for (var i = 0 in botoes)
-        if (botoes[i].checked)
-            alert("Escolheu: " + botoes[i].value);
+   
+   
 }
 
 
 function enviar() {
-    let contador_pontos = testarDissertativa() + checarBox();
-    console.log(contador_pontos);
+    // let contador_pontos = testarDissertativa() + checarBox();
+    // console.log(contador_pontos);
     // let count = checarBox();
     // console.log(count);
+    let lista = [];
+    let gabarito = ['certa','certa','certa','certa'];
+    var botoes = document.getElementsByName("flexRadioDefault");
+    for (var i = 0 in botoes) {
+        if (botoes[i].checked)
+            lista.push(botoes[i].value);
+    }
+    console.log(lista)
+    // for (let i = 0; botoes[i] <= 4; i++) {
+    //     if (botoes[i] == lista[i]) {
+    //         botoes++;
+    //     }
+    // }
 }
