@@ -4,7 +4,7 @@ function testarDissertativa() {
     for (i = 1; i <= 2; i++) {
         pergunta.push(document.getElementById(i).value);
     }
-    let tam = []
+    let tam = [];
     let count = 0;
     for (i = 0; i < pergunta.length; i++) {
         pergunta;
@@ -76,6 +76,7 @@ function checarBox() {
     }
 }
 
+
 // function checarRadio() {
 //     var botoes = document.getElementsByName("flexRadioDefault");
 //     for (var i = 0 in botoes)
@@ -87,11 +88,6 @@ function checarBox() {
 function enviar() {
     let contador_pontos = testarDissertativa() + checarBox();
     console.log(contador_pontos);
-
     // let count = checarBox();
     // console.log(count);
-
-
-
-
 }
