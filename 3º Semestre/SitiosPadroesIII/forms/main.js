@@ -23,11 +23,13 @@ function checarBox() {
     var check3 = document.getElementsByName("check3");
 
     //VERIFICANDO CHECKBOX 1
-    for (var i = 0 in check1) {
-        if (check1[i].checked) {
-            lista.push(check1[i].value);
+    let a = 0;
+    for (a in check1) {
+        if (check1[a].checked) {
+            lista.push(check1[a].value);
         }
     }
+
     let gabarito = ['0', '1'];
     let count = 0;
     for (let i = 0; lista[i] <= 4; i++) {
@@ -38,13 +40,13 @@ function checarBox() {
     if (count < 2) {
         count = 0;
     }
-    ////////////////////////////////////////////
-    //VERIFICANDO CHECKBOX 2
+
     lista = [];
     gabarito = ['1', '2'];
-    for (var i = 0 in check2) {
-        if (check2[i].checked)
-            lista.push(check2[i].value);
+    let b = 0;
+    for (b in check2) {
+        if (check2[b].checked)
+            lista.push(check2[b].value);
     }
 
     for (let i = 0; lista[i] <= 4; i++) {
@@ -60,9 +62,10 @@ function checarBox() {
     //VERIFICANDO CHECKBOX 3
     lista = [];
     gabarito = ['0', '3'];
-    for (var i = 0 in check3) {
-        if (check3[i].checked)
-            lista.push(check3[i].value);
+    let c = 0;
+    for (c in check3) {
+        if (check3[c].checked)
+            lista.push(check3[c].value);
     }
     for (let i = 0; lista[i] <= 4; i++) {
         if (gabarito[i] == lista[i]) {
@@ -76,35 +79,46 @@ function checarBox() {
     }
 }
 
-
-// function checarRadio() {
-//     var botoes = document.getElementsByName("flexRadioDefault");
-//     for (var i = 0 in botoes)
-//         if (botoes[i].checked)
-//             alert("Escolheu: " + botoes[i].value);
-// }
 function checarRadio() {
-   
-   
+    let lista = [];
+    let j = 0;
+
+    let gabarito = ['10', '10', '10', '10', '10'];
+    for (let i = 0; i <= 5; i++) {
+        var botoes = document.getElementsByName("flexRadioDefault" + i);
+        for (j in botoes) {
+            if (botoes[j].checked)
+                lista.push(botoes[j].value);
+        }
+    }
+
+    let count = 0;
+    for (let i = 0; i < 5; i++) {
+        if (lista[i] == gabarito[i]) {
+            count++;
+        }
+    }
+    return count;
 }
 
 
 function enviar() {
-    // let contador_pontos = testarDissertativa() + checarBox();
-    // console.log(contador_pontos);
-    // let count = checarBox();
-    // console.log(count);
-    let lista = [];
-    let gabarito = ['certa','certa','certa','certa'];
-    var botoes = document.getElementsByName("flexRadioDefault");
-    for (var i = 0 in botoes) {
-        if (botoes[i].checked)
-            lista.push(botoes[i].value);
+    let contador_pontos = testarDissertativa() + checarBox() + checarRadio();
+    console.log(contador_pontos);
+    if (contador_pontos > 6) {
+        document.getElementById("resultado").innerHTML = contador_pontos + " Parabéns Aprovado !!!"
+        document.getElementById("resultado").style.color = "green";
+    } else {
+        document.getElementById("resultado").innerHTML = contador_pontos + " Reprovado Burrão !!!"
+        document.getElementById("resultado").style.color = "red";
     }
-    console.log(lista)
-    // for (let i = 0; botoes[i] <= 4; i++) {
-    //     if (botoes[i] == lista[i]) {
-    //         botoes++;
-    //     }
-    // }
+    document.getElementById("resultado").style.display = "block";
+    document.getElementById("formulario").style.display = "none";
 }
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === "Escape") {
+        document.getElementById("resultado").style.display = "none";
+        document.getElementById("formulario").style.display = "block";
+    }
+});

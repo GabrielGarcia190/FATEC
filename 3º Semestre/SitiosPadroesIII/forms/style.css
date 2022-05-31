@@ -5,13 +5,12 @@
     margin-left: 5vw;
     margin-right: 5vw;
 }
-
-#form button{
-    margin-top: 2vw;
-    display: flex;
-    justify-content: center;
+.button{
+        display: flex;
+    justify-content: center ;
     align-items: center;
 }
+
 
 .form{
     margin-top: 2vw;
@@ -21,6 +20,7 @@
 
 h1{
     padding-top: 2vw;
+    padding-bottom: 2vw;
     text-align: center;
 }
 
@@ -41,4 +41,9 @@ h1{
     margin-top: 2vw;
 }
 
-
+#resultado{
+    font-size: 40px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    text-align: center;
+}

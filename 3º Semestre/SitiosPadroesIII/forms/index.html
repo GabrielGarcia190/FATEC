@@ -14,8 +14,10 @@
 
 <body>
     <div class="border border-dark" id="form">
-        <h1> Formulário - Gabriel Garca</h1>
-        <div class="form">
+        <div id="resultado" style="display: none;">
+        </div>
+        <div class="form" id="formulario">
+            <h1> Formulário - Gabriel Garca</h1>
             <div>
                 <h5>1 - Qual o seu nome completo:</h5>
                 <input class="inuput-group" type="text" id="1" name="dissertativas" style="width: 80vw" />
@@ -54,7 +56,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="0" id="ch5" name="check2">
                     <label class="form-check-label" for="ch5">
-                        A) Estatística
+                        A) Engenharia de cercas
                     </label>
                     <br />
                     <input class="form-check-input" type="checkbox" value="1" id="ch6" name="check2">
@@ -64,7 +66,7 @@
                     <br>
                     <input class="form-check-input" type="checkbox" value="2" id="ch7" name="check2">
                     <label class="form-check-label" for="ch7">
-                        C) Engenharia de cercas
+                        C) Estatística
                     </label>
                     <br />
                     <input class="form-check-input" type="checkbox" value="3" id="ch8" name="check2">
@@ -99,29 +101,25 @@
             <div class="radio">
                 <h5>6 - O que é Pix?</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="certa"
-                        id="1-1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault0" value="10" id="1-1">
                     <label class="form-check-label" for="1-1">
                         A) Meio de pagamento instantâneo criado pelo Banco Central do Brasil.
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="1-2"
-                        value="1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault0" id="1-2" value="1">
                     <label class="form-check-label" for="1-2">
                         B) Plano de investimento de baixo risco do Banco do Brasil.
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="2"
-                        id="1-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault0" value="2" id="1-3">
                     <label class="form-check-label" for="1-3">
                         C) Conjunto de formas de pagamento realizados por subadquirentes.
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="1-4"
-                        value="3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault0" id="1-4" value="3">
                     <label class="form-check-label" for="1-4">
                         D) Forma de pagamento online.
                     </label>
@@ -129,30 +127,26 @@
                 <div class="pergunta">
                     <h5>7 - Qual o nome do líder da Coreia do Norte?</h5>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" value="0"
-                            id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" value="0" id="2-1">
+                        <label class="form-check-label" for="2-1">
                             A) Pak Pong-ju.
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                            value="certa">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="2-2" value="10">
+                        <label class="form-check-label" for="2-2">
                             B) Kim Jong-un.
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" value="2"
-                            id="flexRadioDefault3">
-                        <label class="form-check-label" for="flexRadioDefault3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" value="2" id="2-3">
+                        <label class="form-check-label" for="2-3">
                             C) Cristiano Martins.
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4"
-                            value="3">
-                        <label class="form-check-label" for="flexRadioDefault4">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="2-4" value="3">
+                        <label class="form-check-label" for="2-4">
                             D) Moon Jae-in.
                         </label>
                     </div>
@@ -160,110 +154,103 @@
                 <div class="pergunta">
                     <h5>8 - Como morreu Saddam Hussein?</h5>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" value="0"
-                            id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault2" value="0" id="3-1">
+                        <label class="form-check-label" for="3-1">
                             A) Vítima de câncer.
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                            value="1">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="3-2" value="1">
+                        <label class="form-check-label" for="3-2">
                             B) Suicídio.
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" value="2"
-                            id="flexRadioDefault3">
-                        <label class="form-check-label" for="flexRadioDefault3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault2" value="2" id="3-3">
+                        <label class="form-check-label" for="3-3">
                             C) Ataque cardíaco.
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4"
-                            value="certa">
-                        <label class="form-check-label" for="flexRadioDefault4">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="3-4" value="10">
+                        <label class="form-check-label" for="3-4">
                             D) Enforcado.
                         </label>
                     </div>
                     <div class="pergunta">
                         <h5>9 - Quem é o autor do famoso discurso "Eu tenho um sonho"? </h5>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" value="0"
-                                id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault3" value="0" id="5-1">
+                            <label class="form-check-label" for="5-1">
                                 A) Jorge Luis Gregorio (Careca TV).
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                value="1">
-                            <label class="form-check-label" for="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault3" id="5-2" value="1">
+                            <label class="form-check-label" for="5-2">
                                 B) Barack Obama
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" value="certa"
-                                id="flexRadioDefault3">
-                            <label class="form-check-label" for="flexRadioDefault3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault3" value="10" id="5-3">
+                            <label class="form-check-label" for="5-3">
                                 C) Nelson Mandela.
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4"
-                                value="2">
-                            <label class="form-check-label" for="flexRadioDefault4">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault3" id="5-4" value="2">
+                            <label class="form-check-label" for="5-4">
                                 D) Donald Trump
                             </label>
                         </div>
                         <div class="pergunta">
                             <h5>10 - Quais as maiores pandemias da história?</h5>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="certa"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault4" value="10"
+                                    id="4-1">
+                                <label class="form-check-label" for="4-1">
                                     A) Peste negra e covid-19.
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" value="1">
-                                <label class="form-check-label" for="flexRadioDefault2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault4" id="4-2"
+                                    value="1">
+                                <label class="form-check-label" for="4-2">
                                     B) Varíola e hipertensão.
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="2"
-                                    id="flexRadioDefault3">
-                                <label class="form-check-label" for="flexRadioDefault3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault4" value="2"
+                                    id="4-3">
+                                <label class="form-check-label" for="4-3">
                                     C) Cólera e colesterol.
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault4" value="certa">
-                                <label class="form-check-label" for="flexRadioDefault4">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault4" id="4-4"
+                                    value="10">
+                                <label class="form-check-label" for="4-4">
                                     D) Gripe espanhola e câncer.
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-success" onclick="enviar()">Success</button>
             </div>
-
-
-
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                crossorigin="anonymous"></script>
+            <div class="button">
+                <button type="button" class="btn btn-success d-flex" onclick="enviar()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
