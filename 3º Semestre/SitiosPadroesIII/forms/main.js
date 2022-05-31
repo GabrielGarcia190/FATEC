@@ -76,22 +76,17 @@ function checarBox() {
     }
 }
 
-// function checarRadio() {
-//     var botoes = document.getElementsByName("flexRadioDefault");
-//     for (var i = 0 in botoes)
-//         if (botoes[i].checked)
-//             alert("Escolheu: " + botoes[i].value);
-// }
+function checarRadio() {
+    var botoes = document.getElementsByName("flexRadioDefault");
+    for (var i = 0 in botoes)
+        if (botoes[i].checked)
+            alert("Escolheu: " + botoes[i].value);
+}
 
 
 function enviar() {
     let contador_pontos = testarDissertativa() + checarBox();
     console.log(contador_pontos);
-
     // let count = checarBox();
     // console.log(count);
-
-
-
-
 }
