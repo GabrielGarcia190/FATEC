@@ -105,20 +105,24 @@ function checarRadio() {
 function enviar() {
     let contador_pontos = testarDissertativa() + checarBox() + checarRadio();
     console.log(contador_pontos);
-    if (contador_pontos > 6) {
+    if (contador_pontos >= 6) {
         document.getElementById("resultado").innerHTML = contador_pontos + " Parabéns Aprovado !!!"
         document.getElementById("resultado").style.color = "green";
     } else {
         document.getElementById("resultado").innerHTML = contador_pontos + " Reprovado Burrão !!!"
         document.getElementById("resultado").style.color = "red";
     }
-    document.getElementById("resultado").style.display = "block";
+    document.getElementById("res").style.display = "block";
     document.getElementById("formulario").style.display = "none";
+}
+
+function outraResposta(){
+    location.reload();
 }
 
 document.addEventListener('keydown', function (event) {
     if (event.key === "Escape") {
-        document.getElementById("resultado").style.display = "none";
+        document.getElementById("res").style.display = "none";
         document.getElementById("formulario").style.display = "block";
     }
 });

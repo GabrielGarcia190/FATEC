@@ -6,7 +6,7 @@
     margin-right: 5vw;
 }
 .button{
-        display: flex;
+    display: flex;
     justify-content: center ;
     align-items: center;
 }
@@ -46,4 +46,8 @@ h1{
     padding-top: 2vw;
     padding-bottom: 2vw;
     text-align: center;
+}
+
+#res{
+    padding-bottom: 2vw;
 }
