@@ -83,6 +83,12 @@ function checarBox() {
 //         if (botoes[i].checked)
 //             alert("Escolheu: " + botoes[i].value);
 // }
+function checarRadio() {
+    var botoes = document.getElementsByName("flexRadioDefault");
+    for (var i = 0 in botoes)
+        if (botoes[i].checked)
+            alert("Escolheu: " + botoes[i].value);
+}
 
 
 function enviar() {

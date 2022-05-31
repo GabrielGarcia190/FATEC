@@ -11,6 +11,11 @@
     margin-bottom: 2vw;
 }
 
+h1{
+    padding-top: 2vw;
+    text-align: center;
+}
+
 .form .dissertativa input{
   width: 80vw;
   height: 8vw;
