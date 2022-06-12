@@ -52,10 +52,6 @@ function validaSenha() {
 }
 
 
-function validaCaracterEspecial() {
-
-}
-
 function pegarNome(obj) {
     obj = obj.split("@");
     console.log(obj);
