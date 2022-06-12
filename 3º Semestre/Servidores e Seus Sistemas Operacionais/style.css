@@ -1,3 +1,38 @@
-body{
+body {
     background-color: #565656;
-}   
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.botoes {
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes button{
+    margin-right: 1vw;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    text-align: center;
+}
+
+
+.formulario form{
+ padding-top: 2vw;
+ padding-bottom: 2vw;
+ padding-left: 5vw;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.input-group{
+    width: 50vw;
+}
