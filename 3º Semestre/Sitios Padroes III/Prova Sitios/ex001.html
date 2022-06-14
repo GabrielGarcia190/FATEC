@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+
+<body>
+    <labe for="senha"> INSIRA SUA SENHA</labe>
+    <input type="text" id="senha" ">
+    <button onclick=" validaSenha()"> CADASTRAR</button>
+
+    <p id="p">A senha deve possuir </p>
+    <p style="color: red;" id="p2">- Possuir entre 6 e 8 caracteres:</p>
+    <p style="color: red;" id="p3">- Possuir letras maiúsculas e minúsculas;</p>
+    <p style="color: red;" id="p4">- Possuir símbolos (caracteres especiais);</p>
+    <p style="color: red;" id="p1"> - Possuir número </p>
+    <p id="senha">
+</body>
+<script>
+
+    function validaSenha() {
+
+        let count = 0;
+        let ctNumber = 0;
+        let maisc = 0;
+        let ctSenha = 0;
+
+        let senha = document.getElementById("senha").value;
+        let cpsenha = senha.toUpperCase(senha);
+        let carEspecial = '!@#$%¨&*())_=+/|-,~^]ºª;?°"" `'
+
+        senha = senha.split("");
+        cpsenha = cpsenha.split("");
+        carEspecial = carEspecial.split('');
+
+        if (senha.length >= 6 && senha.length <= 8) {
+            document.getElementById("p2").style.color = "green";
+            count++;
+        }
+
+        for (let i = 0; i < senha.length; i++) {
+            if (senha[i] == cpsenha[i]) {
+                maisc++;
+            }
+        }
+
+        for (let i = 0; i < senha.length; i++) {
+            if (isNaN(senha[i])) {
+            
+            }else{
+                ctNumber++;
+            }
+        }
+
+        let j = 0;
+        for (let i = 0; i < carEspecial.length; i++) {
+            while(j < carEspecial.length){
+                if (senha[i] == carEspecial[j]) {
+                    ctSenha++;
+                }
+                j++;
+            }
+        }
+
+        if (ctSenha != 0) {
+            document.getElementById("p4").style.color = "green";
+            count++;
+        }
+        
+
+        if (maisc != 0) {
+            document.getElementById("p3").style.color = "green";
+            count++;
+        }
+        if (ctNumber != 0) {
+            document.getElementById("p1").style.color = "green";
+            count++;
+        }
+
+        if(count == 4){
+
+        }
+
+        console.log(carEspecial.length);
+        console.log(ctSenha);
+
+        document.getElementById("senha") = "Senha Valida";
+
+    }
+</script>
+
+</html>

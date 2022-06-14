@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+    <div>
+        <labe for="nome"> Nome:</labe>
+        <input type="text" id="nome" />
+        <br />
+        <br />
+        <labe for="email"> E-mail:</labe>
+        <input type="email" id="email" />
+        <br />
+        <br />
+        <label for="idade" >Idade: </label>
+        <input type="number" id="idade" />
+        <br />
+        <br />
+        <div class="radio" >
+            <input type="radio" value="1"  onclick="radio(this.value)" name="rd1">
+            <label for="rd1"> MASCULINO</label>
+            <BR />
+            <input type="radio" value="2"  onclick="radio(this.value)" name="rd1">
+            <label for="rd1"> FEMININO</label>
+            <BR />        
+        </div>
+        <br>
+        <p id="Erro" style="color: red;"></p>
+        <button id="button">ENVIAR</button>
+        <br>
+        <br>
+        <button id="limpar">LIMPAR</button>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    const button = document.getElementById('button');
+    const limpar = document.getElementById('limpar');
+    const par = document.getElementById("Erro");
+    let a ;
+
+    button.addEventListener('click', function(){
+
+        let email = document.getElementById('email').value;
+        let count= 0;
+        let idade = document.getElementById('idade').value;
+        let nome = document.getElementById('nome').value;
+    
+        email = email.split("@");
+        console.log(email); 
+        console.log(email.length)
+       
+        if(idade == 0 || idade == "" || idade == undefined || isNaN(idade)){
+            par.innerHTML = " * Idade Incorreta/Invalida";
+            count ++;
+        }
+        if( nome == null || nome == "" || Number(nome)){
+            par.innerHTML += "<br> * Nome Invalido";
+            count ++;
+        }
+
+        if(email.length < 2 ){
+             par.innerHTML += "<br>  * Email invalido";
+             count ++;
+        }
+
+        if( a == undefined){
+            par.innerHTML += "<br>  * Escolha o Sexo ";
+            count ++;
+        }
+
+    });
+
+    limpar.addEventListener('click', function(){
+        location.reload();
+    });
+
+
+    function radio(event){
+         a = event
+
+        return 0;
+    }
+</script>
+
+</html>
