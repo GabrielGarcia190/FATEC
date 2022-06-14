@@ -1,5 +1,5 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js';
-import { getFirestore, collection, getDocs, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js';
+import { getFirestore, collection, getDocs, addDoc, serverTimestamp, doc, deleteDoc } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js';
 
 const firebaseConfig = {
     apiKey: 'AIzaSyB9lTnDEOBK4LtzZbBsGrDEf_1MUA_Rb7s',
@@ -15,28 +15,40 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const formAddPessoa = document.querySelector('[data-js="add-pessoa-form"]')
 const collectionPessoas = collection(db, 'Pessoas');
+const listaPessoas = document.querySelector('[data-js="listaPessoas"]')
+const btnEditar = document.querySelector('[data-js="btnEditar"]')
+
+
 
 collection(db, 'Pessoas')
+
+
+btnEditar.addEventListener("click", function (event) {
+    document.querySelector('[data-js="formulario"]').style.display = "block";
+    document.querySelector('[data-js="lista"]').style.display = "none";
+    document.querySelector('[data-js="menu"]').style.display = "none";
+})
+
 
 getDocs(collectionPessoas)
     .then(querySnapshot => {
         const PessoasLis = querySnapshot.docs.reduce((acc, doc) => {
             const { Nome, Sobrenome, DatadeNascimento } = doc.data()
 
-            acc += `<li class="my-4">
+            acc += `<li data-id="${doc.id}" class="my-4">
                 <h5>${Nome}</h5>
 
                 <ul>
-                    <li>Nome: ${Sobrenome}</li>
-                    <li>Data de Nascimento: ${DatadeNascimento.toDate().getDate()} / ${DatadeNascimento.toDate().getMonth() + 1} / ${DatadeNascimento.toDate().getFullYear()}</li>
+                   <li>Sobrenome: ${Sobrenome}</li>
+                   <li>Data do Cadastro: ${DatadeNascimento.toDate().getDate()} / ${DatadeNascimento.toDate().getMonth() + 1} / ${DatadeNascimento.toDate().getFullYear()}</li>
                 </ul>
+                    <button data-remove="${doc.id}" class="btn btn-danger">Excluir</button>
                 </li>`;
 
             return acc;
 
         }, '');
 
-        const listaPessoas = document.querySelector('[data-js="listaPessoas"]')
         listaPessoas.innerHTML = PessoasLis;
         //querySnapshot.forEach(doc => console.log(doc.data()))
     })
@@ -50,6 +62,25 @@ formAddPessoa.addEventListener('submit', e => {
         Sobrenome: e.target.Sobrenome.value,
 
     })
-        .then(doc => console.log("Documento criado com ID:", doc.id))
-        .catch(console.log);
+        .then(doc => {
+            console.log("Documento criado com ID:", doc.id)
+            location.reload();
+        })
+        .catch(console.log("Pessoa não adionada"));
+})
+
+listaPessoas.addEventListener('click', e => {
+    const removeButtonId = e.target.dataset.remove;
+
+
+
+
+    if (removeButtonId) {
+
+        deleteDoc(doc(db, "Pessoas", removeButtonId));
+        const pessoa = document.querySelector(`[data-id="${removeButtonId}"]`);
+        pessoa.remove();
+    }
+
+
 })

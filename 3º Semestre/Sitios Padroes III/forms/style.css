@@ -1,0 +1,53 @@
+#form{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    border-radius: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.button{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+
+.form{
+    margin-top: 2vw;
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+}
+
+h1{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    text-align: center;
+}
+
+.form .dissertativa input{
+  width: 80vw;
+  height: 8vw;
+}
+
+.checkbox{
+    margin-top: 3vw;
+}
+
+.checkbox div{
+    margin-bottom: 2vw;
+}
+
+.pergunta{
+    margin-top: 2vw;
+}
+
+#resultado{
+    font-size: 40px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    text-align: center;
+}
+
+#res{
+    padding-bottom: 2vw;
+}

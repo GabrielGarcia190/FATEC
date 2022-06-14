@@ -5,34 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Firebase - Cristiano</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="imagem/png" href="https://cdn.iconscout.com/icon/free/png-256/firebase-3628772-3030134.png" />
+
 </head>
 
 <body>
-    <div div class="container text-white my-5">
+    <div class="menu" data-js="menu">
+        <div class="botoes">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/firebase-3629364-3032357.png">
+        </div>
+        <h2 class="text-white">Firebase-Teste</h2>
+        <div class="botoes">
+            <button class="btn btn-warning" onclick="buscarDados()">Buscar Dados</button>
+            <button class="btn btn-danger" data-js="btnEditar" onclick="editarDados()">Editar Dados</button>
+        </div>
+    </div>
+
+    <div div class="container text-white my-5" style="display: none;" data-js="lista">
         <h2>Pessoas</h2>
         <ul data-js="listaPessoas">
+
         </ul>
     </div>
 
-    <form class=" container text-white my-5" data-js="add-pessoa-form">
-        <label for="Nome">Nome: </label>
-        <div class="input-group">
-            <input value="Gabriel" type="text" class="form-control bg=transparent text-dark" placeholder="Insira o seu Nome" id="Nome">
-        </div>
-        <br />
-        <label for="Sobrenome">Sobrenome:</label>
-        <div class="input-group">
-            <input type="text"  value="Carlos"class="form-control bg=transparent text-dark" placeholder="Insira o seu Sobrenome" id="Sobrenome">
-        </div>
-        <br />
-        <input type="submit"   class="btn btn-primary text-dark" value="Adicionar">
-    </form>
+    <div class="formulario" data-js="formulario" style="display: none;">
+        <form class=" container text-white my-5 border border-white" data-js="add-pessoa-form" ">
+            <label for=" Nome">Nome: </label>
+            <div class="input-group">
+                <input type="text" class="form-control bg-transparent text-white" placeholder="Insira o seu Nome"
+                    id="Nome" required>
+            </div>
+            <br />
+            <label for="Sobrenome">Sobrenome:</label>
+            <div class="input-group">
+                <input type="text" class="form-control bg-transparent text-white" placeholder="Insira o seu Sobrenome"
+                    id="Sobrenome"required> 
+            </div>
+            <br />
+            <input type="submit" class="btn btn-primary text-dark" value="Adicionar">
+        </form>
+    </div>
 </body>
 <script type="module" src="main.js"></script>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
