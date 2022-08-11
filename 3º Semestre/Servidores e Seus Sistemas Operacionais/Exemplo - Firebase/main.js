@@ -13,20 +13,21 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const formAddPessoa = document.querySelector('[data-js="add-pessoa-form"]')
+const formAddPessoa = document.querySelector('[data-js="add-pessoa-form"]');
 const collectionPessoas = collection(db, 'Pessoas');
-const listaPessoas = document.querySelector('[data-js="listaPessoas"]')
-const btnEditar = document.querySelector('[data-js="btnEditar"]')
+const listaPessoas = document.querySelector('[data-js="listaPessoas"]');
+const btnEditar = document.querySelector('[data-js="btnEditar"]');
 
-
-
-collection(db, 'Pessoas')
-
+collection(db, 'Pessoas');
 
 btnEditar.addEventListener("click", function (event) {
     document.querySelector('[data-js="formulario"]').style.display = "block";
     document.querySelector('[data-js="lista"]').style.display = "none";
     document.querySelector('[data-js="menu"]').style.display = "none";
+})
+
+btnEditar.removeEventListener("click", function(){
+
 })
 
 
