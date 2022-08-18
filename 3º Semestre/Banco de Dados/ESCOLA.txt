@@ -1,0 +1,44 @@
+CREATE TABLE estado(
+	idEst INT NOT NULL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL
+)
+
+COPY estado FROM 'C:\adrieli\estado.txt';
+SELECT * FROM estado;
+
+CREATE TABLE cidade(
+	idCid INT NOT NULL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	idEst INT REFERENCES estado(idEst)
+)
+
+COPY cidade FROM 'C:\adrieli\cidade.txt';
+SELECT * FROM cidade;
+
+CREATE TABLE aluno(
+	idAlu INT NOT NULL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	idCid INT REFERENCES cidade(idCid)
+)
+
+COPY aluno FROM 'C:\adrieli\aluno.txt';
+SELECT * FROM aluno;
+
+CREATE TABLE curso(
+	idCur INT NOT NULL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL 
+)
+
+COPY curso FROM 'C:\adrieli\curso.txt';
+SELECT * FROM curso;
+
+CREATE TABLE cursoAlu(
+	idCursoAlu INT NOT NULL PRIMARY KEY,
+	idAlu INT REFERENCES aluno(idAlu),
+	idCur INT REFERENCES curso(idCur)
+)
+
+COPY cursoAlu FROM 'C:\adrieli\cursoalu.txt';
+SELECT * FROM cursoAlu;
+
+SELECT * FROM cidade ORDER BY nome;
