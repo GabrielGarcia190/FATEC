@@ -1,0 +1,18 @@
+CREATE TABLE Pessoa (
+    IdPessoa serial primary key
+);
+
+CREATE TABLE fornecedor (
+    idfornecedor serial,
+    idpessoa integer,
+    constraint fk_pessoa foreign key (idpessoa) references pessoa,
+    constraint pk_fornecedor primary key (idpessoa, idfornecedor)
+);
+
+CREATE TABLE compra (
+    idcompra serial primary key,
+    idpessoa integer,
+    idfornecedor integer,
+    constraint fk_pessoa foreign key (idpessoa) references pessoa,
+    constraint fk_fornecedor foreign key (idpessoa, idfornecedor) references fornecedor
+);
