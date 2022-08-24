@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+    font-size: 18px;
+}
+
+
+.container{
+    background-color: #10454F;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.container img{
+    border-radius: 50%;
+    border: medium solid transparent#BDE038;
+    box-shadow: 0 0 10px #BDE038;
+}
