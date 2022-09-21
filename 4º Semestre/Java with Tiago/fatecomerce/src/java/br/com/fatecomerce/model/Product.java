@@ -4,20 +4,18 @@ public class Product {
 
     private Integer idProduct;
     private String nameProduct;
-    private String descriptionProduct;
-    private Double amountProduct;
-    private Integer quantityProduct;
+    private String descrptionProduct;
+    private Double costPriceProduct;
+    private Double salePriceProduct;
+    private Brand brand;
+    private Category category;
 
     public Integer getIdProduct() {
         return idProduct;
     }
 
     public void setIdProduct(Integer idProduct) {
-        if (idProduct <= 0) {
-            return;
-        } else {
-            this.idProduct = idProduct;
-        }
+        this.idProduct = idProduct;
     }
 
     public String getNameProduct() {
@@ -28,27 +26,44 @@ public class Product {
         this.nameProduct = nameProduct;
     }
 
-    public String getDescriptionProduct() {
-        return descriptionProduct;
+    public String getDescrptionProduct() {
+        return descrptionProduct;
     }
 
-    public void setDescriptionProduct(String descriptionProduct) {
-        this.descriptionProduct = descriptionProduct;
+    public void setDescrptionProduct(String descrptionProduct) {
+        this.descrptionProduct = descrptionProduct;
     }
 
-    public Double getAmountProduct() {
-        return amountProduct;
+    public Double getCostPriceProduct() {
+        return costPriceProduct;
     }
 
-    public void setAmountProduct(Double amountProduct) {
-        this.amountProduct = amountProduct;
+    public void setCostPriceProduct(Double costPriceProduct) {
+        this.costPriceProduct = costPriceProduct;
     }
 
-    public Integer getQuantityProduct() {
-        return quantityProduct;
+    public Double getSalePriceProduct() {
+        return salePriceProduct;
     }
 
-    public void setQuantityProduct(Integer quantityProduct) {
-        this.quantityProduct = quantityProduct;
+    public void setSalePriceProduct(Double salePriceProduct) {
+        this.salePriceProduct = salePriceProduct;
     }
+
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
 }
