@@ -7,7 +7,7 @@ package br.com.fatecomerce.teste;
 import br.com.fatecomerce.model.Brand;
 import br.com.fatecomerce.model.Category;
 import br.com.fatecomerce.model.Product;
-import com.sun.xml.ws.transport.tcp.connectioncache.spi.transport.ConnectionCacheFactory;
+import br.com.fatecomerce.util.ConnectionFactory;
 import java.sql.Connection;
 
 /**
@@ -53,7 +53,7 @@ public class Main {
         Connection conn = null;
         
         try {
-            conn = ConnectionCacheFactory.getConnection();
+            conn = ConnectionFactory.getConnection();
             System.out.println("Conectado com sucesso");
         } catch (Exception ex) {
             System.out.println("Deu ruim");
