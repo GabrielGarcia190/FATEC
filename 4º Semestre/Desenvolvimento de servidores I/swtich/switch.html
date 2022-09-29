@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+          <div>
+            <h3>Pagamento de compras</h3>
+            <form method="get" action="switch.php">
+                Informe o valor total <input type="number" name="num"/><br><br>
+                <fieldset><legend>Pagamento:</legend>
+                    <input type="radio" name="oper" value="1"/>Pagamento a vista e desconto de 10%<br>
+                    <input type="radio" name="oper" value="2"/>Pagamento em 30 dias e juros de 5%<br>
+                    <input type="radio" name="oper" value="3"/>Pagamento em 60 dias e juros de 20%<br>
+                </fieldset>
+                <br>
+                <input type="submit" value="Calcular"/><br><br>
+            </form>
+        </div>
+    </body>
+</html>
