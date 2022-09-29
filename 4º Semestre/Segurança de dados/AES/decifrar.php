@@ -1,7 +1,7 @@
 <?php
-include 'AES.php';
-$inputText = "1OUdhPUr6mIcA8XPvcLQ/g==";
-$inputKey = "5131af7a19f7057b";
+include 'aes.php';
+$inputText = "+Aza97Tk9DYkQFztKLmqGMDx5fGaSJeJnSAiUKtkgdI=";
+$inputKey = "28d109db5be8ba6b";
 $blockSize = 128;
 $aes = new AES($inputText, $inputKey, $blockSize);
 $dec=$aes->decrypt();

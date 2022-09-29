@@ -1,0 +1,27 @@
+```bash
+**openssl genrsa -out key.privada 1024
+#** cria a chave com 1024 bits
+```
+
+```bash
+**openssl genrsa -des3 -out key.privada 1024**
+# encripta a chave com palavra chave
+# daí é necessário botar alguma frase chave
+```
+
+```bash
+**openssl rsa -in key.privada -pubout -out key.publica**
+# gera chave publica a partir da chave privada
+```
+
+
+```bash
+openssl rsautl -encrypt -in pra_crifrar.txt -pubin -inkey key.publica -out cifrado_final.txt
+# cifra o arquivo "pra_cifrar.txt" e cria outro arquivo "cifrado_final.txt"
+```
+
+```bash
+openssl rsautl -decrypt -in cifrado_final.txt -inkey key.privada -out decifrado_final.txt
+# decifra o arquivo "cifrado_final.txt" e cria outro arquivo "decifrado_final.txt"
+```
+
