@@ -26,7 +26,7 @@ btnEditar.addEventListener("click", function (event) {
     document.querySelector('[data-js="menu"]').style.display = "none";
 })
 
-btnEditar.removeEventListener("click", function(){
+btnEditar.removeEventListener("click", function () {
 
 })
 
@@ -65,6 +65,7 @@ formAddPessoa.addEventListener('submit', e => {
     })
         .then(doc => {
             console.log("Documento criado com ID:", doc.id)
+            alert("Documento com sucesso ID!");
             location.reload();
         })
         .catch(console.log("Pessoa não adionada"));

@@ -17,7 +17,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         
         // Função com parâmetros ou argumentos
         function mostraValor ($valor){
-            echo "<p>Esta função mostra o valor informado com argumentos</p>";
+            $total = $valor * 2;
+            echo "<p>Esta função mostra o valor informado com $total argumentos</p>";
         }
         ?>
     </body>
