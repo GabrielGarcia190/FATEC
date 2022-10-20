@@ -51,7 +51,7 @@ margin-top: 10px;
 		<br/>
 		<br/>
 		<div id="demos" align="center">
-			<h2 align="center">Login - Valida��o de login...</h2><br clear="all" /><br
+			<h2 align="center">Login - Validação de login...</h2><br clear="all" /><br
 				clear="all" />
 			<div id="s4">
 				<div class="form" id="first">
@@ -68,10 +68,22 @@ margin-top: 10px;
 								maxlength="120" />
 						</div>
 						<br>
-						<input name="enviar" type="submit" id="enviar" value="enviar">
+						<button name="enviar" type="submit" id="enviar" value="enviar" onclick="">Enviar</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</body>
+
+	<script>
+		let contador= 0;
+		
+		function Contar(){
+			contador++;
+			if(contador == 3){
+				alert("Tentativas excedidas");
+				window.location.href = "index.html";
+			}
+		}
+	</script>
 </html>
