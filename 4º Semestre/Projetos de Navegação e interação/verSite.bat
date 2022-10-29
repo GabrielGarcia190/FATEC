@@ -1,0 +1,1 @@
+cd ./Projeto_jorge npm run dev pause;
