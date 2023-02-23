@@ -1,0 +1,7 @@
+C:\Users\gokug\Documents\GitHub\FATEC\5º Semestre\Desenvolvimento para Servidores\FatecLibrary\Services\FatecLibrary.BookAPI\obj\Debug\net7.0\FatecLibrary.BookAPI.csproj.AssemblyReference.cache
+C:\Users\gokug\Documents\GitHub\FATEC\5º Semestre\Desenvolvimento para Servidores\FatecLibrary\Services\FatecLibrary.BookAPI\obj\Debug\net7.0\FatecLibrary.BookAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gokug\Documents\GitHub\FATEC\5º Semestre\Desenvolvimento para Servidores\FatecLibrary\Services\FatecLibrary.BookAPI\obj\Debug\net7.0\FatecLibrary.BookAPI.AssemblyInfoInputs.cache
+C:\Users\gokug\Documents\GitHub\FATEC\5º Semestre\Desenvolvimento para Servidores\FatecLibrary\Services\FatecLibrary.BookAPI\obj\Debug\net7.0\FatecLibrary.BookAPI.AssemblyInfo.cs
+C:\Users\gokug\Documents\GitHub\FATEC\5º Semestre\Desenvolvimento para Servidores\FatecLibrary\Services\FatecLibrary.BookAPI\obj\Debug\net7.0\FatecLibrary.BookAPI.csproj.CoreCompileInputs.cache
+C:\Users\gokug\Documents\GitHub\FATEC\5º Semestre\Desenvolvimento para Servidores\FatecLibrary\Services\FatecLibrary.BookAPI\obj\Debug\net7.0\FatecLibrary.BookAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gokug\Documents\GitHub\FATEC\5º Semestre\Desenvolvimento para Servidores\FatecLibrary\Services\FatecLibrary.BookAPI\obj\Debug\net7.0\FatecLibrary.BookAPI.MvcApplicationPartsAssemblyInfo.cache

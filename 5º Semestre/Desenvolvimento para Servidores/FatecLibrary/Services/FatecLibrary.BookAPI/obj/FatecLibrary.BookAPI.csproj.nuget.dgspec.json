@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\OneDrive\\Documentos\\GitHub\\FATEC\\5º Semestre\\Desenvolvimento para Servidores\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj": {}
+    "C:\\Users\\gokug\\Documents\\GitHub\\FATEC\\5º Semestre\\Desenvolvimento para Servidores\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\OneDrive\\Documentos\\GitHub\\FATEC\\5º Semestre\\Desenvolvimento para Servidores\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj": {
+    "C:\\Users\\gokug\\Documents\\GitHub\\FATEC\\5º Semestre\\Desenvolvimento para Servidores\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documentos\\GitHub\\FATEC\\5º Semestre\\Desenvolvimento para Servidores\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
+        "projectUniqueName": "C:\\Users\\gokug\\Documents\\GitHub\\FATEC\\5º Semestre\\Desenvolvimento para Servidores\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
         "projectName": "FatecLibrary.BookAPI",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documentos\\GitHub\\FATEC\\5º Semestre\\Desenvolvimento para Servidores\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documentos\\GitHub\\FATEC\\5º Semestre\\Desenvolvimento para Servidores\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\obj\\",
+        "projectPath": "C:\\Users\\gokug\\Documents\\GitHub\\FATEC\\5º Semestre\\Desenvolvimento para Servidores\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
+        "packagesPath": "C:\\Users\\gokug\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gokug\\Documents\\GitHub\\FATEC\\5º Semestre\\Desenvolvimento para Servidores\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gokug\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[7.0.2, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -76,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
