@@ -12,7 +12,7 @@ public class AppDBContext : DbContext
     public DbSet<Book> Books { get; set; }
 
     //Aqui  usamos Fluent API e não Data Annotations
-    protected override  void  OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Publishing>()
             .HasKey(p => p.Id);
@@ -20,11 +20,10 @@ public class AppDBContext : DbContext
             .Property(p => p.Name).HasMaxLength(100).IsRequired();
         modelBuilder.Entity<Publishing>()
            .Property(p => p.Acronym).HasMaxLength(10);
-
         modelBuilder.Entity<Book>()
             .HasKey(b => b.Id);
         modelBuilder.Entity<Book>()
-            .Property( b => b.Title).HasMaxLength(100).IsRequired();
+            .Property(b => b.Title).HasMaxLength(100).IsRequired();
         modelBuilder.Entity<Book>()
             .Property(b => b.Price).HasPrecision(8, 2);
         modelBuilder.Entity<Book>()
@@ -33,6 +32,34 @@ public class AppDBContext : DbContext
             .Property(b => b.ImageURL).HasMaxLength(255);
 
         //relacionamento
-        modelBuilder.Entity<Publishing>().HasMany(p => p.Books).WithOne(p => p.Publishing)
+        modelBuilder.Entity<Publishing>().HasMany(p => p.Books)
+            .WithOne(b => b.Publishing).IsRequired().OnDelete(DeleteBehavior.Cascade);
+
+        //Populando o BD caso com as primeiras editoras
+        modelBuilder.Entity<Publishing>().HasData(
+             new Publishing
+             {
+                 Id = 1,
+                 Name = "Alta Books",
+                 Acronym = "AB"
+             },
+             new Publishing
+             {
+                 Id = 2,
+                 Name = "Editora Fatec",
+                 Acronym = "Fatec"
+             });
+
+        modelBuilder.Entity<Book>().HasData(
+            new Book
+            {
+                Id = 1,
+                Title = "Alta",
+                Price = 1,
+                PublicationYear = 1,
+                Edition = 1,
+                ImageURL = "asas",
+                PublishingId = 1
+            });
     }
 }

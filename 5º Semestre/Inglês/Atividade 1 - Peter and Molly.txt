@@ -1,0 +1,11 @@
+1 - The boy's first name: PETER
+2 - The girl's full name: MOLLY LIN
+3 - Their nicknames: PETE
+4 - Number of the class: 213
+5 - Their teacher's name: Ms. Taylor
+6 - Time of the class: 09:00
+7 - Qual foi o problema: Confundiram a classe
+
+Mis = mau
+undestand - compreender
+misundertand - má compreenssão
