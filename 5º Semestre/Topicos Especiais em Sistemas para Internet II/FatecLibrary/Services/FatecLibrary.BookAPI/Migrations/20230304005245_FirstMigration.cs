@@ -8,7 +8,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FatecLibrary.BookAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigrate : Migration
+    public partial class FirstMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -35,7 +35,7 @@ namespace FatecLibrary.BookAPI.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Title = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     Price = table.Column<decimal>(type: "numeric(8,2)", precision: 8, scale: 2, nullable: false),
-                    PublictionYear = table.Column<int>(type: "integer", nullable: false),
+                    PublicationYear = table.Column<int>(type: "integer", nullable: false),
                     Edition = table.Column<int>(type: "integer", nullable: false),
                     ImageURL = table.Column<string>(type: "character varying(255)", maxLength: 255, nullable: true),
                     PublishingId = table.Column<int>(type: "integer", nullable: false)
@@ -62,7 +62,7 @@ namespace FatecLibrary.BookAPI.Migrations
 
             migrationBuilder.InsertData(
                 table: "Books",
-                columns: new[] { "Id", "Edition", "ImageURL", "Price", "PublictionYear", "PublishingId", "Title" },
+                columns: new[] { "Id", "Edition", "ImageURL", "Price", "PublicationYear", "PublishingId", "Title" },
                 values: new object[] { 1, 1, "asas", 1m, 1, 1, "Alta" });
 
             migrationBuilder.CreateIndex(
