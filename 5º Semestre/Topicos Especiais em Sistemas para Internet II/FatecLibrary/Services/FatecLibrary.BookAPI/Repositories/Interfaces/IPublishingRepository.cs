@@ -1,4 +1,5 @@
-﻿using FatecLibrary.BookAPI.Models.Entities;
+﻿using FatecLibrary.BookAPI.DTO.Entities;
+using FatecLibrary.BookAPI.Models.Entities;
 
 namespace FatecLibrary.BookAPI.Repositories.Interfaces;
 

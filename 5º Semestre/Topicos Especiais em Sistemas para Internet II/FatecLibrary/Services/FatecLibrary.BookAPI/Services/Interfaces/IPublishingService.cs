@@ -1,6 +1,6 @@
 ﻿using FatecLibrary.BookAPI.DTO.Entities;
 
-namespace FatecLibrary.BookAPI.Services.Entities
+namespace FatecLibrary.BookAPI.Services.Interfaces
 {
     public class IPublishingService
     {
