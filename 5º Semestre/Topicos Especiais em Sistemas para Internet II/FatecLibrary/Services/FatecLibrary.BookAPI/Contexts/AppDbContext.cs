@@ -29,9 +29,7 @@ public class AppDBContext : DbContext
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
         }
-    }
-    //
- 
+    } 
     public AppDBContext(DbContextOptions<AppDBContext> options) : base(options) { }
 
     //aqui definimos o mapeamento dos objetos relaacionais BD

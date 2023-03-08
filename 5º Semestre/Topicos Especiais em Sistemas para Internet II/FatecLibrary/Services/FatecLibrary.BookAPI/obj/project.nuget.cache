@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZGJwOuA1PfbHzLNq1XZBGqlK8Vk6x79jIlkOn+26wfBzx6EFB426D1kW7lyefiOdunhi8YFgqjOSMDl/EnnNCQ==",
+  "dgSpecHash": "5Jwgu3EtTWzCmx60LMIiTfHKZ1bE48RuyA6b+1hnOPXS9+ynu8xOzuK7hcOtkNGe5TWtZkD6NeuK0qQARxIuzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\OneDrive\\Documentos\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
+  "projectFilePath": "C:\\Users\\gabri\\dev\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

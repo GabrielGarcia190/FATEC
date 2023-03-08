@@ -2,7 +2,7 @@
 using FatecLibrary.BookAPI.DTO.Entities;
 using FatecLibrary.BookAPI.Models.Entities;
 
-namespace FatecLibrary.BookAPI.DTO.Mapping
+namespace FatecLibrary.BookAPI.Contexts.Mapping
 {
     public class MappingProfile : Profile
     {
