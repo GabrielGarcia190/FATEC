@@ -5,8 +5,9 @@ import {
   BellIcon,
   ArrowRightOnRectangleIcon,
   UserPlusIcon,
+  MagnifyingGlassIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
+import { Home, Profile, Notifications, Search } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
 
 const icon = {
@@ -29,12 +30,12 @@ export const routes = [
         path: "/profile",
         element: <Home />,
       },
-      
+
       {
-        icon: <UserPlusIcon {...icon} />,
-        name: "Tabelas",
-        path: "/tables",
-        element: <Tables />,
+        icon: <MagnifyingGlassIcon {...icon} />,
+        name: "Pesquisar",
+        path: "/search",
+        element: <Search />,
       },
       {
         icon: <BellIcon {...icon} />,

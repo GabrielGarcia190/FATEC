@@ -19,7 +19,7 @@ namespace FatecLibrary.BookAPI.Controllers
         {
             var booksDTO = await _bookService.GetAll();
             if(booksDTO == null)
-                return NotFound("Books not found");]
+                return NotFound("Books not found");
             return Ok(booksDTO);
         }
 
