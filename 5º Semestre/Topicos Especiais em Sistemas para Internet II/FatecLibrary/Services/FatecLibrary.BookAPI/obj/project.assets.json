@@ -3823,11 +3823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\dev\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
+      "projectUniqueName": "C:\\dev\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
       "projectName": "FatecLibrary.BookAPI",
-      "projectPath": "C:\\Users\\gabri\\dev\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
+      "projectPath": "C:\\dev\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\dev\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\obj\\",
+      "outputPath": "C:\\dev\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
