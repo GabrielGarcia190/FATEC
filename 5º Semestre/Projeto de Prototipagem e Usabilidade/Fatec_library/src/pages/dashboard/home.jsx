@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Typography,
   Card,
@@ -27,6 +27,7 @@ import {
   projectsTableData,
   ordersOverviewData,
 } from "@/data";
+
 
 export function Home() {
   return (
@@ -128,8 +129,8 @@ export function Home() {
                 {projectsTableData.map(
                   ({ img, name, members, budget, completion }, key) => {
                     const className = `py-3 px-5 ${key === projectsTableData.length - 1
-                        ? ""
-                        : "border-b border-blue-gray-50"
+                      ? ""
+                      : "border-b border-blue-gray-50"
                       }`;
 
                     return (
@@ -214,8 +215,8 @@ export function Home() {
                 <div key={title} className="flex items-start gap-4 py-3">
                   <div
                     className={`relative p-1 after:absolute after:-bottom-6 after:left-2/4 after:w-0.5 after:-translate-x-2/4 after:bg-blue-gray-50 after:content-[''] ${key === ordersOverviewData.length - 1
-                        ? "after:h-0"
-                        : "after:h-4/6"
+                      ? "after:h-0"
+                      : "after:h-4/6"
                       }`}
                   >
                     {React.createElement(icon, {

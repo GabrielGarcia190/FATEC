@@ -9,13 +9,34 @@ import {
 } from "@/widgets/layout";
 import routes from "@/routes";
 import { useMaterialTailwindController, setOpenConfigurator } from "@/context";
+import { useState } from "react";
+import { auth } from "../../firebase/connection";
+
+
 
 export function Dashboard() {
   const [controller, dispatch] = useMaterialTailwindController();
   const { sidenavType } = controller;
 
+  const [user, setUser] = useState(null);
+
+  async function logado() {
+    await auth.onAuthStateChanged((user) => {
+      if (user) {
+        console.log("Está logado");
+        setUser(user);
+        return;
+      } else {
+        
+        window.location.href = "http://localhost:5173/auth/sign-in"
+        setUser(null);
+      }
+    });
+  }
+
+
   return (
-    <div className="min-h-screen bg-blue-gray-50/50">
+    <div className="min-h-screen bg-blue-gray-50/50" onLoad={logado}>
       <Sidenav
         routes={routes}
         brandImg={

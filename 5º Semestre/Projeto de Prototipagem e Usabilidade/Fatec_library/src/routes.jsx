@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Notifications, Search } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
+import { DotOutline, SignOut, UserGear } from "@phosphor-icons/react";
 
 const icon = {
   className: "w-5 h-5 text-inherit",
@@ -57,8 +58,14 @@ export const routes = [
       },
       {
         icon: <UserPlusIcon {...icon} />,
-        name: "Sair",
+        name: "Cadastre-se",
         path: "/sign-up",
+        element: <SignUp />,
+      },
+      {
+        icon: <SignOut {...icon} />,
+        name: "Sair",
+        path: "/sign-out",
         element: <SignUp />,
       },
     ],

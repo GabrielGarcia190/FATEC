@@ -26,7 +26,6 @@ export function Search() {
     } else {
       const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}`);
       const data = await response.json();
-      console.log(data);
       setSearchResults(data.items.map(item => ({
         id: item.id,
         title: item.volumeInfo.title,

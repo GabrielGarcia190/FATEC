@@ -11,12 +11,16 @@
   "dependencies": {
     "@heroicons/react": "2.0.12",
     "@material-tailwind/react": "1.2.4",
+    "@phosphor-icons/react": "^2.0.5",
     "apexcharts": "3.35.5",
+    "firebase": "^9.18.0",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-apexcharts": "1.4.0",
     "react-dom": "18.2.0",
     "react-modal": "^3.16.1",
+    "react-native-elements": "^3.4.3",
+    "react-native-vector-icons": "^9.2.0",
     "react-paginate": "^8.1.4",
     "react-router-dom": "6.4.2"
   },

@@ -10,6 +10,8 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { useState } from "react";
+import { useMaterialTailwindController, setOpenConfigurator } from "@/context";
+import { auth } from "../../../firebase/connection";
 
 export function SignUp() {
 
@@ -59,6 +61,7 @@ export function SignUp() {
               console.log(data.erro);
               setresCEP(
                 {
+                  bairro: "Digite um CEP Valido",
                   localidade: "Digite um CEP Valido",
                   uf: "00"
                 }
@@ -66,6 +69,7 @@ export function SignUp() {
               )
             } else {
               setresCEP(data);
+              console.log(data);
               validado = true;
             }
             return;
@@ -75,7 +79,6 @@ export function SignUp() {
         return false;
       }
     } catch (error) {
-
       console.log(error);
     }
   }
@@ -96,8 +99,27 @@ export function SignUp() {
 
   }
 
+  const [controller, dispatch] = useMaterialTailwindController();
+  const { sidenavType } = controller;
+
+  const [user, setUser] = useState(null);
+
+  async function logado() {
+    await auth.onAuthStateChanged((user) => {
+      if (user) {
+        alert("Você já está logado")
+        window.location.href = "http://localhost:5173/dashboard/home"
+        setUser(user);
+        return;
+      } else {
+        console.log("Não está logado");
+        setUser(null);
+      }
+    })
+  }
+
   return (
-    <>
+    <div onLoad={logado}>
       <img
         src="https://images.unsplash.com/photo-1589159856415-286795c9eb3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
         className="absolute inset-0 z-0 h-full w-full object-cover"
@@ -125,20 +147,25 @@ export function SignUp() {
                 <Input type="text" label="Telefone" size="lg" required onChange={validadaNumero} value={CelNumer} maxLength={15} />
               </div>
               <div className=" flex flex-row gap-2">
-                <Input label="Logradouro" type="text" size="lg" required />
-                <Input type="text" label="Bairro" size="lg" required />
+                <Input label="Logradouro" type="text" size="lg" required value={resCEP.logradouro}/>
+                <Input type="text" label="Bairro" size="lg" required value={resCEP.bairro} />
               </div>
               <div className=" flex flex-row gap-3">
-                <Input label="CEP" type="text" size="lg" required onChange={validaCEP} value={CEP} />
-                <Input label="Cidade" type="text" size="lg" required onFocus={consultaCEP} value={resCEP.localidade} />
-                <Input type="text" label="UF" size="lg" className="w-[6vw]" required value={resCEP.uf} maxLength={2} />
+                <Input label="Complemento" type="text" size="lg" required value={resCEP.complemento} />
+                <Input label="Número" type="text" size="lg" required />
+                <input type="text" placeholder="IBGE" size="lg" className="w-[6vw] rounded-lg p-2 border border-gray-500 " required value={resCEP.ibge} maxLength={2} />
+              </div>
+              <div className=" flex flex-row gap-3">
+                <Input label="CEP" type="text" size="lg" required onChange={validaCEP} onBlur={consultaCEP} value={CEP} />
+                <Input label="Cidade" type="text" size="lg" required  value={resCEP.localidade} />
+                <input type="text" placeholder="UF" size="lg" className="w-[6vw] rounded-lg p-2 border border-gray-500 " required value={resCEP.uf} maxLength={2} />
               </div>
 
 
 
               <Input type="password" label="Senha" size="lg" required />
               <div className="-ml-2.5">
-                <Checkbox label="I agree the Terms and Conditions" />
+                <Checkbox label="Eu li e aceito os termos e condições" />
               </div>
             </CardBody>
             <CardFooter className="pt-0">
@@ -162,7 +189,7 @@ export function SignUp() {
           </Card>
         </form>
       </div>
-    </>
+    </div>
   );
 }
 
