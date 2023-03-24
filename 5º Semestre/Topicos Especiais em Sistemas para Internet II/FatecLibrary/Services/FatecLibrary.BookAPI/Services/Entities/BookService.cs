@@ -35,7 +35,7 @@ namespace FatecLibrary.BookAPI.Services.Entities
         {
             var book = _mapper.Map<Book>(bookDTO);
             await _bookRespoRepository.Create(book);
-            bookDTO.id = book.Id;
+            bookDTO.Id = book.Id;
         }
         
         public async Task Update(BookDTO bookDTO)

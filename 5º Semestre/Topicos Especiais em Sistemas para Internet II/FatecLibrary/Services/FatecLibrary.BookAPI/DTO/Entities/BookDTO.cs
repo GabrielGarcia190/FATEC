@@ -5,7 +5,7 @@ namespace FatecLibrary.BookAPI.DTO.Entities
 {
     public class BookDTO
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         [Required(ErrorMessage = "The TItle is Required")]
         [MinLength(3)]
         [MaxLength(100)]

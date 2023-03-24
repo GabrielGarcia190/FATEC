@@ -38,7 +38,7 @@ namespace FatecLibrary.BookAPI.Controllers
             if(bookDTO is null)
                 return BadRequest("Data Invalid");
             await _bookService.Create(bookDTO);
-            return new CreatedAtRouteResult("GetBook", new { id = bookDTO.id }, bookDTO);
+            return new CreatedAtRouteResult("GetBook", new { id = bookDTO.Id}, bookDTO);
         }
 
         [HttpPut()]

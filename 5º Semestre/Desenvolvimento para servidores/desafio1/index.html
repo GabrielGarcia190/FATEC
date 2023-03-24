@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2>Calculadora de média</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="campo1">Nota 1:</label>
+                            <input type="number" class="form-control"
+                                id="campo1" name="campo1">
+                        </div>
+                        <div class="form-group">
+                            <label for="campo2">Nota 2:</label>
+                            <input type="number" class="form-control"
+                                id="campo2" name="campo2">
+                        </div>
+                        <button type="button" class="btn btn-primary"
+                            onclick="calcular()">Calcular média</button>
+                    </form>
+                    <br>
+                    <div class="alert alert-info" role="alert" id="resultado"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+		function calcular() {
+			var nota1 = parseFloat(document.getElementById("campo1").value);
+			var nota2 = parseFloat(document.getElementById("campo2").value);
+			var media = (nota1 + nota2) / 2;
+			var resultado = "";
+
+			if (media < 5) {
+				resultado = "Reprovado";
+			} else if (media >= 5.1 && media <= 6.5) {
+				resultado = "Recuperação";
+			} else {
+				resultado = "Aprovado";
+			}
+
+			document.getElementById("resultado").innerHTML = "Média: " + media.toFixed(2) + " - " + resultado;
+		}
+	</script>
+    </body>
+</html>

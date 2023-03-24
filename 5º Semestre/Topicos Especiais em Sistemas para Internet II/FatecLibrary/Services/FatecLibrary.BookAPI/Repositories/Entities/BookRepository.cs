@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FatecLibrary.BookAPI.Repositories.Entities
 {
-    public class BookRepository 
+    public class BookRepository: IBookRepository
     {
         private readonly AppDBContext _dbContext;
 

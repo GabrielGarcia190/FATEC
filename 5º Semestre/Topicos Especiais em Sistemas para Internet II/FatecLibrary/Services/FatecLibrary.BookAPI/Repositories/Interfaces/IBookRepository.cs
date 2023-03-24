@@ -5,9 +5,9 @@ namespace FatecLibrary.BookAPI.Repositories.Interfaces
     public interface IBookRepository
     {
         Task<IEnumerable<Book>> GetAll();
-        Task<IEnumerable<Book>> GetById(int id);
-        Task<IEnumerable<Book>> Create(Book book);
-        Task<IEnumerable<Book>> Update(Book book);
-        Task<IEnumerable<Book>> Delete(int id);
+        Task<Book> GetById(int id);
+        Task<Book> Create(Book book);
+        Task<Book> Update(Book book);
+        Task<Book> Delete(int id);
     }
 }

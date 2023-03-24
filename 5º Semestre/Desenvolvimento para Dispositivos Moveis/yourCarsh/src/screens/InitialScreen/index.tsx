@@ -12,7 +12,7 @@ export function InitialScreen({ navigation }: any) {
           />
           <Text className="text-[#938C93]">Em breve ...</Text>
         </View>
-        <View className="flex-1 justify-end items-center mb-6">
+        <View className="flex-1 justify-end items-center" >
           <TouchableOpacity className=" w-[94vw] h-14 bg-[#3F64EF] items-center justify-center mt-4 rounded-xl">
             <Text className="font-bold text-md text-white">Em Breve ...</Text>
           </TouchableOpacity>

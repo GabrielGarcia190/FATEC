@@ -1,4 +1,6 @@
 import { StatusBar } from "expo-status-bar";
+import { Ionicons } from "@expo/vector-icons";
+import React, { useState } from "react";
 import {
   SafeAreaView,
   Text,
@@ -6,9 +8,26 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  StyleSheet,
 } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 
-export function Login({ navigation }: any) {
+export default function Login({ navigation }: any) {
+  const [type, setType] = useState("login");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const toggleShowPassword = () => setShowPassword(!showPassword);
+
+  async function handleLogin() {
+    await handleLogin();
+  }
+
+
+
+
+
   return (
     <SafeAreaView className="flex-1 bg-[#181818] flex  ">
       <View className=" h-32 w-full items-center mt-10 flex flex-col">
@@ -31,39 +50,69 @@ export function Login({ navigation }: any) {
           className="p-2 w-80 mt-4 rounded-xl bg-[#212121] text-[#5C5867]"
           placeholderTextColor="#5C5867"
           placeholder="exameple@gmail.com"
+          onChangeText={setEmail}
+          value={email}
         />
-        <TextInput
-          className="p-2 w-80 mt-4 rounded-xl bg-[#212121] text-[#5C5867]  "
-          placeholderTextColor="#5C5867"
-          placeholder="**********"
-        />
-        <View className="flex flex-row  mt-6 w-screen pr-24  justify-between">
-          <TouchableOpacity className=" bg-[#212121] w-16 h-16 items-center justify-center rounded-full p-2">
-            <Image
-              className="h-10 w-10"
-              source={require("../../../assets/google.png")}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity className=" bg-[#212121] w-16 h-16 items-center justify-center rounded-full p-2">
-            <Image
-              className="h-8 w-8"
-              source={require("../../../assets/discord.png")}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity className=" bg-[#212121] w-16 h-16 items-center justify-center rounded-full p-2">
-            <Image
-              className="h-8 w-8"
-              source={require("../../../assets/git.png")}
+        <View className=" flex justify-between flex-row p-2 w-80 mt-4 rounded-xl bg-[#212121] text-[#5C5867] ">
+          <TextInput
+            className="text-[#5C5867]"
+            placeholderTextColor="#5C5867"
+            placeholder="Insira sua senha"
+            onChangeText={(e) => setPassword(e)}
+            secureTextEntry={!showPassword}
+            value={password}
+          />
+          <TouchableOpacity onPress={toggleShowPassword}>
+            <Ionicons
+              name={showPassword ? "eye-off" : "eye"}
+              size={24}
+              color="#5C5867"
+              className="p-2 w-80 mt-5"
             />
           </TouchableOpacity>
         </View>
-        <View className="w-80   items-center h-14">
-          <TouchableOpacity
-            className=" w-[85vw] h-14 bg-[#3F64EF] items-center justify-center mt-4 rounded-xl"
-            onPress={() => navigation.navigate("Apresentation")}
+
+        <View className="w-80 items-center h-14 flex mt-4">
+          <LinearGradient
+            colors={["#FF3D00", "#FFC107", "#4CAF50", "#1976D2"]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 0 }}
+            className="flex justify-center w-[322px] h-[60px] p-4 items-center rounded-xl"
           >
-            <Text className="font-bold text-md text-white">Fazer Login</Text>
-          </TouchableOpacity>
+            <TouchableOpacity
+              activeOpacity={0.9}
+              className=" w-[320px] h-[58px]  bg-[#181818] items-center rounded-xl flex flex-row"
+              onPress={() => navigation.navigate("Apresentation")}
+            >
+              <Image
+                className="h-10 w-10 ml-2"
+                source={require("../../../assets/google.png")}
+              />
+              <Text className="font-bold text-lg text-white text-center ml-20">
+                Fazer Login
+              </Text>
+            </TouchableOpacity>
+          </LinearGradient>
+          <LinearGradient
+            colors={["#3940E8", "#2748CE", "#1976D2", "#1790FF"]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 0 }}
+            className="flex justify-center w-[322px] h-[60px] p-4 items-center rounded-xl mt-4"
+          >
+            <TouchableOpacity
+              activeOpacity={0.9}
+              className=" w-[320px] h-[58px]  bg-[#181818] items-center rounded-xl flex flex-row"
+              onPress={() => navigation.navigate("Apresentation")}
+            >
+              <Image
+                className="h-10 w-10 ml-2"
+                source={require("../../../assets/git.png")}
+              />
+              <Text className="font-bold text-lg text-white text-center ml-20">
+                Fazer Login
+              </Text>
+            </TouchableOpacity>
+          </LinearGradient>
           <Text className="text-[#3F64EF] font-md font-semibold mt-2">
             Esqueceu sua senha?
           </Text>
@@ -79,3 +128,11 @@ export function Login({ navigation }: any) {
     </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  gradient: {
+    borderRadius: 30,
+    borderWidth: 2,
+    borderColor: "transparent",
+  },
+});

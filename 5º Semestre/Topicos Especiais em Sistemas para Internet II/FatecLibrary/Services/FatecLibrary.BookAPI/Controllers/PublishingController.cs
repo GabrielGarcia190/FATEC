@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FatecLibrary.BookAPI.Controllers
 {
 
-    [Route("api/[controller")]
+    [Route("api/[controller]")]
     [ApiController]
     public class PublishingController : Controller
     {
@@ -34,7 +34,7 @@ namespace FatecLibrary.BookAPI.Controllers
             return Ok(publishersDTO);
         }
 
-        [HttpGet("{id: int}", Name = "GetPublishing")]
+        [HttpGet("{id:int}", Name = "GetPublishing")]
         public async Task<ActionResult<PublishingDTO>> Get(int id)
         {
             var publishingDTO = await _publishingService.GetById(id);
