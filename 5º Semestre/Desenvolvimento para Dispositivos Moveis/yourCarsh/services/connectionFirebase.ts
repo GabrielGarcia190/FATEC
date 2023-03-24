@@ -1,10 +1,8 @@
-import "firebase/auth";
-import { initializeApp } from "firebase/app";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
 
-
-
-export const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyDAuSwReXPvWQdsNCN1QZ5Og1oqWqj9HMs",
   authDomain: "aula-boer.firebaseapp.com",
   projectId: "aula-boer",
@@ -15,4 +13,9 @@ export const firebaseConfig = {
 
 
 
-export const app = initializeApp(firebaseConfig);
+if (!firebase.apps.length) {
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+}
+
+export default firebase;
