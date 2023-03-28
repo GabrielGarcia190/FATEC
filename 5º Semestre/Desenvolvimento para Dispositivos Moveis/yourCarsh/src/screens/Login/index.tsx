@@ -13,6 +13,7 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 import firebase from "../../../services/connectionFirebase";
 
+
 export default function Login({ navigation }: any) {
   const [type, setType] = useState("login");
   const [email, setEmail] = useState("");
@@ -20,6 +21,7 @@ export default function Login({ navigation }: any) {
   const [showPassword, setShowPassword] = useState(false);
 
   const toggleShowPassword = () => setShowPassword(!showPassword);
+
 
   function handleLogin() {
     if (type === "login") {
@@ -40,19 +42,6 @@ export default function Login({ navigation }: any) {
           return;
         });
     }
-    // else {
-    //   // Aqui cadastramos o usuario
-    //   const user = firebase.auth().createUserWithEmailAndPassword(userCredentials.email, userCredentials.password)
-    //     .then((user) => {
-    //       // props.changeStatus(user.user.uid);
-    //       console.log("Cadastrado com sucesso!");
-    //     })
-    //     .catch((err) => {
-    //       console.log(err);
-    //       alert('Erro ao Cadastrar!');
-    //       return;
-    //     })
-    // }
   }
 
   type Props = {

@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{80
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FatecLibrary.BookAPI", "Services\FatecLibrary.BookAPI\FatecLibrary.BookAPI.csproj", "{D25ED6D0-AC70-48C4-A2EA-7877959C0250}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{A50377C9-2F38-4B88-93AB-C94799F74BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FatecLibrary.web", "FatecLibrary.web\FatecLibrary.web.csproj", "{B72E748E-6615-4773-91FE-3D074C99511F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{D25ED6D0-AC70-48C4-A2EA-7877959C0250}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D25ED6D0-AC70-48C4-A2EA-7877959C0250}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D25ED6D0-AC70-48C4-A2EA-7877959C0250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72E748E-6615-4773-91FE-3D074C99511F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72E748E-6615-4773-91FE-3D074C99511F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72E748E-6615-4773-91FE-3D074C99511F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72E748E-6615-4773-91FE-3D074C99511F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D25ED6D0-AC70-48C4-A2EA-7877959C0250} = {8069BDAB-8189-4983-A316-16885B00B105}
+		{B72E748E-6615-4773-91FE-3D074C99511F} = {A50377C9-2F38-4B88-93AB-C94799F74BEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0FFAAD8F-882E-4E0B-8B40-4D40490D779F}
