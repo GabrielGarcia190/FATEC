@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export function Home({navigation}:any) {  
+export function Home({ navigation }: any) {
   return (
     <View className="flex-1 bg-[#05060A] flex   ">
       <ImageBackground
@@ -24,7 +24,10 @@ export function Home({navigation}:any) {
         Faça login ou cadastre-se e comece {"\n"}a organizar sua vida financeira
       </Text>
       <View className="items-center w-4/4">
-        <TouchableOpacity  className=" w-[94vw] h-14  bg-[#3F64EF] items-center justify-center mt-20 rounded-xl flex-row" onPress={() => navigation.navigate('Login')}>
+        <TouchableOpacity
+          className=" w-[94vw] h-14  bg-[#3F64EF] items-center justify-center mt-20 rounded-xl flex-row"
+          onPress={() => navigation.navigate("Login")}
+        >
           <Text className="font-bold text-md text-white">Vamos começar </Text>
           <Image
             className="h-6 w-6 ml-2"

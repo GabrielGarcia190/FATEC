@@ -120,7 +120,7 @@ export default function Login({ navigation }: any) {
                 source={require("../../../assets/google.png")}
               />
               <Text className="font-bold text-lg text-white text-center ml-14">
-                Entrar com Googe
+                Entrar com Google
               </Text>
             </TouchableOpacity>
           </LinearGradient>

@@ -3,23 +3,42 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "../screens/Login";
 import { Home } from "../screens/Home";
 import { InitialScreen } from "../screens/InitialScreen";
-import { HomeScreen } from "../screens/TabNavBar/HomeScreen";
-import { SearchScreen } from "../screens/TabNavBar/SeacrScreen";
-import { ProfileScreen } from "../screens/TabNavBar/ProfileScreen";
+import { Dashboard } from "../screens/Dashboard";
+import { ProfileScreen } from "../screens/ProfileScreen";
 import { NavigationBar } from "../components/NavigationBar";
+import { TransitionSpecs } from "@react-navigation/stack";
 
 const Stack = createNativeStackNavigator();
 
 export function Routes() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Login" component={Login} />
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+          gestureEnabled: true,
+          animationTypeForReplace: "pop",
+          animation: "fade",
+        }}
+      >
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            animation: "slide_from_right",
+          }}
+        />
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{
+            animation: "fade",
+          }}
+        />
         <Stack.Screen name="Apresentation" component={InitialScreen} />
-        <Stack.Screen name="InitialScreen" component={HomeScreen} />
-        <Stack.Screen name="Search" component={SearchScreen} />
+        <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="Navigat" component={NavigationBar} />
       </Stack.Navigator>
     </NavigationContainer>
   );
