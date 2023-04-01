@@ -16,6 +16,8 @@ export function Notifications() {
   const [livroSelecionado, setLivroSelecionado] = useState(null);
   const [prazoPagamento, setPrazoPagamento] = useState('');
   const [unidadePrazoPagamento, setUnidadePrazoPagamento] = useState("dias");
+  const [juros, setJuros] = useState(0);
+
 
   useEffect(() => {
     async function fetchData() {
@@ -45,11 +47,16 @@ export function Notifications() {
     fecharModal();
   }
 
+  function mostrar(){
+    console.log(prazoPagamento, unidadePrazoPagamento);
+  }
+
   return (
     <div className="flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold mb-4">Catálogo de Livros</h1>
       <div className="flex flex-wrap justify-center items-center">
         {livros.map((livro) => (
+
           <div
             key={livro.id}
             className="bg-white p-4 rounded border border-gray-300 m-2 cursor-pointer"
@@ -100,14 +107,16 @@ export function Notifications() {
                   <option value="meses">meses</option>
                 </select>
               </div>
+                <p>Valor à pagar:R$ {livroSelecionado?.saleInfo.listPrice.amount}</p>
             </div>
             <div className="flex justify-end">
               <button
-                type="submit"
+              onClick={mostrar}
                 className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
               >
-                Comprar por R$ {livroSelecionado?.saleInfo.listPrice.amount}
+                Calcular juros
               </button>
+              
               <button
                 type="button"
                 className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ml-2"

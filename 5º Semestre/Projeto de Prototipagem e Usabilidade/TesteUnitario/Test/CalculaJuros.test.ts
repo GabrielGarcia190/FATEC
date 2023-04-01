@@ -5,7 +5,7 @@ describe("CalculaJuros", () => {
     const valorInicial = 1000;
     const taxa = 10;
     const periodo = 5;
-    const montanteEsperado = 1200;
+    const montanteEsperado = 1501;
 
     const montanteCalculado = CalculaJuros(valorInicial, taxa, periodo);
 

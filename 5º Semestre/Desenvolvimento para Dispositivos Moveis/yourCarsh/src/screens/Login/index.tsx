@@ -32,6 +32,7 @@ export default function Login({ navigation }: any) {
         .then((user) => {
           // props.changeStatus(user.user.uid)
           console.log("Logado com sucesso!");
+          console.log(user);
 
           navigation.navigate("Apresentation");
         })
@@ -146,10 +147,13 @@ export default function Login({ navigation }: any) {
           </LinearGradient>
         </View>
         <View className="mt-56 items-center w-80">
-          <Text className="text-[#53505C] fonto-md font-semibold ">
-            Não tem conta?
-            <Text className="text-[#3F64EF]"> Cadastre-se</Text>
-          </Text>
+          <View className="] fonto-md font-semibold flex flex-row">
+            <Text className="text-[#53505C]">Não tem conta?   </Text>
+           
+            <TouchableOpacity onPress={()=> navigation.navigate("SignUp")}>
+            <Text className="text-[#3F64EF]">Cadastre-se</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
       <StatusBar style="auto" hidden={true} />
