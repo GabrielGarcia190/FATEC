@@ -1,11 +1,11 @@
 import { CalculaJuros } from "../CalculaJuros";
 
 describe("CalculaJuros", () => {
-  it("deve calcular o juros simples corretamente", () => {
+  it("Deve calcular o juros simples corretamente", () => {
     const valorInicial = 1000;
     const taxa = 10;
     const periodo = 5;
-    const montanteEsperado = 1501;
+    const montanteEsperado = 1500;
 
     const montanteCalculado = CalculaJuros(valorInicial, taxa, periodo);
 

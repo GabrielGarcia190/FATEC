@@ -1,13 +1,9 @@
-import { Router, Request, Response, NextFunction } from 'express';
-import 'express-async-errors';
-
+import { Router } from 'express';
+import { CreateUserController } from './controller/user/CreateUserController';
 
 const router = Router();
 
-router.get('/teste', (req: Request, res: Response) => {
-    throw new Error('Erro ao fazer requisição');
-    // return res.json({ nome: 'eduardo' })
+// -----------ROTAS PARA USER ---------------//
+router.post('/user', new CreateUserController().handle)
 
-}); 
-
-export default router;
+export { router };
