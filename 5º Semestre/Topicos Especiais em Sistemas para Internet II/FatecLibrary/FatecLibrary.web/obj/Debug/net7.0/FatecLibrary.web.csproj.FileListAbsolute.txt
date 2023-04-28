@@ -1,0 +1,8 @@
+C:\dev\GitHub\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.web\obj\Debug\net7.0\FatecLibrary.web.csproj.AssemblyReference.cache
+C:\dev\GitHub\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.web\obj\Debug\net7.0\FatecLibrary.web.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\GitHub\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.web\obj\Debug\net7.0\FatecLibrary.web.AssemblyInfoInputs.cache
+C:\dev\GitHub\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.web\obj\Debug\net7.0\FatecLibrary.web.AssemblyInfo.cs
+C:\dev\GitHub\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.web\obj\Debug\net7.0\FatecLibrary.web.csproj.CoreCompileInputs.cache
+C:\dev\GitHub\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.web\obj\Debug\net7.0\FatecLibrary.web.MvcApplicationPartsAssemblyInfo.cache
+C:\dev\GitHub\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.web\obj\Debug\net7.0\FatecLibrary.web.RazorAssemblyInfo.cache
+C:\dev\GitHub\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.web\obj\Debug\net7.0\FatecLibrary.web.RazorAssemblyInfo.cs

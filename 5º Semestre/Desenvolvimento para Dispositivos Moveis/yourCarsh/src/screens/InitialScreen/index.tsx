@@ -2,7 +2,7 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { NavigationBar } from "../../components/NavigationBar";
 import { SafeAreaView } from "react-native-safe-area-context";
-import {ProductManager} from "../../components/productMaganger";
+import {ProductManager} from "../../components/InsertProducts";
 
 export default function InitialScreen({ navigation }: any) {
   return (
