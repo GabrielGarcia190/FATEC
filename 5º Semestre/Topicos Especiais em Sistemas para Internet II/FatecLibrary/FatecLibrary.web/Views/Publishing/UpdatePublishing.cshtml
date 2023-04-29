@@ -1,17 +1,11 @@
 ﻿@model FatecLibrary.Web.Models.Entities.PublishingViewModel
 
-
-
 <h3>Update Publhishing</h3>
-
-
 
 <hr />
 <form asp-action="UpdatePublishing">
 
-
-
-
+    
     <div class="container">
         <div class="col-6">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -21,7 +15,7 @@
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-
+            
         </div>
         <div class="col-6">
             <div class="form-group">
@@ -36,3 +30,6 @@
         </div>
     </div>
 </form>
+
+
+

@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FatecLibrary.BookAPI.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20230318005625_MyFirstMigration")]
-    partial class MyFirstMigration
+    [Migration("20230429181240_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,23 +1,19 @@
-﻿using FatecLibrary.web.Models.Entities;
-using FatecLibrary.web.Services.Interface;
+﻿using FatecLibrary.Web.Models.Entities;
+using FatecLibrary.Web.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-
-
-namespace FatecLibrary.web.Controllers;
-
-
-
+namespace FatecLibrary.Web.Controllers;
 public class BookController : Controller
 {
-    private readonly IBookService _bookService;
-    private readonly IPublishingService _publishingService;
 
-    public BookController(IBookService bookService, IPublishingService publishingService)
+    private readonly IBookService _bookService;
+    private readonly IPublisingService _publisingService;
+
+    public BookController(IBookService bookService, IPublisingService publisingService)
     {
         _bookService = bookService;
-        _publishingService = publishingService;
+        _publisingService = publisingService;
     }
 
     [HttpGet]
@@ -33,7 +29,8 @@ public class BookController : Controller
     public async Task<IActionResult> CreateBook()
     {
         ViewBag.PublishingId = new SelectList(
-        await _publishingService.GetAllPublishers(), "Id", "Name");
+                await _publisingService.GetAllPublishers(), "Id", "Name");
+
         return View();
     }
 
@@ -43,32 +40,30 @@ public class BookController : Controller
         if(ModelState.IsValid)
         {
             var result = await _bookService.CreateBook(bookViewModel);
+
             if(result != null)
                 return RedirectToAction(nameof(Index));
         }
         else
         {
             ViewBag.PublishingId = new SelectList(
-            await _publishingService.GetAllPublishers(), "Id", "Name");
-            // return BadRequest("Erro");
-        }
+                 await _publisingService.GetAllPublishers(), "Id", "Name");
+        }
         return View(bookViewModel);
     }
 
     [HttpGet]
     public async Task<IActionResult> UpdateBook(int id)
     {
-        ViewBag.PublishingId = new
-        SelectList(await _publishingService.GetAllPublishers(), "Id", "Name");
+        ViewBag.PublishingId = new SelectList(await _publisingService.GetAllPublishers(), "Id", "Name");
 
         var result = await _bookService.FindBookById(id);
 
         if(result is null)
             return View("Error");
+
         return View(result);
     }
-
-
 
     [HttpPost]
     public async Task<IActionResult> UpdateBook(BookViewModel bookViewModel)
@@ -79,11 +74,11 @@ public class BookController : Controller
 
             if(result is not null)
                 return RedirectToAction(nameof(Index));
+
         }
+
         return View(bookViewModel);
     }
-
-
 
     [HttpGet]
     public async Task<ActionResult<BookViewModel>> DeleteBook(int id)
@@ -99,10 +94,12 @@ public class BookController : Controller
     [HttpPost(), ActionName("DeleteBook")]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
-        var result = await _bookService.DeleteById(id);
+        var result = await _bookService.DeleteBookById(id);
 
         if(!result)
             return View("Error");
 
         return RedirectToAction("Index");
     }
+
+}

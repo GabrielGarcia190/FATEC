@@ -1,8 +1,8 @@
-﻿using FatecLibrary.web.Models;
+﻿using FatecLibrary.Web.Models.Error;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace FatecLibrary.web.Controllers
+namespace FatecLibrary.Web.Controllers
 {
     public class HomeController : Controller
     {
@@ -14,6 +14,11 @@ namespace FatecLibrary.web.Controllers
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
         {
             return View();
         }

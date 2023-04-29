@@ -4,18 +4,19 @@ using FatecLibrary.BookAPI.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace FatecLibrary.BookAPI.Repositories.Entities;
-
 public class PublishingRepository : IPublishingRepository
 {
 
-    //o que os repositorios fazem?
-    //Fazem o acesso dos métodos ao banco de dados
+    // o que que os repositories fazem?
+    // Fazem o acesso dos métodos ao banco de dados
+
     private readonly AppDBContext _dbContext;
 
-    public PublishingRepository(AppDBContext dBContext)
+    public PublishingRepository(AppDBContext dbContext)
     {
-        _dbContext = dBContext;
+        _dbContext = dbContext;
     }
+
 
     public async Task<IEnumerable<Publishing>> GetAll()
     {
@@ -53,5 +54,4 @@ public class PublishingRepository : IPublishingRepository
         await _dbContext.SaveChangesAsync();
         return publishing;
     }
-
 }

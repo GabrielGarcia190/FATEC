@@ -1,4 +1,4 @@
-namespace FatecLibrary.web.Models.Error
+namespace FatecLibrary.Web.Models.Error
 {
     public class ErrorViewModel
     {

@@ -2,7 +2,7 @@
 using FatecLibrary.BookAPI.DTO.Entities;
 using FatecLibrary.BookAPI.Models.Entities;
 
-namespace FatecLibrary.BookAPI.Contexts.Mapping
+namespace FatecLibrary.BookAPI.DTO.Mappings
 {
     public class MappingProfile : Profile
     {
@@ -10,12 +10,14 @@ namespace FatecLibrary.BookAPI.Contexts.Mapping
         {
             CreateMap<Publishing, PublishingDTO>().ReverseMap();
 
+            CreateMap<BookDTO, Book>();
+
             CreateMap<Book, BookDTO>().ForMember(
-             p => p.PublishingName,
-            options => options.MapFrom
-            (src => src.Publishing.Name
-                )
-            );
+                p => p.PublishingName,
+                options => options.MapFrom(
+                        src => src.Publishing.Name
+                    )
+                );
         }
     }
 }

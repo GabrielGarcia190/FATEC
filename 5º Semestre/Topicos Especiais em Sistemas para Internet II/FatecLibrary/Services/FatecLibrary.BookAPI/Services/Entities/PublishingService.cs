@@ -3,60 +3,57 @@ using FatecLibrary.BookAPI.DTO.Entities;
 using FatecLibrary.BookAPI.Models.Entities;
 using FatecLibrary.BookAPI.Repositories.Interfaces;
 using FatecLibrary.BookAPI.Services.Interfaces;
-using Microsoft.EntityFrameworkCore.Update.Internal;
 
-namespace FatecLibrary.BookAPI.Services.Entities
+namespace FatecLibrary.BookAPI.Services.Entities;
+public class PublishingService : IPublishingService
 {
-    public class PublishingService : IPublishingService
+    // O que os services fazem?
+    // eles fazem as chamadas dos métodos que realizarão as operações
+    // no banco de dados, ou seja, os repositories
+
+    private readonly IPublishingRepository _publishingRepository;
+    private readonly IMapper _mapper;
+
+    public PublishingService(IPublishingRepository publishingRepository,
+        IMapper mapper)
     {
-        // O que os serviços fazem?
-        // eles fazem as chamadas dos métodos que realizarão as operações
-        // no banco de dados, pi seja, os repositorios
+        _publishingRepository = publishingRepository;
+        _mapper = mapper;
+    }
 
-        private readonly IPublishingRepository _publishingRepository;
-        private readonly IMapper _mapper;
+    public async Task<IEnumerable<PublishingDTO>> GetAll()
+    {
+        var publishers = await _publishingRepository.GetAll();
+        return _mapper.Map<IEnumerable<PublishingDTO>>(publishers);
+    }
 
-        public PublishingService(IPublishingRepository publishingRepository, IMapper mapper)
-        {
-            _publishingRepository = publishingRepository;
-            _mapper = mapper;
-        }
+    public async Task<IEnumerable<PublishingDTO>> GetPublishersBooks()
+    {
+        var publishers = await _publishingRepository.GetPublishersBooks();
+        return _mapper.Map<IEnumerable<PublishingDTO>>(publishers);
+    }
 
-        public async Task<IEnumerable<PublishingDTO>> GetAll()
-        {
-            var publishers = await _publishingRepository.GetAll();
-            return _mapper.Map<IEnumerable<PublishingDTO>>(publishers);
-        }
+    public async Task<PublishingDTO> GetById(int id)
+    {
+        var publishing = await _publishingRepository.GetById(id);
+        return _mapper.Map<PublishingDTO>(publishing);
+    }
 
-        public async Task<IEnumerable<PublishingDTO>> GetPublishersBooks()
-        {
-            var publisher = await _publishingRepository.GetPublishersBooks();
-            return _mapper.Map<IEnumerable<PublishingDTO>>(publisher);
-        }
+    public async Task Create(PublishingDTO publishingDTO)
+    {
+        var publishing = _mapper.Map<Publishing>(publishingDTO);
+        await _publishingRepository.Create(publishing);
+        publishingDTO.Id = publishing.Id;
+    }
 
-        public async Task<PublishingDTO> GetById(int id)
-        {
-            var publishing = await _publishingRepository.GetById(id);
-            return _mapper.Map<PublishingDTO>(publishing);
-        }
+    public async Task Update(PublishingDTO publishingDTO)
+    {
+        var publishing = _mapper.Map<Publishing>(publishingDTO);
+        await _publishingRepository.Update(publishing);
+    }
 
-        public async Task Create(PublishingDTO publishingDTO)
-        {
-            var publishing = _mapper.Map<Publishing>(publishingDTO);
-            await _publishingRepository.Create(publishing);
-            publishing.Id = publishingDTO.Id;
-        }
-
-        public  async Task Update(PublishingDTO publishingDTO)
-        {
-            var publishing = _mapper.Map<Publishing>(publishingDTO);
-            await _publishingRepository.Update(publishing);
-        }
-
-        public async Task Remove(int id)
-        {
-            var publising = await _publishingRepository.GetById(id);
-            await _publishingRepository.Delete(publising.Id);
-        }
+    public async Task Remove(int id)
+    {
+        await _publishingRepository.Delete(id);
     }
 }

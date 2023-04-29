@@ -16,24 +16,44 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\dev\GitHub\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Book/CreateBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGVCb29rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Book/DeleteBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xEZWxldGVCb29rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Book/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Book/UpdateBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xVcGRhdGVCb29rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Publishing/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGluZ1xDcmVhdGUuY3NodG1s
+[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Publishing/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGluZ1xEZWxldGUuY3NodG1s
+[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Publishing/CreatePublishing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGluZ1xDcmVhdGVQdWJsaXNoaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Publishing/DeletePublishing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGluZ1xEZWxldGVQdWJsaXNoaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Publishing/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGluZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Publishing/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGluZ1xVcGRhdGUuY3NodG1s
+[C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Publishing/UpdatePublishing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGluZ1xVcGRhdGVQdWJsaXNoaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/dev/GitHub/FATEC/5º Semestre/Topicos Especiais em Sistemas para Internet II/FatecLibrary/FatecLibrary.web/Views/Shared/Error.cshtml]
