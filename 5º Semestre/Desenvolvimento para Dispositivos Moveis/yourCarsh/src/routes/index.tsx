@@ -35,9 +35,9 @@ export function Routes() {
             animation: "fade",
           }}
         />
-        <Stack.Screen name="Apresentation" component={InitialScreen} />
-        <Stack.Screen name="Dashboard" component={ListProducts} />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="Add" component={InitialScreen} />
+        <Stack.Screen name="List" component={ListProducts} />
+        <Stack.Screen name="Edit" component={ProfileScreen} />
         <Stack.Screen name="Navigat" component={NavigationBar} />
         <Stack.Screen name="SignUp" component={SignUp} />
       </Stack.Navigator>

@@ -3,19 +3,16 @@ import {
   View,
   Text,
   TouchableOpacity,
-  Image,
   StyleSheet,
   ActivityIndicator,
   ScrollView,
-  Button,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import firebase from "../../../services/connectionFirebase";
 import { ListItem } from "react-native-elements";
-import { ListDashes, NotePencil, Pencil, Plus } from "phosphor-react-native";
-import Clipboard from "@react-native-clipboard/clipboard";
+import { NotePencil } from "phosphor-react-native";
 
-export interface Despesa {
+interface Despesa {
   id: string;
   name: string;
   valor: string;
@@ -23,9 +20,7 @@ export interface Despesa {
   periodo: string;
 }
 
-export let id = "";
-
-export function ListProducts({ navigation }: any) {
+export function ListProducts() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [despesas, setDespesas] = useState<Despesa[]>([]);
   const [mostrar, setMostrar] = useState<boolean>(true);
@@ -64,15 +59,9 @@ export function ListProducts({ navigation }: any) {
     }
   };
 
-  async function eaeComparca(id_cara: string) {
-    id = id_cara;
-    navigation.navigate("Edit");
+  function handleEditDespesa(despesas: Despesa) {
+    setMostrar(false);
   }
-
-  function mesagem(){
-    alert("Nenhuma despesa selecionada")
-  }
-
   return (
     <SafeAreaView className="flex-1 bg-[#05060A]">
       <View className="flex-1 items-center justify-center">
@@ -109,7 +98,7 @@ export function ListProducts({ navigation }: any) {
                         <View className=" justify-start flex items-end w-1/6">
                           <TouchableOpacity
                             key={despesa.id}
-                            onPress={() => eaeComparca(despesa.id)}
+                            onPress={() => handleEditDespesa(despesa)}
                           >
                             <NotePencil size={25} color="#4a4a4a" />
                           </TouchableOpacity>
@@ -136,29 +125,9 @@ export function ListProducts({ navigation }: any) {
           <Text className="font-bold text-md text-white">Listar Despesas </Text>
         </TouchableOpacity>
       </View>
-      <View>
-        <View className="bg-[#292727] h-16  rounded-t-xl items-center justify-around flex flex-row">
-          <TouchableOpacity onPress={() => navigation.navigate("Add")}>
-            <View className="ml-2">
-              <Plus size={32} color="white" />
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <View className="ml-2">
-              <ListDashes size={32} color="gray" />
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={mesagem}>
-            <View className="ml-2">
-              <Pencil size={32} color="white" />
-            </View>
-          </TouchableOpacity>
-        </View>
-      </View>
     </SafeAreaView>
   );
 }
-
 const styles = StyleSheet.create({
   listItem: {
     backgroundColor: "trasparent",

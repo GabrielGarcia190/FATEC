@@ -34,7 +34,7 @@ export default function Login({ navigation }: any) {
           console.log("Logado com sucesso!");
           console.log(user);
 
-          navigation.navigate("Apresentation");
+          navigation.navigate("Add");
         })
         .catch((err) => {
           console.log(err);
@@ -114,7 +114,7 @@ export default function Login({ navigation }: any) {
             <TouchableOpacity
               activeOpacity={0.9}
               className=" w-[320px] h-[58px]  bg-[#181818] items-center rounded-xl flex flex-row"
-              onPress={() => navigation.navigate("Apresentation")}
+              onPress={() => navigation.navigate("Add")}
             >
               <Image
                 className="h-10 w-10 ml-2"
@@ -134,7 +134,7 @@ export default function Login({ navigation }: any) {
             <TouchableOpacity
               activeOpacity={0.9}
               className=" w-[320px] h-[58px]  bg-[#181818] items-center rounded-xl flex flex-row"
-              onPress={() => navigation.navigate("Apresentation")}
+              onPress={() => navigation.navigate("Add")}
             >
               <Image
                 className="h-10 w-10 ml-2"

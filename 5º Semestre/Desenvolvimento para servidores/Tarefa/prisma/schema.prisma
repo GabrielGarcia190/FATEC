@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model cartaoCredito {
+  id            String @id @default(uuid())
+  numero_cartao String
+  nome_cartao   String
+  CPF_cartao    String
+  ccv           String
+  data_validade String
+
+  created_at DateTime @default(now())
+  
+  @@map("cartao_credito")
+}

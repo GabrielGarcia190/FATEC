@@ -4,8 +4,9 @@ import { verify } from "jsonwebtoken";
 type PayLoad = {
     sub: string;
 }
+const { JWT_SECRET } = process.env;
 
-export function isAuthenticated(
+export function isAuthorezed(
     req: Request,
     res: Response,
     next: NextFunction
@@ -25,15 +26,15 @@ export function isAuthenticated(
     try {
         const { sub } = verify(
             token,
-            process.env.JWT_SECRET
+            String(JWT_SECRET)
         ) as PayLoad;
 
-        req.user_id = sub;
+        req.card_id = sub;
 
         console.log(sub);
-            return next();
+        return next();
     }
-    catch(error){
+    catch (error) {
         return res.status(401).end();
     }
 }

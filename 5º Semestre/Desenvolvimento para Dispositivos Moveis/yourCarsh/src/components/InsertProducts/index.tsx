@@ -3,6 +3,10 @@ import { Text, TextInput, View, TouchableOpacity, Image, Keyboard } from "react-
 import React, { useState } from "react";
 import firebase from "../../../services/connectionFirebase";
 
+interface productProps {
+    name?: string;
+}
+
 export function ProductManager() {
     const [descricao, setDescricao] = useState("");
     const [name, setName] = useState("");
@@ -31,7 +35,11 @@ export function ProductManager() {
         let despesas = await firebase.database().ref('depesas');
         let chave = despesas.push().key;
 
-        despesas.child(chave).set({
+        if(descricao === '' || name === '' || periodo === '' || valor === ''){
+            return alert('Preencha todos os campos corretamente!');
+        }
+
+        despesas.child(String(chave)).set({
             name: name,
             descricao: descricao,
             valor: valor,
@@ -41,10 +49,6 @@ export function ProductManager() {
         alert('Produto Cadastrado!');
     }
 
-
-    async function list() {
-
-    }
 
 
     return (
@@ -61,6 +65,7 @@ export function ProductManager() {
                 className="h-10 w-4/5 bg-[#222121] p-2 rounded-md"
                 value={name}
                 onChangeText={(text) => setName(text)}
+                color={'#6F6A6A'}
             />
 
 
@@ -70,7 +75,7 @@ export function ProductManager() {
 
             <TextInput
                 className="h-10 w-4/5 bg-[#222121] p-2 rounded-md"
-
+                color={'#6F6A6A'}
                 value={descricao}
                 onChangeText={(text) => setDescricao(text)}
             />
@@ -82,6 +87,7 @@ export function ProductManager() {
             <TextInput
                 className="h-10 w-4/5 bg-[#222121] p-2 rounded-md" value={periodo}
                 onChangeText={(text) => setPeriodo(text)}
+                color={'#6F6A6A'}
             />
 
 
@@ -91,19 +97,12 @@ export function ProductManager() {
             <TextInput
                 className="h-10 w-4/5 bg-[#222121] p-2 rounded-md" value={valor}
                 onChangeText={(text) => setValor(text)}
+                color={'#6F6A6A'}
             />
             <TouchableOpacity
                 className=" w-4/5 h-14  bg-[#3F64EF] items-center justify-center mt-20 rounded-xl flex-row"
                 onPress={insertProducts}
             >
-                <Image />
-                <Text className="font-bold text-md text-white">Cadastrar </Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-                className=" w-4/5 h-14  bg-[#3F64EF] items-center justify-center mt-20 rounded-xl flex-row"
-                onPress={insertProducts}
-            >
-                <Image />
                 <Text className="font-bold text-md text-white">Cadastrar </Text>
             </TouchableOpacity>
 
