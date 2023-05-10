@@ -8,12 +8,19 @@ import {
   ActivityIndicator,
   ScrollView,
   Button,
+  Modal,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import firebase from "../../../services/connectionFirebase";
 import { ListItem } from "react-native-elements";
-import { ListDashes, NotePencil, Pencil, Plus } from "phosphor-react-native";
-import Clipboard from "@react-native-clipboard/clipboard";
+import {
+  Check,
+  ListDashes,
+  NotePencil,
+  Pencil,
+  Plus,
+  X,
+} from "phosphor-react-native";
 
 export interface Despesa {
   id: string;
@@ -29,6 +36,11 @@ export function ListProducts({ navigation }: any) {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [despesas, setDespesas] = useState<Despesa[]>([]);
   const [mostrar, setMostrar] = useState<boolean>(true);
+  const [modalVisible, setModalVisible] = useState(false);
+  
+  useEffect(() => {
+    list();
+  }, []);
 
   const list = async () => {
     setIsLoading(true);
@@ -47,10 +59,6 @@ export function ListProducts({ navigation }: any) {
     });
   };
 
-  useEffect(() => {
-    list();
-  }, []);
-
   const excluirDespesa = async (despesaId: string) => {
     try {
       await firebase.database().ref(`depesas/${despesaId}`).remove();
@@ -59,29 +67,69 @@ export function ListProducts({ navigation }: any) {
       );
       setDespesas(newDespesas);
       console.log("Despesa excluída com sucesso!");
+      setModalVisible(false);
     } catch (error) {
       console.error("Erro ao excluir despesa:", error);
     }
   };
 
-  async function eaeComparca(id_cara: string) {
+  async function editar(id_cara: string) {
     id = id_cara;
     navigation.navigate("Edit");
   }
 
-  function mesagem(){
-    alert("Nenhuma despesa selecionada")
+  function mesagem() {
+    alert("Nenhuma despesa selecionada");
   }
 
+  function openModal(id_cara: string) {
+    id = id_cara;
+    setModalVisible(true);
+  }
+
+  function closeModal() {
+    setModalVisible(false);
+  }
   return (
     <SafeAreaView className="flex-1 bg-[#05060A]">
       <View className="flex-1 items-center justify-center">
-        <Text className="text-white">Listagem de Despesas</Text>
+        <Text className="text-white mt-9 text-xl">Listagem de Despesas</Text>
 
         {isLoading ? (
           <ActivityIndicator size="large" color="#3F64EF" />
         ) : (
           <ScrollView className="h-fit w-full">
+            <Modal
+              transparent={true}
+              visible={modalVisible}
+              animationType="fade"
+              onRequestClose={closeModal}
+            >
+              <View style={styles.modalContainer}>
+                <View style={styles.modalContent}>
+                  <Text className="text-xl uppercase text-white font-bold text-center">
+                    AVISO
+                  </Text>
+                  <Text className="text-sm uppercase text-white text-center mb-2 p-4">
+                    Confirmar exclusão
+                  </Text>
+                  <View className=" flex flex-row justify-around">
+                    <TouchableOpacity
+                      onPress={() => excluirDespesa(id)}
+                      className="bg-green-700 rounded-xl p-2"
+                    >
+                      <Check size={32} color="#ffffff" weight="bold" />
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                      onPress={closeModal}
+                      className="bg-red-700 rounded-xl p-2"
+                    >
+                      <X size={32} color="#ffffff" weight="bold" />
+                    </TouchableOpacity>
+                  </View>
+                </View>
+              </View>
+            </Modal>
             {despesas.map(
               (despesa, index) =>
                 despesa.name && (
@@ -109,7 +157,7 @@ export function ListProducts({ navigation }: any) {
                         <View className=" justify-start flex items-end w-1/6">
                           <TouchableOpacity
                             key={despesa.id}
-                            onPress={() => eaeComparca(despesa.id)}
+                            onPress={() => editar(despesa.id)}
                           >
                             <NotePencil size={25} color="#4a4a4a" />
                           </TouchableOpacity>
@@ -117,7 +165,7 @@ export function ListProducts({ navigation }: any) {
                       </View>
                       <TouchableOpacity
                         className="w-full h-fit bg-red-700 p-2 flex justify-center items-center rounded-xl mt-2"
-                        onPress={() => excluirDespesa(despesa.id)}
+                        onPress={() => openModal(despesa.id)}
                       >
                         <Text className="font-bold text-md text-white">
                           Excluir
@@ -133,7 +181,7 @@ export function ListProducts({ navigation }: any) {
           className=" w-4/5 h-14 mb-5 bg-[#3F64EF] items-center justify-center mt-20 rounded-xl flex-row"
           onPress={list}
         >
-          <Text className="font-bold text-md text-white">Listar Despesas </Text>
+          <Text className="font-bold text-md text-white">Atualizar Lista</Text>
         </TouchableOpacity>
       </View>
       <View>
@@ -165,5 +213,16 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginHorizontal: 10,
     padding: 5,
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.9)",
+  },
+  modalContent: {
+    backgroundColor: "#4a4a4a",
+    borderRadius: 5,
+    padding: 20,
   },
 });

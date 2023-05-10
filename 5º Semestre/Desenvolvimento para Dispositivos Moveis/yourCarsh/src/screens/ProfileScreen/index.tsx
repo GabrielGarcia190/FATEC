@@ -56,6 +56,8 @@ export function ProfileScreen({ navigation }: any) {
   function updateData(id: string, newData: any) {
     const dataRef = firebase.database().ref(`depesas/${id}`);
     dataRef.update(newData);
+    alert("Despesa atualizada com sucesso!");
+    navigation.navigate("List");
   }
 
   function handleSubmit() {
@@ -94,8 +96,8 @@ export function ProfileScreen({ navigation }: any) {
         </View>
         <TextInput
           className=" bg-[#222121] p-2  w-11/12 h-10 rounded-md"
-          value={`R$ ${valor}`}
-          onChangeText={(text) => setName(text)}
+          value={valor}
+          onChangeText={(text) => setValor(text)}
           color={"#6F6A6A"}
         />
         <View className="w-full items-start ml-10 mt-6 ">

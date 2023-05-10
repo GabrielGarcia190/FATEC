@@ -5,6 +5,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { ProductManager } from "../../components/InsertProducts";
 import { Pencil, ListDashes , Plus } from "phosphor-react-native";
 
+
+async function edit(){
+  alert("Nenhuma despesa selecionada")
+}
+
 export default function InitialScreen({ navigation }: any) {
   return (
     <SafeAreaView className="flex-1 bg-[#05060A]">
@@ -27,7 +32,7 @@ export default function InitialScreen({ navigation }: any) {
               <ListDashes  size={32} color="white" />
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("Edit")}>
+          <TouchableOpacity onPress={edit}>
             <View className="ml-2">
               <Pencil size={32} color="white" />
             </View>
