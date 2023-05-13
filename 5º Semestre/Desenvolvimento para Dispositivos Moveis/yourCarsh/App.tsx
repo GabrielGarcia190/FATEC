@@ -17,7 +17,7 @@ export default function App() {
         barStyle="light-content"
         backgroundColor="transparent"
         translucent
-      // hidden={true}
+      hidden={true}
       />
       <Routes />
     </SafeAreaView>
