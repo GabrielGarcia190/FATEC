@@ -1,0 +1,159 @@
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.csproj.AssemblyReference.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.AssemblyInfoInputs.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.AssemblyInfo.cs
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.csproj.CoreCompileInputs.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.MvcApplicationPartsAssemblyInfo.cs
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.MvcApplicationPartsAssemblyInfo.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.RazorAssemblyInfo.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.RazorAssemblyInfo.cs
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\appsettings.Development.json
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\appsettings.json
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.staticwebassets.runtime.json
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.exe
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.deps.json
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.runtimeconfig.json
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.pdb
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.AspNetIdentity.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.Storage.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Humanizer.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\IdentityModel.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\MySqlConnector.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets.build.json
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets.development.json
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\scopedcss\bundle\FatecLibrary.IdentityServer.styles.css
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.csproj.CopyComplete
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\refint\FatecLibrary.IdentityServer.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.pdb
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.genruntimeconfig.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\ref\FatecLibrary.IdentityServer.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-87E8D726F53317C553E5B8FB7A47CB07.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\appsettings.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-87E8D726F53317C553E5B8FB7A47CB07.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.staticwebassets.runtime.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.exe
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.deps.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.runtimeconfig.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.pdb
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.AspNetIdentity.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.Storage.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\IdentityModel.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.csproj.AssemblyReference.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.AssemblyInfoInputs.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.AssemblyInfo.cs
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.RazorAssemblyInfo.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.RazorAssemblyInfo.cs
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.FatecLibrary.IdentityServer.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.build.FatecLibrary.IdentityServer.props
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FatecLibrary.IdentityServer.props
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FatecLibrary.IdentityServer.props
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\scopedcss\bundle\FatecLibrary.IdentityServer.styles.css
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.csproj.CopyComplete
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\refint\FatecLibrary.IdentityServer.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.pdb
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.genruntimeconfig.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\ref\FatecLibrary.IdentityServer.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-2A4F1D383AE946B5EDFFEB4BA73F34BB.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\appsettings.Development.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\appsettings.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-2A4F1D383AE946B5EDFFEB4BA73F34BB.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-87E8D726F53317C553E5B8FB7A47CB07.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.staticwebassets.runtime.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.exe
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.deps.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.runtimeconfig.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\FatecLibrary.IdentityServer.pdb
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.AspNetIdentity.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.Storage.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Humanizer.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\IdentityModel.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\MySqlConnector.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Npgsql.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.csproj.AssemblyReference.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.AssemblyInfoInputs.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.AssemblyInfo.cs
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.csproj.CoreCompileInputs.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.MvcApplicationPartsAssemblyInfo.cs
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.MvcApplicationPartsAssemblyInfo.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.RazorAssemblyInfo.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.RazorAssemblyInfo.cs
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.FatecLibrary.IdentityServer.Microsoft.AspNetCore.StaticWebAssets.props
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.build.FatecLibrary.IdentityServer.props
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FatecLibrary.IdentityServer.props
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FatecLibrary.IdentityServer.props
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets.pack.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets.build.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\staticwebassets.development.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\scopedcss\bundle\FatecLibrary.IdentityServer.styles.css
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.csproj.CopyComplete
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\refint\FatecLibrary.IdentityServer.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.pdb
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.genruntimeconfig.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\ref\FatecLibrary.IdentityServer.dll

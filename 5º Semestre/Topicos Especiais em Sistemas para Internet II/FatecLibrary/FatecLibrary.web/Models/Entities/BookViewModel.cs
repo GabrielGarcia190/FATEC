@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace FatecLibrary.Web.Models.Entities;
-public class BookViewModel
+public class BookViewModel 
 {
     public int Id { get; set; }
     [Required]
@@ -13,7 +13,7 @@ public class BookViewModel
     public int PublicationYear { get; set; }
     [Required]
     public int Edition { get; set; }
-    [Required]
+    
     public string? ImageURL { get; set; }
     public string? PublishingName { get; set; }
     [Required]

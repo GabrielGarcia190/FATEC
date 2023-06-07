@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FatecLibrary.Web.Models.Entities;
+namespace FatecLibrary.Web.Models.Entities; 
 public class PublishingViewModel
 {
     public int Id { get; set; }

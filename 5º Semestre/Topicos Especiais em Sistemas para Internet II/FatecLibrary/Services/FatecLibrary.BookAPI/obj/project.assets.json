@@ -3817,23 +3817,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabri\\.nuget\\packages\\": {},
+    "C:\\Users\\Gabriel Garcia\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
+      "projectUniqueName": "C:\\dev\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
       "projectName": "FatecLibrary.BookAPI",
-      "projectPath": "C:\\dev\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
-      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\GitHub\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\obj\\",
+      "projectPath": "C:\\dev\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\FatecLibrary.BookAPI.csproj",
+      "packagesPath": "C:\\Users\\Gabriel Garcia\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\FATEC\\5º Semestre\\Topicos Especiais em Sistemas para Internet II\\FatecLibrary\\Services\\FatecLibrary.BookAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gabriel Garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3924,7 +3924,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

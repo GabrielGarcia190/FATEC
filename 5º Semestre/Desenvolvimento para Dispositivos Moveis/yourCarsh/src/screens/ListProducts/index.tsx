@@ -14,6 +14,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import firebase from "../../../services/connectionFirebase";
 import { ListItem } from "react-native-elements";
 import {
+  ChartLineUp,
   Check,
   ListDashes,
   NotePencil,
@@ -196,9 +197,9 @@ export function ListProducts({ navigation }: any) {
               <ListDashes size={32} color="gray" />
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={mesagem}>
+          <TouchableOpacity onPress={() => navigation.navigate("api")}>
             <View className="ml-2">
-              <Pencil size={32} color="white" />
+            <ChartLineUp size={32} color="white" />
             </View>
           </TouchableOpacity>
         </View>

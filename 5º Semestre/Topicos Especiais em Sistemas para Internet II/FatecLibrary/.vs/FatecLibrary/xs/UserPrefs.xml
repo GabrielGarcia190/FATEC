@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{0627F5A3-3209-443B-AD6E-C7A4D7FADDA3}|Default">
+  <MonoDevelop.Ide.ItemProperties.FrontEnd.FatecLibrary.Web PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FatecLibrary.BookAPI/Migrations/20230201200213_InitialMigration.cs">
+    <Files>
+      <File FileName="FatecLibrary.BookAPI/Program.cs" />
+      <File FileName="FatecLibrary.BookAPI/Properties/launchSettings.json" />
+      <File FileName="FatecLibrary.BookAPI/Repositories/Entities/BookRepository.cs" />
+      <File FileName="FatecLibrary.BookAPI/Context/AppDBContext.cs" />
+      <File FileName="FatecLibrary.BookAPI/appsettings.json" Line="13" Column="1" />
+      <File FileName="FatecLibrary.BookAPI/Migrations/20230201200213_InitialMigration.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FatecLibrary" expanded="True">
+            <Node name="FrontEnd" expanded="True" />
+            <Node name="Services" expanded="True">
+              <Node name="FatecLibrary.BookAPI" expanded="True">
+                <Node name="Context" expanded="True" />
+                <Node name="DTO" expanded="True">
+                  <Node name="Mappings" expanded="True" />
+                </Node>
+                <Node name="Migrations" expanded="True">
+                  <Node name="20230201200213_InitialMigration.cs" selected="True" />
+                </Node>
+                <Node name="Repositories" expanded="True">
+                  <Node name="Entities" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

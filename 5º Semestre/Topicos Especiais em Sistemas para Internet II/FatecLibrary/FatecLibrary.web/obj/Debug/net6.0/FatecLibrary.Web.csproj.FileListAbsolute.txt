@@ -1,0 +1,162 @@
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/appsettings.Development.json
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/appsettings.json
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/Properties/._launchSettings.json
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/FatecLibrary.Web.staticwebassets.runtime.json
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/FatecLibrary.Web
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/FatecLibrary.Web.deps.json
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/FatecLibrary.Web.runtimeconfig.json
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/FatecLibrary.Web.dll
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/FatecLibrary.Web.pdb
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/AutoMapper.dll
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.csproj.AssemblyReference.cache
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.AssemblyInfoInputs.cache
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.AssemblyInfo.cs
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.csproj.CoreCompileInputs.cache
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.RazorAssemblyInfo.cache
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.RazorAssemblyInfo.cs
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/staticwebassets/msbuild.FatecLibrary.Web.Microsoft.AspNetCore.StaticWebAssets.props
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/staticwebassets/msbuild.build.FatecLibrary.Web.props
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.FatecLibrary.Web.props
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.FatecLibrary.Web.props
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/staticwebassets.pack.json
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/staticwebassets.build.json
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/staticwebassets.development.json
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/scopedcss/bundle/FatecLibrary.Web.styles.css
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/scopedcss/projectbundle/FatecLibrary.Web.bundle.scp.css
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.csproj.CopyComplete
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.dll
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/refint/FatecLibrary.Web.dll
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.pdb
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/FatecLibrary.Web.genruntimeconfig.cache
+/Volumes/MOUCO/Fatec/fatec/FatecLibrary/FatecLibrary.Web/obj/Debug/net6.0/ref/FatecLibrary.Web.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\appsettings.Development.json
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\appsettings.json
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Properties\._launchSettings.json
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.staticwebassets.runtime.json
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.exe
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.deps.json
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.runtimeconfig.json
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.pdb
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\AutoMapper.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.csproj.AssemblyReference.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.AssemblyInfoInputs.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.AssemblyInfo.cs
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.csproj.CoreCompileInputs.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.RazorAssemblyInfo.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.RazorAssemblyInfo.cs
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets.build.json
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets.development.json
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\scopedcss\bundle\FatecLibrary.Web.styles.css
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\scopedcss\projectbundle\FatecLibrary.Web.bundle.scp.css
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.csproj.CopyComplete
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\refint\FatecLibrary.Web.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.pdb
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.genruntimeconfig.cache
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\ref\FatecLibrary.Web.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\src\fatec\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\appsettings.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Properties\._launchSettings.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.staticwebassets.runtime.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.exe
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.deps.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.runtimeconfig.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.pdb
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.csproj.AssemblyReference.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.AssemblyInfoInputs.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.AssemblyInfo.cs
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.RazorAssemblyInfo.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.RazorAssemblyInfo.cs
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets\msbuild.FatecLibrary.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.FatecLibrary.Web.props
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FatecLibrary.Web.props
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FatecLibrary.Web.props
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\scopedcss\bundle\FatecLibrary.Web.styles.css
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\scopedcss\projectbundle\FatecLibrary.Web.bundle.scp.css
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.csproj.CopyComplete
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\refint\FatecLibrary.Web.dll
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.pdb
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.genruntimeconfig.cache
+C:\Users\Gabriel Garcia\Documents\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\ref\FatecLibrary.Web.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\appsettings.Development.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\appsettings.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Properties\._launchSettings.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.staticwebassets.runtime.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.exe
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.deps.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.runtimeconfig.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\FatecLibrary.Web.pdb
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\AutoMapper.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.csproj.AssemblyReference.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.AssemblyInfoInputs.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.AssemblyInfo.cs
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.csproj.CoreCompileInputs.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.RazorAssemblyInfo.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.RazorAssemblyInfo.cs
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets\msbuild.FatecLibrary.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.FatecLibrary.Web.props
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FatecLibrary.Web.props
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FatecLibrary.Web.props
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets.pack.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets.build.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\staticwebassets.development.json
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\scopedcss\bundle\FatecLibrary.Web.styles.css
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\scopedcss\projectbundle\FatecLibrary.Web.bundle.scp.css
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.csproj.CopyComplete
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\refint\FatecLibrary.Web.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.pdb
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\FatecLibrary.Web.genruntimeconfig.cache
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.Web\obj\Debug\net6.0\ref\FatecLibrary.Web.dll

@@ -21,13 +21,13 @@ export function ProfileScreen({ navigation }: any) {
   const [valor, setValor] = useState("");
 
   const list = async () => {
-    console.log("Id do produto: ", id)
+    console.log("Id do produto: ", id);
     if (id === "") {
       setDescricao("Selecione uma despesa para editar");
       setName("Selecione uma despesa para editar");
       setPeriodo("Selecione uma despesa para editar");
       setValor("Selecione uma despesa para editar");
-      return
+      return;
     }
 
     const dbRef = firebase.database().ref(`depesas/${id}`);
@@ -65,11 +65,14 @@ export function ProfileScreen({ navigation }: any) {
     updateData(id, newData);
   }
 
-
   return (
     <SafeAreaView className="flex-1 bg-[#05060A] h-screen w-screen">
       <View className="h-fit w-full flex flex-col justify-center items-center">
-        <Text className="mt-8 font-bold text-xl text-white">
+      <Image
+          className="w-screen h-32 ml-2 opacity-30"
+          source={{uri: "https://wallpaperaccess.com/full/3870941.jpg"}}
+        />
+        <Text className="mt-4 font-bold text-xl text-white">
           Editar Despesas
         </Text>
 
@@ -115,25 +118,14 @@ export function ProfileScreen({ navigation }: any) {
         >
           <Text className="font-bold text-md text-white">Editar</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("List")}
+          className=" w-4/5 h-14  bg-red-700 items-center justify-center mt-10 rounded-xl flex-row"
+        >
+          <Text className="font-bold text-md text-white">Cancelar edição</Text>
+        </TouchableOpacity>
       </View>
 
-      <View className="bg-[#292727] h-16   mt-52 rounded-t-xl items-center justify-around flex flex-row">
-        <TouchableOpacity onPress={() => navigation.navigate("Add")}>
-          <View className="ml-2">
-            <Plus size={32} color="white" />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("List")}>
-          <View className="ml-2">
-            <ListDashes size={32} color="white" />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View className="ml-2">
-            <Pencil size={32} color="gray" />
-          </View>
-        </TouchableOpacity>
-      </View>
     </SafeAreaView>
   );
 }

@@ -3,11 +3,10 @@ import React from "react";
 import { NavigationBar } from "../../components/NavigationBar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ProductManager } from "../../components/InsertProducts";
-import { Pencil, ListDashes , Plus } from "phosphor-react-native";
+import { Pencil, ListDashes, Plus, ChartLineUp } from "phosphor-react-native";
 
-
-async function edit(){
-  alert("Nenhuma despesa selecionada")
+async function edit() {
+  alert("Nenhuma despesa selecionada");
 }
 
 export default function InitialScreen({ navigation }: any) {
@@ -23,18 +22,18 @@ export default function InitialScreen({ navigation }: any) {
       <View>
         <View className="bg-[#292727] h-16  rounded-t-xl items-center justify-around flex flex-row">
           <TouchableOpacity>
-          <View className="ml-2">
-            <Plus size={32} color="gray" /> 
-          </View>
+            <View className="ml-2">
+              <Plus size={32} color="gray" />
+            </View>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate("List")}>
             <View className="ml-2">
-              <ListDashes  size={32} color="white" />
+              <ListDashes size={32} color="white" />
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={edit}>
+          <TouchableOpacity onPress={() => navigation.navigate("api")}>
             <View className="ml-2">
-              <Pencil size={32} color="white" />
+              <ChartLineUp size={32} color="white" />
             </View>
           </TouchableOpacity>
         </View>

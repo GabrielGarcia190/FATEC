@@ -1,0 +1,83 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Gabriel Garcia\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native0svg-uri
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\Gabriel Garcia\AppData\Local\Microsoft\WindowsApps;;C:\Users\Gabriel Garcia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Gabriel Garcia\AppData\Roaming\npm;C:\Users\Gabriel Garcia\.dotnet\tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.1.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/react-native0svg-uri: Not found
+      at params.callback [as _callback] (C:\Users\Gabriel Garcia\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Users\Gabriel Garcia\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:511:28)
+      at Request.<anonymous> (C:\Users\Gabriel Garcia\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:511:28)
+      at IncomingMessage.<anonymous> (C:\Users\Gabriel Garcia\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:625:28)
+      at IncomingMessage.emit (node:events:523:35)
+      at endReadableNT (node:internal/streams/readable:1367:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "yourcarsh",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web"
+    },
+    "dependencies": {
+      "@emotion/react": "^11.10.6",
+      "@emotion/styled": "^11.10.6",
+      "@expo/webpack-config": "^18.0.1",
+      "@mui/icons-material": "^5.11.11",
+      "@mui/material": "^5.11.15",
+      "@react-native-clipboard/clipboard": "^1.11.2",
+      "@react-native-picker/picker": "2.4.8",
+      "@react-navigation/bottom-tabs": "^6.5.7",
+      "@react-navigation/native": "^6.1.6",
+      "@react-navigation/native-stack": "^6.9.12",
+      "@react-navigation/stack": "^6.3.16",
+      "expo": "~48.0.4",
+      "expo-constants": "~14.2.1",
+      "expo-linear-gradient": "~12.1.2",
+      "expo-linking": "~4.0.1",
+      "expo-router": "^1.2.1",
+      "expo-status-bar": "~1.4.4",
+      "firebase": "^9.18.0",
+      "nativewind": "^2.0.11",
+      "phosphor-react-native": "^1.1.2",
+      "react": "18.2.0",
+      "react-native": "0.71.4",
+      "react-native-clipboard": "^0.0.5",
+      "react-native-elements": "^3.4.3",
+      "react-native-safe-area-context": "4.5.0",
+      "react-native-screens": "~3.20.0",
+      "react-native-svg": "13.4.0",
+      "react-native-web": "~0.18.10",
+      "tailwindcss": "^3.2.7"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.20.0",
+      "@types/react": "~18.0.14",
+      "typescript": "^4.9.4"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

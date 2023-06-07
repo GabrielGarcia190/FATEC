@@ -8,6 +8,7 @@ import { ProfileScreen } from "../screens/ProfileScreen";
 import { NavigationBar } from "../components/NavigationBar";
 import { TransitionSpecs } from "@react-navigation/stack";
 import { SignUp } from "../screens/SignUp";
+import { ConsultaAPI } from "../screens/consultaAPI/consultaAPI";
 const Stack = createNativeStackNavigator();
 
 export function Routes() {
@@ -39,6 +40,7 @@ export function Routes() {
         <Stack.Screen name="List" component={ListProducts} />
         <Stack.Screen name="Edit" component={ProfileScreen} />
         <Stack.Screen name="Navigat" component={NavigationBar} />
+        <Stack.Screen name="api" component={ConsultaAPI} />
         <Stack.Screen name="SignUp" component={SignUp} />
       </Stack.Navigator>
     </NavigationContainer>
