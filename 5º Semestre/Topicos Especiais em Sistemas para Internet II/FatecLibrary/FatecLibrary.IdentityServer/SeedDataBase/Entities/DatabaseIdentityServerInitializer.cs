@@ -51,15 +51,15 @@ namespace FatecLibrary.IdentityServer.SeedDataBase.Entities
                 // define os dados dos usuário admin
                 ApplicationUser admin = new ApplicationUser()
                 {
-                    UserName = "emerson",
-                    NormalizedUserName = "EMERSON",
-                    Email = "emerson@gmail.com",
+                    UserName = "gabriel",
+                    NormalizedUserName = "GABRIEL",
+                    Email = "gabriel@gmail.com",
                     NormalizedEmail = "EMERSON@GMAIL.COM",
                     EmailConfirmed = true,
                     LockoutEnabled = false,
                     PhoneNumber = "+55 (17) 99012-3456",
-                    FirstName = "Usuario",
-                    LastName = "Emerson",
+                    FirstName = "Gabriel",
+                    LastName = "Garcia",
                     SecurityStamp = Guid.NewGuid().ToString(),
                 };
 

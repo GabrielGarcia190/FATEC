@@ -157,3 +157,4 @@ C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLi
 C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.pdb
 C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\FatecLibrary.IdentityServer.genruntimeconfig.cache
 C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\obj\Debug\net6.0\ref\FatecLibrary.IdentityServer.dll
+C:\dev\FATEC\5º Semestre\Topicos Especiais em Sistemas para Internet II\FatecLibrary\FatecLibrary.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-18C553FCE01C4ECB8966F43593B019F1.json
