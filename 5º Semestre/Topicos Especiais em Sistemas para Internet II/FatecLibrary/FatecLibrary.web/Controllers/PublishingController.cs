@@ -59,7 +59,7 @@ public class PublishingController : Controller
         return View(result);
     }
 
-    [HttpPut]
+    [HttpPost]
     public async Task<IActionResult> UpdatePublishing(PublishingViewModel publishingViewModel)
     {
         if (ModelState.IsValid)

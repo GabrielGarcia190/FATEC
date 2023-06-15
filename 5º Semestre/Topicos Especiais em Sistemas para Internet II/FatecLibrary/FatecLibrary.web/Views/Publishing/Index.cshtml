@@ -1,36 +1,26 @@
 ﻿@model IEnumerable<FatecLibrary.Web.Models.Entities.PublishingViewModel>
 
-<h2>Publishers</h2>
+<div class="w-100 d-flex justify-content-center align-content-md-center">
+    <h2>Lista de Editoras</h2>
+</div>
 <hr />
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div>
-                <div class="pull-left">
-                    <a asp-action="CreatePublishing" class="btn btn-primary">
-                        <span title="Create New" class="fas fa-plus"></span> New Publishing
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <div class="container text-center">
-    
+
     <br />
     <div class="panel panel-default">
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Name)
+                    <th class="bg-black text-white border-light border-1 text-center shadow-lg">
+                        Nome
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Acronym)
+                    <th class="bg-black text-white border-light border-1 text-center shadow-lg">
+                        Abreviação
                     </th>
-                    <th>
+                    <th class="bg-black text-white border-light border-1 text-center shadow-lg">
                         Options
                     </th>
                 </tr>
@@ -39,13 +29,13 @@
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <td>
+                        <td class="shadow-sm bg-light bg-gradient">
                             @Html.DisplayFor(modelItem => item.Name)
                         </td>
-                        <td>
+                        <td class="shadow-sm bg-light bg-gradient">
                             @Html.DisplayFor(modelItem => item.Acronym)
                         </td>
-                        <td align="center">
+                        <td align="center" class="shadow-sm bg-light bg-gradient">
                             <a asp-action="UpdatePublishing" asp-route-id="@item.Id" title="Edit" class="btn btn-warning">
                                 <span class="fas fa-edit"></span>
                             </a>
@@ -58,4 +48,18 @@
             </tbody>
         </table>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <div class="pull-left">
+                        <a asp-action="CreatePublishing" class="btn btn-primary">
+                            <span title="Create New" class="fas fa-plus"></span> Adicionar Editora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+

@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FatecLibrary.Web", "FatecLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FatecLibrary.BookAPI", "FatecLibrary.BookAPI\FatecLibrary.BookAPI.csproj", "{AB55AB11-4ACB-4893-9AAB-702E809DD3DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FatecLibrary.IdentityServer", "FatecLibrary.IdentityServer\FatecLibrary.IdentityServer.csproj", "{C6B76E53-F44B-4135-9A7E-AD5A0B32E360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FatecLibrary.IdentityServer", "FatecLibrary.IdentityServer\FatecLibrary.IdentityServer.csproj", "{C6B76E53-F44B-4135-9A7E-AD5A0B32E360}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

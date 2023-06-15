@@ -1,8 +1,51 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron {
+            background-image: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            opacity: 0.9;
+            font-weight:500;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4 text-white">Bem-vindo à Biblioteca</h1>
+            <p class="lead text-white">Explore nossa vasta coleção de livros e recursos</p>
+            <a class="btn btn-primary btn-lg" href="https://localhost:5149/Book" role="button">Ver Livros</a>
+        </div>
+    </div>
 
-<div class="text-center flex-row">
-    <h1 class="display-4">Seja bem vindo ao Fatec Library</h1>
-    <img src="https://cdn-icons-png.flaticon.com/512/3145/3145765.png" class="img-flui" />
-</div>
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-md-6 flex align-items-center justify-content-center">
+                <h2>Sobre a Biblioteca</h2>
+                <p>A Biblioteca é um espaço acolhedor dedicado à leitura, aprendizado e descoberta. Oferecemos uma ampla variedade de livros, revistas e recursos para pessoas de todas as idades.</p>
+                <p>Visite-nos e explore o mundo dos livros!</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Empréstimo de livros</li>
+                    <li>Acesso a computadores e internet</li>
+                    <li>Eventos literários e palestras</li>
+                    <li>Sala de estudos</li>
+                    <li>Clube do livro</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

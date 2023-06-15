@@ -1,34 +1,34 @@
 ﻿@model FatecLibrary.Web.Models.Entities.PublishingViewModel
 
-<h2>Create a new Publishing</h2>
+<h2>Adicionar uma nova editora <h2>
 
 <form asp-action="CreatePublishing">
     <div class="form-horizontal">
         <hr />
         <div asp-validation-summary="All" class="text-danger"></div>
         <div class="col-6">
-            <div class="form-group">
-                <label asp-for="Name" class="col-md-2 control-label"></label>
-                <div class="col-md-10">
-                    <input asp-for="Name" class="form-control" />
+            <div class="form-group mt-4 fw-bold">
+                <label asp-for="Name" class="col-md-2 control-label">Nome:</label>
+                <div class="col-md-10 ">
+                    <input asp-for="Name" class="form-control" placeholder="Insira o nome da editora" />
                     <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
             </div>
         </div>
         <div class="col-6">
-            <div class="form-group">
-                <label asp-for="Acronym" class="col-md-2 control-label"></label>
+            <div class="form-group mt-4 fw-bold">
+                <label asp-for="Acronym" class="col-md-2 control-label">Abreviação</label>
                 <div class="col-md-10">
-                    <input asp-for="Acronym" class="form-control" />
+                    <input asp-for="Acronym" class="form-control" placeholder="Insira a abreviação da editora - Ex: AB"/>
                     <span asp-validation-for="Acronym" class="text-danger"></span>
                 </div>
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group mt-5">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-success" />
-                <a asp-action="Index" class="btn btn-info">Back to List</a>
+                <input type="submit" value="+" class="btn btn-success text-light" />
+                <a asp-action="Index" class="btn btn-info bg-gradient">Voltar</a>
             </div>
         </div>
     </div>

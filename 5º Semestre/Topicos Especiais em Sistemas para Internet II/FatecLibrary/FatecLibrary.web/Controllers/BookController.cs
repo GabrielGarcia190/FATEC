@@ -69,7 +69,7 @@ public class BookController : Controller
         return View(result);
     }
 
-    [HttpPut]
+    [HttpPost]
     public async Task<IActionResult> UpdateBook(BookViewModel bookViewModel)
     {
         if (ModelState.IsValid)

@@ -1,43 +1,33 @@
 ﻿@model IEnumerable<FatecLibrary.Web.Models.Entities.BookViewModel>
 
-<h2>Books</h2>
+
+<div class="w-100 d-flex justify-content-center align-content-md-center">
+<h2>Lista de Livros</h2>
+</div>
 <hr />
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div>
-                <div class="pull-left">
-                    <a asp-action="CreateBook" class="btn btn-primary">
-                        <span title="Create New" class="fas fa-plus"></span> New Book
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="container text-center">
 
     <br />
     <div class="panel panel-default">
         <table class="table table-striped">
-            <thead>
+            <thead class="thead-light">
                 <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Title)
+                    <th class="bg-black text-white border-light border-1 text-center shadow-lg">
+                       Titulo
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Price)
+                    <th class="bg-black text-white border-light border-1 text-center shadow-lg">
+                        Preço
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.PublicationYear)
+                    <th class="bg-black text-white border-light border-1 text-center shadow-lg">
+                        Ano da publicação
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Edition)
+                    <th class="bg-black text-white border-light border-1 text-center shadow-lg">
+                        Edição
                     </th>
-                    <th>
-                        Options
+                    <th class="bg-black text-white border-light border-1 text-center">
+                        Opções
                     </th>
                 </tr>
             </thead>
@@ -45,19 +35,19 @@
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <td>
+                        <td class="shadow-sm bg-light bg-gradient">
                             @Html.DisplayFor(modelItem => item.Title)
                         </td>
-                        <td>
+                        <td class="shadow-sm bg-light bg-gradient">
                             @Html.DisplayFor(modelItem => item.Price)
                         </td>
-                        <td>
+                        <td class="shadow-sm bg-light bg-gradient">
                             @Html.DisplayFor(modelItem => item.PublicationYear)
                         </td>
-                        <td>
+                        <td class="shadow-sm bg-light bg-gradient">
                             @Html.DisplayFor(modelItem => item.Edition)
                         </td>
-                        <td align="center">
+                        <td align="center" class="shadow-sm bg-light bg-gradient">
                             <a asp-action="UpdateBook" asp-route-id="@item.Id" title="Edit" class="btn btn-warning">
                                 <span class="fas fa-edit"></span>
                             </a>
@@ -70,4 +60,19 @@
             </tbody>
         </table>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <div class="pull-left">
+                        <a asp-action="CreateBook" class="btn btn-primary">
+                            <span title="Create New" class="fas fa-plus"></span> Adicionar Livro
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

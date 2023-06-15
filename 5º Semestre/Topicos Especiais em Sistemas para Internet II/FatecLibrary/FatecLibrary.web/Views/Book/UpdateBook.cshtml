@@ -1,69 +1,69 @@
 ﻿@model FatecLibrary.Web.Models.Entities.BookViewModel
 
-<h3>Update Book</h3>
+<h3>Editar Livros</h3>
 
 <hr />
 <form asp-action="UpdateBook">
 
 
     <div class="container">
-        <div class="col-6">
+        <div class="col-6 fw-bold mt-3">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
+                <label asp-for="Title" class="col-md-2 control-label">Titulo:</label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
 
         </div>
-        <div class="col-6">
+        <div class="col-6 fw-bold mt-3">
             <div class="form-group">
-                <label asp-for="Price" class="col-md-2 control-label"></label>
+                <label asp-for="Price" class="col-md-2 control-label">Preço(R$):</label>
                 <div class="col-md-10">
                     <input asp-for="Price" class="form-control" />
                     <span asp-validation-for="Price" class="text-danger"></span>
                 </div>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 fw-bold mt-3">
             <div class="form-group">
-                <label asp-for="PublicationYear" class="col-md-2 control-label"></label>
+                <label asp-for="PublicationYear" class="col-md-2 control-label"> Ano:</label>
                 <div class="col-md-10">
                     <input asp-for="PublicationYear" class="form-control" />
                     <span asp-validation-for="PublicationYear" class="text-danger"></span>
                 </div>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 fw-bold mt-3">
             <div class="form-group">
-                <label asp-for="Edition" class="col-md-2 control-label"></label>
+                <label asp-for="Edition" class="col-md-2 control-label">Edição:</label>
                 <div class="col-md-10">
                     <input asp-for="Edition" class="form-control" />
                     <span asp-validation-for="Edition" class="text-danger"></span>
                 </div>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 fw-bold mt-3">
             <div class="form-group">
-                <label asp-for="ImageURL" class="col-md-2 control-label"></label>
+                <label asp-for="ImageURL" class="col-md-2 control-label">URL da Capa:</label>
                 <div class="col-md-10">
                     <input asp-for="ImageURL" class="form-control" />
                     <span asp-validation-for="ImageURL" class="text-danger"></span>
                 </div>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 fw-bold mt-3">
             <div class="form-group">
-                <label asp-for="PublishingId" class="col-md-2 control-label"></label>
+                <label asp-for="PublishingId" class="col-md-2 control-label">Editora:</label>
                 <div class="col-md-10">
                     <select asp-for="PublishingId" class="form-control" asp-items="@ViewBag.PublishingId"> </select>
                 </div>
             </div>
         </div>
         <div class="form-group" style="padding-top: 10px">
-            <input type="submit" value="Save" class="btn btn-primary" />
-            <a asp-action="Index" class="btn btn-info">Back to List</a>
+            <input type="submit" value="Salvar" class="btn btn-success bg-gradient" />
+            <a asp-action="Index" class="btn btn-primary bg-gradient shadow">Voltar</a>
         </div>
     </div>
 </form>

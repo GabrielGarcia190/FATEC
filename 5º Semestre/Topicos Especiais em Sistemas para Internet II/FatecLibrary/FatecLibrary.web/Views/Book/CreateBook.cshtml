@@ -1,70 +1,96 @@
 ﻿@model FatecLibrary.Web.Models.Entities.BookViewModel
 
-<h2>Create a new Book</h2>
 
-<form asp-action="CreateBook">
+<h2>Adicionar um novo livro </h2>
+
+<form asp-action="CreateBook" id="yearForm">
     <div class="form-horizontal">
         <hr />
         <div asp-validation-summary="All" class="text-danger"></div>
+        <div>
+
         <div class="col-6">
-            <div class="form-group">
-                <label asp-for="Title" class="col-md-2 control-label"></label>
+            <div class="form-group mt-4 fw-bold">
+                <label asp-for="Title" class="col-md-2 control-label">Titulo:</label>
                 <div class="col-md-10">
-                    <input asp-for="Title" class="form-control" />
+                    <input asp-for="Title" class="form-control" placeholder="Insira o titulo do livro"/>
                     <span asp-validation-for="Title" class="text-danger"></span>
                 </div>
             </div>
         </div>
         <div class="col-6">
-            <div class="form-group">
-                <label asp-for="Price" class="col-md-2 control-label"></label>
+            <div class="form-group mt-3 fw-bold">
+                <label asp-for="Price" class="col-md-2 control-label">Preço(R$):</label>
                 <div class="col-md-10">
-                    <input asp-for="Price" class="form-control" />
+                    <input asp-for="Price" class="form-control" id="moneyInput" placeholder="Insira o valor sem o R$ - Ex: 0.00" />
                     <span asp-validation-for="Price" class="text-danger"></span>
                 </div>
             </div>
         </div>
         <div class="col-6">
-            <div class="form-group">
-                <label asp-for="PublicationYear" class="col-md-2 control-label"></label>
+                <div class="form-group mt-3 fw-bold ">
+                <label asp-for="PublicationYear" class="col-md-2 control-label"> Publicação:</label>
                 <div class="col-md-10">
-                    <input asp-for="PublicationYear" class="form-control" />
+                    <input asp-for="PublicationYear" class="form-control" id="yearInput" placeholder="Insira o ano de publicação do livro" />
                     <span asp-validation-for="PublicationYear" class="text-danger"></span>
                 </div>
             </div>
         </div>
         <div class="col-6">
-            <div class="form-group">
-                <label asp-for="Edition" class="col-md-2 control-label"></label>
+                <div class="form-group mt-3 fw-bold">
+                <label asp-for="Edition" class="col-md-2 control-label">Edição:</label>
                 <div class="col-md-10">
-                    <input asp-for="Edition" class="form-control" />
+                    <input asp-for="Edition" class="form-control" placeholder="Insira a edição do livro"/>
                     <span asp-validation-for="Edition" class="text-danger"></span>
                 </div>
             </div>
         </div>
         <div class="col-6">
-            <div class="form-group">
-                <label asp-for="ImageURL" class="col-md-2 control-label"></label>
+                <div class="form-group mt-3 fw-bold">
+                <label asp-for="ImageURL" class="col-md-2 control-label">Capa do Livro:</label>
                 <div class="col-md-10">
-                    <input asp-for="ImageURL" class="form-control" />
+                    <input asp-for="ImageURL" class="form-control" placeholder="Insira a URL da capa do livro"/>
                     <span asp-validation-for="ImageURL" class="text-danger"></span>
                 </div>
             </div>
         </div>
         <div class="col-6">
-            <div class="form-group">
-                <label asp-for="PublishingId" class="col-md-2 control-label"></label>
+                <div class="form-group mt-3 fw-bold">
+                <label asp-for="PublishingId" class="col-md-2 control-label">Editora:</label>
                 <div class="col-md-10">
-                    <select asp-for="PublishingId" class="form-control" asp-items="@ViewBag.PublishingId"> </select>
+                    <select asp-for="PublishingId" class="form-control" asp-items="@ViewBag.PublishingId">
+                            <option disabled selected hidden class="select-placeholder">Selecione uma opção</option>
+                    </select>
                 </div>
             </div>
         </div>
-
-        <div class="form-group">
+        </div>
+        <div class="form-group mt-5">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-success" />
-                <a asp-action="Index" class="btn btn-info">Back to List</a>
+                <input type="submit" value="+" class="btn btn-success text-light " />
+                <a asp-action="Index" class="btn btn-info bg-gradient">Voltar</a>
             </div>
         </div>
     </div>
 </form>
+
+
+<script>
+    const form = document.getElementById('yearForm');
+    const yearInput = document.getElementById('yearInput');
+    const moneyInput = document.getElementById('moneyInput');
+    const moneyPattern = /^\d+(\.\d{1,2})?$/;
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Impede o envio do formulário
+
+        // Validação do ano usando expressão regular
+        const yearPattern = /^\d{4}$/; // Aceita apenas 4 dígitos numéricos
+        if (!yearPattern.test(yearInput.value)) {
+           alert('Insira um ano válido (ex: 2021)');
+        } else {
+
+            form.submit(); // Envie o formulário se a validação for bem-sucedida
+        }
+    });
+</script>
