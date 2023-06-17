@@ -24,6 +24,7 @@ import {
 } from "firebase/firestore";
 import { database } from "../../firebase/config/configDatabase";
 import Modal from "react-modal";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,7 +49,6 @@ export default function Home() {
         listaDados.push(`${doc.id}`, doc.data());
       });
       setDados(listaDados);
-      console.log(listaDados);
       setLoading(false);
     } catch (error) {
       alert("Erro ao consultar dados");
@@ -62,21 +62,23 @@ export default function Home() {
   }
   function AbrirModal(id: string) {
     setId(id);
-    console.log("ID Selecionado: " + id);
     setIsOpen(true);
   }
 
   async function deletarDados(docId: string) {
-    const q = await query(collection(database, "Consulta"), where("id", "==", docId));
+    if(!docId){
+        console.log("Não há dados para deletar");
+    }
+    console.log(docId);
+    const q = query(collection(database, "Consulta"), where("id", "==", docId));
 
-
-      const querySnapshot = await getDocs(q);
+    const querySnapshot = await getDocs(q).then((querySnapshot) => {
       const ordemId: Array<string> = [];
-      await querySnapshot.forEach((doc) => {
+      querySnapshot.forEach((doc) => {
         ordemId.push(doc.id);
       });
       setDocId(ordemId[0]);
- 
+    });
 
     const dbRef = doc(database, "Consulta", delId);
     try {
@@ -87,6 +89,12 @@ export default function Home() {
     } catch (error) {
       alert("Erro ao deletar dados:" + error);
     }
+  }
+
+
+  function irParaEditar( id:string){
+    sessionStorage.setItem('chave', id );
+   router.push("alterar")
   }
 
   useEffect(() => {
@@ -179,10 +187,14 @@ export default function Home() {
                           />
                           Cancelar agendamento
                         </button>
-                        <button className="bg-[#ffc107] ml-10 p-2 w-56 rounded-md flex flex-row items-center text-black">
-                          <NotePencil size={20} color="#000" className="mr-3" />
-                          Alterar Dados
-                        </button>
+                          <button className="bg-[#ffc107] ml-10 p-2 w-56 rounded-md flex flex-row items-center text-black" onClick={() => irParaEditar(dados["id"])}>
+                            <NotePencil
+                              size={20}
+                              color="#000"
+                              className="mr-3"
+                            />
+                            Alterar Dados
+                          </button>
                       </div>
                     </div>
                   </>
@@ -191,9 +203,12 @@ export default function Home() {
           )}
         </div>
         <div className="w-full flex justify-end">
-        <button className="bg-[#2ebd3e] p-2 rounded-md mr-8" onClick={() => router.push("agendar")}>
-          Agendar Consulta
-        </button>
+          <button
+            className="bg-[#2ebd3e] p-2 rounded-md mr-8 mt-8"
+            onClick={() => router.push("agendar")}
+          >
+            Agendar Consulta
+          </button>
         </div>
       </div>
     </div>
